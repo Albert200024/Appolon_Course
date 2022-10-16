@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+/*=========== Navbar ===========*/
+.menu{
+	background-color: white;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	box-sizing: border-box;
+    z-index: 1;
+    padding: 8px 16px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.menuLeft li{
+	float: left;
+	list-style-type: none;
+}
+
+.menuRight li{
+	float: right;
+	list-style-type: none;
+}
+
+.menuLeft li a, .menuRight li a {
+	padding: 8px 16px;
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: black;
+}
+
+.menuLeft li a:hover, .menuRight li a:hover{
+	 background-color: #ccc;
+	 color: #000;
+}
+
+/*=========== Header ===========*/
+.header_container{
+    max-width: 1600px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    letter-spacing: 4px;
+}
+
+.header_container img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.text_block{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 12px 24px;
+	opacity: 0.60;
+}
+
+.text_block h1{
+  font-size: 36px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/*=========== Main ===========*/
+.main{
+   max-width: 1100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*Section1 About*/
+.about-container{
+	padding-top: 64px;
+    padding-bottom: 64px;
+    overflow: hidden;
+    border-bottom: 3px solid #F5F5F5;
+    margin: 20px 0;
+}
+
+.img_block{
+	width: 45%;
+	float: left;
+    padding: 12px 24px;
+}
+
+.img_block img{
+    width: 100%;
+    height: 100;
+    opacity: 0.75;
+    border-radius: 4px;
+}
+
+.about_text_block{
+	width: 45%;
+    float: right;
+    padding: 12px 24px;
+}
+
+.about_text_block h1{
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+    padding: 12px 24px 50px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.about_text_block h5{
+	letter-spacing: 5px;
+	text-align: center;
+	font-weight: 400;
+    margin: 13px 0;
+    font-size: 18px;
+}
+
+.about_text_block_text1{
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 13px 0;
+}
+
+.about_text_block_text1 span{
+	color: #000;
+	background-color: #f1f1f1;
+	padding-left: 8px;
+    padding-right: 8px;
+}
+
+.about_text_block_text2{
+   color: #757575;
+   font-size: 18px;
+}
+
+/*Section2 Our Menu*/
+.our_menu_container{
+   	padding-top: 64px;
+    padding-bottom: 64px;
+    border-bottom: 3px solid #F5F5F5;
+    overflow: hidden;
+}
+
+.our_menu_img_block{
+	width: 45%;
+	float: right;
+}
+
+.our_menu_img_block img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
+}
+
+.our_menu_text_block{
+	width: 45%;
+	float: left;
+}
+
+.our_menu_text_block h1{
+   padding: 12px 24px 50px;
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   letter-spacing: 5px;
+   font-weight: 400;
+   margin: 10px 0;
+}
+
+.our_menu_text_block h4{
+	letter-spacing: 5px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+
+.our_menu_text_block p {
+	color: #757575;
+	font-family: "Times New Roman", Georgia, Serif;
+	margin: 15px 0;
+}
+
+/*Section3 Contact*/
+.contact_container{
+	padding: 64px 0.1em;
+}
+
+.contact_container h1 {
+	letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
+	font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+    padding: 12px 0 50px;
+    margin: 10px 0;
+}
+
+.contact_text1{
+	font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.contact_text2{
+	color: #607d8b;
+	font-size: 18px;
+}
+
+.contact_text3{
+	margin: 15px 0;
+}
+
+.contact_container form div {
+	margin-top: 40px;
+}
+
+.style_input{
+    padding: 16px 8px;
+    font: inherit;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form_btn{
+	color: #000;
+    background-color: #f1f1f1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/*=========== Footer ===========*/
+.footer{
+    color: #000;
+    background-color: #f1f1f1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.footer p {
+	font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.footer p a {
+	color: inherit;
+}
+
+

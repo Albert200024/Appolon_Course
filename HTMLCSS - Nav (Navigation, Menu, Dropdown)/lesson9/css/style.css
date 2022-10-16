@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	overflow: hidden;
+	background-color: red;
+	list-style-type: none;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+	color: black;
+}
+
+.active{
+	background-color: orange;
+}
+
+.menu li a:not(.active):hover{
+        background-color: gray;
+}
+
+.dropdown-contant{
+	background-color: green;
+	position: absolute;
+	min-width: 135px;
+	display: none;
+}
+
+.dropdown:hover .dropdown-contant{
+   display: block;
+}
