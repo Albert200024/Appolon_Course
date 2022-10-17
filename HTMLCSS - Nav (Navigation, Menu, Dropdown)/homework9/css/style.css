@@ -32,45 +32,43 @@ body{
 }
 
 .menu li a {
-	font-family: 'Amatic SC', sans-serif;
 	text-decoration: none;
 	color: #fff;
 	padding: 8px 16px; 
-    display: block;
+  display: block;
 }
 
 .menu li a:hover{
 	color: #000!important;
-    background-color: #ccc!important;
+  background-color: #ccc!important;
 }
 
 /*============= Header =============*/
 .header{
 	background-image: url("../img/header_img.jpg");
 	background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
-    filter: grayscale(50%);
-    position: relative;
-    display: block;
+  background-size: cover;
+  min-height: 90vh;
+  filter: grayscale(50%);
+  position: relative;
+  display: block;
 }
 
 .header_text1_block{
 	text-align: center;
-	  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .header_text1_block div p {
 	font-size: 100px;
 	color: #fff;
-	font-family: 'Amatic SC', cursive;
 }
 
 .header_btn{
-	border: none;
+	  border: none;
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
@@ -82,23 +80,27 @@ body{
     font-family: 'Amatic SC', sans-serif;
 }
 
+.header_btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
 .header_text2_block{
-	padding: 8px 16px;
-	position: absolute;
+	  padding: 8px 16px;
+	  position: absolute;
     left: 0;
     bottom: 0;
 
 }
 
 .header_text2_block span {
-	background-color: #000;
+	  background-color: #000;
     color: #fff;
     display: inline-block;
     padding-left: 8px;
     padding-right: 8px;
     font-size: 24px;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
 }
 
 /*============= Main =============*/
@@ -167,7 +169,7 @@ body{
    font-weight: bolder;
    margin: 10px 0;
    overflow: hidden;
-    font-size: 36px;
+   font-size: 36px;
    font-family: 'Amatic SC', cursive;
 }
 
@@ -193,7 +195,7 @@ body{
 }
 
 .last_item{
-  border: none !important;
+  border: none;
 }
 
 .food_list .food_list_item h1 span {
@@ -210,7 +212,6 @@ body{
     margin: 36px 0;
     color: #757575;
     font-size: 36px;
-    font-family: 'Amatic SC', cursive;
 }
 
 /* Section2 About */
@@ -233,12 +234,11 @@ body{
 }
 
 .about_title{
-      margin-top: 10px;
-      margin-bottom: 64px;
-      text-align: center;
-      font-size: 64px;
-      font-family: "Amatic SC", sans-serif;
-      font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
 }
 
 .img{
@@ -264,19 +264,112 @@ body{
 }
 
 .hours_block_left{
-     float: left;
-     width: 49.99999%;
+  float: left;
+  width: 49.99999%;
 }
 
 .hours_block_right{
-     float: right;
-     width: 49.99999%;
+  float: right;
+  width: 49.99999%;
 }
 
 /* Section3 Image */
 .image_container img{
+  width: 100%;
+  height: auto;
+  filter: grayscale(75%);
+  vertical-align: middle;
+}
+
+/*Section4 Contact*/
+.contact-container{
+    color: #fff;
+    padding: 64px 16px;
+    filter: grayscale(50%);
+    background-color: #607d8b;
+}
+
+.contact_block{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container h1 {
+    margin-top: 10px;
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.contact-container p {
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+.bg{
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.large_text{
+  font-size: 36px !important;
+}
+
+.contact_block form div {
+    margin: 24px 0;
+}
+
+.style_input{
+    padding: 16px 8px;
+    border: 1px solid #ccc;
     width: 100%;
-    height: auto;
-    filter: grayscale(75%);
-    vertical-align: middle;
+    font: inherit;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.input_btn{
+    width: 100%;
+    display: block;
+    color: #000;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 24px;
+}
+
+.input_btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/*============= Footer =============*/
+.footer{
+    color: #fff;
+    background-color: #000;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+.footer p {
+  font-size: 36px;
+  margin: 36px 0;
+}
+
+.footer p a {
+  color: inherit;
+  background-color: transparent;
+}
+
+.footer p a:hover{
+  color: #4CAF50
 }
