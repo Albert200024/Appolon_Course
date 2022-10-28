@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 2000px;
+}
+
+/*.menu{
+	background-color: orange;
+	overflow: hidden;
+	list-style: none;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	padding: 12px 24px;
+	color: black;
+}
+
+.dropdown-block{
+	position: absolute;
+	background-color: green;
+	display: none;
+	width: 6%;
+}
+
+.menu li a:hover{
+	background-color: red;
+}
+
+.dropdown:hover .dropdown-block{
+   display: block;
+}
+*/
+
+.div1{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	animation: anim1 3s infinite linear;
+}
+
+.div2{
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	background-color: blue;
+	animation: anim2 10s infinite linear;
+}
+
+.div3{
+	width: 200px;
+	height: 200px;
+	background-color: brown;
+	margin: 90px;
+	animation: anim2 60s infinite steps(30);
+}
+
+.div4{
+	width: 200px;
+	height: 200px;
+	background-color: bisque;
+	position: relative;
+	animation: anim4 5s infinite linear;
+}
+
+@keyframes anim1 {
+	from{
+		background-color: green;
+	}
+	to{
+		background-color: darkolivegreen;
+	}
+}
+
+@keyframes anim2 {
+	from{
+		transform: rotate(0deg);
+		background-color: orange;
+
+	}
+	to{
+		transform: rotate(360deg);
+		background-color: aquamarine;
+	}
+}
+
+@keyframes anim4 {
+   0%{
+   	top: 0;
+   	left: 0;
+   	background-color: green;
+   }
+   25%{
+   	top: 0;
+   	left: 500px;
+   	background-color: darkred;
+   }
+   50%{
+   	top: 500px;
+   	left: 500px;
+   	background-color: black;
+   }
+   75%{
+   	top: 500px;
+   	left: 0;
+   	background-color: orange;
+   }
+   100%{
+     top: 0;
+     left: 0;
+     background-color: green;
+   }
+}
+
+
