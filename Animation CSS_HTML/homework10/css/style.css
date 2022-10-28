@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	 background-image: url('../img/back.jpg');
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 height: 100vh;
+}
+
+.div{
+	 width: 200px;
+	 height: 200px;
+	 background-image: url('../img/5.jpg');
+	 background-size: cover;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 margin: auto;
+	 animation: galaxy 35s infinite linear;
+}
+
+.div1{
+	  width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 25s infinite linear;
+}
+
+.eart1{
+   width: 50px;
+	 height: 50px;
+	 background-image: url('../img/4.gif');	
+	 background-size: cover;
+	 border-radius: 50%;
+}
+
+.div2{
+	  width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 30s infinite linear;
+}
+
+.eart2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('../img/5.jpg');
+    background-size: cover;
+}
+
+
+.div3{
+    width: 750px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 32s infinite linear;
+}
+
+.arbanjakDiv{
+	  width: 80px;
+    height: 235px;
+    position: absolute;
+    top: 0px;
+    left: -650px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 15s infinite linear;
+}
+
+.arbanjak{
+	width: 80px;
+	height: 43px;
+	background-image: url('../img/seteline.png');
+	background-size: cover;
+}
+
+.eart3{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('../img/2.jpg');
+    background-size: cover;
+    animation: galaxy 20s infinite linear;
+}
+
+.div4{
+	  width: 785px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: -253px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 40s infinite linear;
+}
+
+.eart4{
+	  width: 70px;
+	  height: 70px;
+	  background-size: cover;
+	  background-image: url('../img/3.jpg');
+	  border-radius: 50%;
+}
+
+.div5{
+	  width: 1160px;
+	  height: 110px;
+	  position: absolute;
+    top: 0;
+    left: -214px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: galaxy 65s infinite linear;
+}
+
+.eart5{
+	  width: 160px;
+	  height: 140px;
+	  background-size: cover;
+	  background-image: url('../img/8.jpg');
+	  border-radius: 50%;
+}
+
+@keyframes galaxy{
+  from {
+  	transform: rotate(0deg);
+  }
+  to {
+  	transform: rotate(360deg);
+  }
+}
