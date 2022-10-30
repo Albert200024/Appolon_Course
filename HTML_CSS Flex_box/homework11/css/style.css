@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
 
+h3{
+	font-size: 24px;
+}
+
 /*===================== Navbar =====================*/
 .menu_container {
 	display: flex;
@@ -90,13 +94,13 @@ header img {
 
 /*===================== Main =====================*/
 .main_container{
-  max-width: 1564px;
+  max-width: 1530px;
   padding: 8px 16px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
-/*===================== Footer =====================*/
 /* Project Section */
 .project_block_title{
 	padding: 32px 16px;
@@ -138,4 +142,138 @@ header img {
 .house_img{
 	width: 100%;
 	vertical-align: middle;
+}
+
+/*About Section*/
+.about_title_block{
+	padding: 32px 16px;
+}
+
+.about_title{
+	border-color: #f1f1f1!important;
+	padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+}
+
+.about_title_block p {
+	margin: 15px 0;
+}
+
+.about_people_block{
+    filter: grayscale(75%);
+    padding: 0 8px;
+    display: flex;
+}
+
+.about_people_block_item{
+	width: 24.99999%;
+	padding: 0 8px;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+
+.about_people_block_item img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.about_people_block_item p {
+	margin: 15px 0;
+}
+.people_block_item_text1 {
+	opacity: 0.60;
+}
+
+.about_people_block_item p button{
+	color: #000;
+    background-color: #f1f1f1;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Verdana,sans-serif;
+    box-sizing: border-box;
+}
+
+.about_people_block_item p button:hover{
+	color: #000;
+    background-color: #ccc;
+}
+
+/*Contact Section*/
+.contact_block{
+   padding: 32px 16px;
+}
+
+.contact_title{
+	padding: 16px 0;
+	border-color: #f1f1f1!important;
+	border-bottom: 1px solid #ccc;
+}
+
+.contact_text{
+	margin: 15px 0;
+}
+
+.input_style{
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 8px;
+    font: inherit;
+    display: block;
+    box-sizing: border-box;
+}
+
+.mTop_Bottom{
+    margin: 16px 0;
+}
+
+.form_btn{
+	color: #fff;
+    background-color: #000;
+    margin: 16px 0;
+    border: none;
+    padding: 8px 16px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.form_btn:hover{
+	color: #000;
+    background-color: #ccc;
+}
+
+/*Image of map Section*/
+.img_block{
+	margin: 0.1rem 16px;
+}
+
+.img_block img{
+  width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+/*===================== Footer =====================*/
+.footer{
+    background-color: #000!important;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+     text-align: center!important;
+}
+
+.footer p {
+	 color: #fff;
+	 margin: 15px 0;
+}
+
+.footer p a {
+	color: inherit;
+}
+
+.footer p a:hover{
+	 color: #4CAF50;
 }
