@@ -7,7 +7,12 @@ body{
     font-family: Verdana,sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    height: 1800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
 }
 
 /*===================== Navbar =====================*/
@@ -33,6 +38,11 @@ body{
 	color: black;
 	display: block;
 	padding: 8px 16px;
+}
+
+.menu_container a:hover{
+	color: #000;
+	background-color: #ccc;
 }
 
 .menuRight{
@@ -65,9 +75,6 @@ header img {
 
 .headerText_block h1{
 	color: #fff;
-	font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400 !important;
-    margin: 10px 0;
     font-size: 36px;
 }
 
@@ -78,5 +85,57 @@ header img {
 }
 
 .text_block_text2{
-	font-weight: 300;
+	color: #f1f1f1;
+}
+
+/*===================== Main =====================*/
+.main_container{
+  max-width: 1564px;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*===================== Footer =====================*/
+/* Project Section */
+.project_block_title{
+	padding: 32px 16px;
+}
+
+.project_title{
+	border-color: #f1f1f1f1 !important;
+	padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+}
+
+.project_img_block1, .project_img_block2{
+	padding: 0 8px;
+	display: flex;
+}
+
+.project_img_block1 .project_img_block_item, .project_img_block2 .project_img_block_item {
+	width: 24.99999%;
+	padding: 0 8px;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+
+.project_img_block1  .project_img_block_info, .project_img_block2 .project_img_block_info{
+	position: relative;
+} 
+
+.houseTitle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+}
+
+.house_img{
+	width: 100%;
+	vertical-align: middle;
 }
