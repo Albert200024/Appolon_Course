@@ -5,6 +5,13 @@
 
 body{
 	font-family: "Times New Roman", Georgia, Serif;
+	line-height: 1.5;
+}
+
+hr{
+	border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
 }
 
 /*=========== Navbar ===========*/
@@ -57,7 +64,7 @@ body{
 
 .header_container img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     vertical-align: middle;
 }
 
@@ -88,14 +95,11 @@ body{
 .about-container{
 	padding-top: 64px;
     padding-bottom: 64px;
-    overflow: hidden;
-    border-bottom: 3px solid #F5F5F5;
-    margin: 20px 0;
+    display: flex;
 }
 
 .img_block{
-	width: 45%;
-	float: left;
+	width: 49.99999%;
     padding: 12px 24px;
 }
 
@@ -103,13 +107,12 @@ body{
     max-width: 100%;
     height: auto;
     opacity: 0.75;
-        vertical-align: middle;
+    vertical-align: middle;
     border-radius: 4px;
 }
 
 .about_text_block{
-	width: 45%;
-    float: right;
+	width: 49.99999%;
     padding: 12px 24px;
 }
 
@@ -153,13 +156,13 @@ body{
 .our_menu_container{
    	padding-top: 64px;
     padding-bottom: 64px;
-    border-bottom: 3px solid #F5F5F5;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;    
 }
 
 .our_menu_img_block{
-	width: 45%;
-	float: right;
+	width: 49.99999%;
+	padding: 12px 24px;
 }
 
 .our_menu_img_block img{
@@ -169,8 +172,8 @@ body{
 }
 
 .our_menu_text_block{
-	width: 45%;
-	float: left;
+	width: 49.99999%;
+	padding: 12px 24px;
 }
 
 .our_menu_text_block h1{
@@ -271,28 +274,40 @@ body{
 
 
 /*/*=========== Media /*===========*/
-@media(max-width: 600px){
-	.menuRight, .img_block{
-		display: none;
+@media(max-width: 992px){
+	.our_menu_img_block{
+		width: 100%;
 	}
 
-	.about_text_block {
+	.our_menu_text_block{
 		width: 100%;
-		box-sizing: border-box;
 	}
 
 	.our_menu_container{
-		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column-reverse; 
 	}
+}
 
-	.our_menu_img_block, .our_menu_text_block{
-		width: 100%;
-		box-sizing: border-box;
-		padding: 12px 24px;
+@media(max-width: 980px){
+	.about_text_block_text2{
+		display: none;
 	}
-  .main{
-  	width: 100%;
-  }
-	
+}
+
+@media(max-width: 600px){
+    .img_block{
+   	display: none;
+    }
+    
+    .about_text_block{
+    	width: 100%;
+    }
+
+    .about_text_block_text2{
+    	display: block;
+    }
+
+    .menuRight{
+    	display: none;
+    }
 }
