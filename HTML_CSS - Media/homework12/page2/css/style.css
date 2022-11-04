@@ -55,7 +55,6 @@ hr{
 /*=========== Header ===========*/
 .header_container{
     max-width: 1600px;
-    min-width: 500px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -101,6 +100,7 @@ hr{
 .img_block{
 	width: 49.99999%;
     padding: 12px 24px;
+    box-sizing: border-box;
 }
 
 .img_block img{
@@ -114,6 +114,7 @@ hr{
 .about_text_block{
 	width: 49.99999%;
     padding: 12px 24px;
+    box-sizing: border-box;
 }
 
 .about_text_block h1{
@@ -156,6 +157,8 @@ hr{
 .our_menu_container{
    	padding-top: 64px;
     padding-bottom: 64px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;    
 }
@@ -163,6 +166,7 @@ hr{
 .our_menu_img_block{
 	width: 49.99999%;
 	padding: 12px 24px;
+	box-sizing: border-box;
 }
 
 .our_menu_img_block img{
@@ -174,6 +178,7 @@ hr{
 .our_menu_text_block{
 	width: 49.99999%;
 	padding: 12px 24px;
+	box-sizing: border-box;
 }
 
 .our_menu_text_block h1{
@@ -296,7 +301,7 @@ hr{
 
 @media(max-width: 600px){
     .img_block{
-   	display: none;
+   	   display: none;
     }
     
     .about_text_block{
