@@ -179,19 +179,23 @@ hr {
     color: #fff;
     background-color: #616161;
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     padding-left: 8px;
     padding-right: 8px;
-
 }
 
 .listItem_tittle1{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .left_side{
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 
@@ -199,6 +203,9 @@ hr {
     color: #fff;
     background-color: #616161;
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     padding-left: 8px;
     padding-right: 8px;
@@ -207,7 +214,8 @@ hr {
 }
 
 .back1{
-  background-color: #f44336!important;
+   background-color: #f44336!important;
+   height: 45px;
 }
 
 .back2{
@@ -216,9 +224,9 @@ hr {
 }
 
 .food_list p {
-      color: #757575;
-      margin: 36px 0;
-      font-size: 36px;
+    color: #757575;
+    margin: 36px 0;
+    font-size: 36px;
 }
 
 
@@ -402,6 +410,16 @@ hr {
 
 @media(max-width: 400px){
    .menu_selector_block div{
-    font-size: 30px;
+      font-size: 30px;
    }
+}
+
+@media(max-width: 340px){
+  .food_list .listItem_tittle span{
+    font-size: 30px;
+  }
+
+  .right_side span, .left_side span{
+    font-size: 30px;
+  }
 }
