@@ -9,6 +9,12 @@ body{
   text-transform: uppercase;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
 /*	font-family: 'Amatic SC', sans-serif;*/
 
 /*============= Navbar =============*/
@@ -160,59 +166,61 @@ body{
     padding: 32px 16px;
 }
 
-.food_list .food_list_item {
-  height: 190px;
-  border-bottom: 1px solid #EEEEEE;
+.food_list .listItem_tittle{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.food_list .food_list_item  h1{
-   font-weight: bolder;
-   margin: 10px 0;
-   overflow: hidden;
-   font-size: 36px;
-   font-family: 'Amatic SC', cursive;
+.food_list .listItem_tittle span{
+    color: #fff;
+    background-color: #616161;
+    display: block;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
 }
 
-.food_list .food_list_item h1 b {
-   float: left;
+.listItem_tittle1{
+  display: flex;
+  justify-content: space-between;
 }
 
-.food_list .special_item h1 .special_food{
-   float: left;
-   color: #fff;
-   background-color: #f44336;
-   border-radius: 4px;
-   display: inline-block;
-   padding-left: 8px;
-   padding-right: 8px;
-   text-align: center;
-   margin-left: 5px;
+.left_side{
+  display: flex;
+  gap: 5px;
 }
 
-.back{
-  background-color: #9E9E9E !important;
-  color: #000 !important;
-}
-
-.last_item{
-  border: none;
-}
-
-.food_list .food_list_item h1 span {
-  float: right;
-  color: #fff;
-  background-color: #616161;
-  border-radius: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-weight: 300;
-}
-
-.food_list .food_list_item p {
-    margin: 36px 0;
-    color: #757575;
+.right_side span, .left_side span{
+    color: #fff;
+    background-color: #616161;
+    display: block;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
     font-size: 36px;
 }
+
+.back1{
+  background-color: #f44336!important;
+}
+
+.back2{
+    color: #000!important;
+    background-color: #9e9e9e!important;
+}
+
+.food_list p {
+      color: #757575;
+      margin: 36px 0;
+      font-size: 36px;
+}
+
 
 /* Section2 About */
 .about-container{
@@ -372,4 +380,28 @@ body{
 
 .footer p a:hover{
   color: #4CAF50
+}
+
+
+/*============= Media =============*/
+@media(max-width: 600px){
+  .header_text1_block{
+    width: 100%;
+  }
+  .menu{
+    display: none;
+  }
+  .header_text1_block div{
+    font-weight: bolder;
+    }
+
+  .header_text1_block div p{
+    font-size: 55px 
+  }
+}
+
+@media(max-width: 400px){
+   .menu_selector_block div{
+    font-size: 30px;
+   }
 }

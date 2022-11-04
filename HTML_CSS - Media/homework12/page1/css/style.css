@@ -7,6 +7,46 @@ body{
 	font-family: "Lato", sans-serif;
 }
 
+/*Navbar style start*/
+.menu{
+	font-family: "Montserrat", sans-serif;
+	background-color: #f44336;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 99999;
+}
+
+.menu li {
+	float: left;
+	list-style-type: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	padding: 14px 24px;
+}
+
+.menu li a:not(.active):hover{
+	background-color: white;
+	color: black !important;
+}
+
+.active{
+	background-color: white;
+	color: black !important;
+}
+
+.hide{
+	display: none !important;
+}
+/*Navbar style end*/
+
 /*Header style start*/
 .pageTop{
 	padding: 128px 16px;
@@ -39,14 +79,14 @@ body{
 }
 
 .pageTop_btn:hover{
-  color: #000;
+   color: #000;
    background-color: #ccc;
 }
 /*Header style end*/
 
 /*Section 1 start style*/
 .sec1{
-    padding: 64px 0.1rem;
+    padding: 64px 16px;
 }
 
 .sec1_block{
@@ -98,14 +138,14 @@ body{
 .sec2{
    background-color: #f1f1f1;
    color: #000;
-   padding: 64px 16px
+   padding: 64px 16px;
 }
 
 .sec2_block{
 	max-width: 980px;
 	margin-left: auto;
 	overflow: hidden;
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .sec2_block_text {
@@ -143,6 +183,7 @@ body{
 	  color: #f44336;
 	  padding-bottom: 64px;
 	  padding-top: 64px;
+	  margin-right: 16px
 
 }
 /*Section 2 end style*/
@@ -194,3 +235,41 @@ footer p a{
        color: inherit;
 }
 /*footer style end*/
+
+/*================ Media ================*/
+@media(max-width: 817px){
+   .sec2_block_iqon i{
+      font-size: 175px;
+   }
+}
+
+@media(max-width: 722px){
+   .sec1_block_text,  .sec1_block_iqon{
+   	   width: 100%;
+   }
+
+   .sec2_block{
+   	  display: flex;
+   	  flex-direction: column-reverse;
+   }
+
+   .sec2_block_text,  .sec2_block_iqon{
+   	   width: 100%;
+   }
+}
+
+@media(max-width: 600px){
+  .menu li a:not(.active, .hide){
+  	display: none;
+  }
+
+  .hide {
+  	display: block !important;
+  }
+
+  .menu{
+  	display: flex;
+  	justify-content: space-between;
+  }
+}
+
