@@ -142,18 +142,18 @@
 	width: 500px;
 	position: relative;
 	overflow: hidden;
+	border-radius: 50%;
+
 }
 
 .block img{
 	width: 100%;
 	height: auto;
 	display: block;
-	border-radius: 50%;
 }
 
 .text{
 	position: absolute;
-	border-radius: 50%;
 	background-color: orange;
 	transition: 0.5s;
 	overflow: hidden;
@@ -165,9 +165,10 @@
 }
 
 .block:hover .text{
-	height: 20%;
+	height: 30%;
 }
 
 .text p {
 	text-align: center;
+	padding-top: 25px;
 }
