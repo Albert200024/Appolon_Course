@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Homework15</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/1f21eb1afe.js" crossorigin="anonymous"></script>
 </head>
@@ -11,41 +17,211 @@
 	<nav class="menu">
 		<img src="img/navImg.jpg" alt="">
 		<ul class="menuList">
-			<li>
+			<li class="active active_block">
 			    <i class="fa-solid fa-house-chimney"></i>
-				<a href="">Home</a>
+				<a href="#" class="active">Home</a>
 			</li>
 			<li>
 				<i class="fa-solid fa-user"></i>
-				<a href="">About</a>
+				<a href="#about">About</a>
 			</li>
 			<li>
 				<i class="fa-regular fa-eye"></i>
-				<a href="">Photos</a>
+				<a href="#photo">Photos</a>
 			</li>
 			<li>
 				<i class="fa-solid fa-envelope"></i>
-				<a href="">Contact</a>
+				<a href="#contact">Contact</a>
 			</li>
 		</ul>
 	</nav>
 	<nav class="menu_small_size">
 		<ul>
-			<li><a href="">home</a></li>
-			<li><a href="">about</a></li>
-			<li><a href="">photos</a></li>
-			<li><a href="">contact</a></li>
+			<li><a href="#">home</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#photo">photos</a></li>
+			<li><a href="#contact">contact</a></li>
 		</ul>
 	</nav>
-	<main class="main">
-		<header class="header">
-			<h1 class="header_title"><span>I'm </span> John Doe.</h1>
-			<p class="margin_paragraph">Photographer and Web Designer.</p>
+	<main class="main" id="main">
+		<header class="header" id="home" data-aos="fade-down">
+			<h1 class="header_title animate__animated animate__jello"><span>I'm </span> John Doe.</h1>
+			<p >Photographer and Web Designer.</p>
 			<img src="img/header_image.jpg" alt="">
 		</header>
+		<div class="container " id="about" data-aos="zoom-in-down" >
+			<h2 class="about_title">My Name</h2>
+			<hr>
+			<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             </p>
+             <h3 class="skill_title">My Skills</h3>
+             <p class="skill_p">Photography</p>
+             <div class="skil_div">
+             	<div></div>
+             </div>
+             <p class="skill_p">Web Design</p>
+              <div class="skil_div skil_div2">
+             	<div></div>
+             </div>
+             <p class="skill_p">Photoshop</p>
+             <div class="skil_div skill_div3">
+             	<div></div>
+             </div>
+             <br>
+             <div class="project_block">
+             	<div class="project_block_item">
+             		<span>11+</span>
+             		<br>
+             		Partners
+             	</div>
+             	<div class="project_block_item">
+             		<span>55+</span>
+             		<br>
+                    Projects Done
+             	</div>
+             	<div class="project_block_item">
+             		<span>89+</span>
+             		<br>
+                    Happy Clients
+             	</div>
+             	<div class="project_block_item">
+             		<span>150+</span>
+             		<br>
+             		Meetings
+             	</div>
+             </div>
+             <button class="downlound_CV">
+             	<i class="fa fa-download"></i>
+                 Download Resume
+             </button>
+             <h3 class="price_title">My Price</h3>
+             <div class="price_block">
+             	<div class="price_block_item1">
+             		<ul class="item_list">
+             			<li class="list_title">Basic</li>
+             			<li class="padding_all">Web Design</li>
+             			<li class="padding_all">Photography</li>
+             			<li class="padding_all">5GB Storage</li>
+             			<li class="padding_all">Mail Support</li>
+             			<li class="padding_all">
+             				<h2>$ 10</h2>
+             				<span>per month</span>
+             			</li>
+             			<li class="button_block">
+             				<button class="list_btn">Sign Up</button>
+             			</li>
+             		</ul>
+             	</div>
+             	<div class="price_block_item2">
+             		<ul class="item_list">
+             			<li class="list_title">Pro</li>
+             			<li class="padding_all">Web Design</li>
+             			<li class="padding_all">Photography</li>
+             			<li class="padding_all">50GB Storage</li>
+             			<li class="padding_all">Endless Support</li>
+             			<li class="padding_all">
+             				<h2>$ 25</h2>
+             				<span>per month</span>
+             			</li>
+             			<li class="button_block">
+             				<button class="list_btn">Sign Up</button>
+             			</li>
+             		</ul>
+             	</div>
+             </div>
+             <h3 class="reputation_title">My Reputation</h3>
+             <div class="people_info">
+             	<div class="img">
+             		<img src="img/bandmember.jpg" alt="">
+             	</div>
+             	<div class="text">
+             		<p><span class="">Chris Fox. </span>  CEO at Mighty Schools.</p>
+             		<p>John Doe saved us from a web disaster.</p>
+             	</div>
+             </div>
+             <br>
+             <div class="people_info">
+             	<div class="img">
+             		<img src="img/avatar_g2.jpg" alt="">
+             	</div>
+             	<div class="text">
+             		<p><span class="">Chris Fox. </span>  CEO at Mighty Schools.</p>
+             		<p>John Doe saved us from a web disaster.</p>
+             	</div>
+             </div>
+		</div>
+		<div class="container" id="photo" data-aos="zoom-in-right" >
+			<h2 class="photos_title">My Photos</h2>
+			<hr>
+			<div class="img_block">
+				<div class="left_side">
+					<img src="img/wedding.jpg" alt="">
+					<img src="img/rocks.jpg" alt="">
+					<img src="img/sailboat.jpg" alt="">
+				</div>
+				<div class="right_side">
+					<img src="img/underwater.jpg" alt="">
+					<img src="img/chef.jpg" alt="">
+					<img src="img/wedding (1).jpg" alt="">
+					<img src="img/p6.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container" id ="contact" data-aos="zoom-in-left">
+			<h2 class="contact_title">Contact Me</h2>
+			<hr>
+			<div class="contact_info_block">
+				 <p>
+				 	<i class="fa fa-map-marker"></i> 
+				 	Chicago, US
+				 </p>
+				 <p>
+				 	<i class="fa fa-phone"></i> 
+				    Phone: +00 151515
+			     </p>
+			     <p>
+			     	<i class="fa fa-envelope"></i> 
+			        Email: mail@mail.com
+			     </p>
+			</div>
+			<br>
+			<p>Let's get in touch. Send me a message:</p>
+			<form action="/action_page.php" target="_blank">
+              <div>
+            	<input type="text" placeholder="Name">
+              </div>
+              <div>
+            	<input type="email" placeholder="Email">
+              </div>
+              <div>
+            	<input type="text" placeholder="Subject">
+              </div>
+              <div>
+            	<input type="text" placeholder="Message">
+              </div>
+              <div>
+               <button class="form_btn" type="submit">
+                  <i class="fa fa-paper-plane"></i> 
+                  SEND MESSAGE
+               </button>
+              </div>
+            </form>
+		</div>
+		<footer class="footer container" data-aos="zoom-in-up">
+		  <i class="fa-brands fa-square-facebook"></i>
+		  <i class="fa-brands fa-instagram"></i>
+		  <i class="fa fa-snapchat"></i>
+		  <i class="fa-brands fa-pinterest-p"></i>
+		  <i class="fa-brands fa-twitter"></i>
+		  <i class="fa-brands fa-linkedin-in"></i>
+		  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+	    </footer>
 	</main>
-	<footer class="footer">
-		
-	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+      AOS.init();
+   </script>
 </body>
 </html>
