@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+	background-color: #000;	
+	font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Segoe UI",Arial,sans-serif;
+    margin: 10px 0;
+}
+
+.margin_paragraph{
+	margin: 15px 0;
+}
+
+/*================= Navbar =================*/
+.menu{
+    width: 124px;
+    background-color: #222;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    display: block;
+}
+
+.menu img{
+   width: 100%;
+   vertical-align: middle;
+}
+
+.menu ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+}
+ 
+.menu ul li a{
+	margin: 12px 0;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+
+	display: block;
+	text-transform: uppercase;
+}
+
+.menu ul li i{
+	color: white;
+	font-size: 34px;
+}
+
+.menu_small_size{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	color: white;
+}
+
+.menu_small_size ul{
+      color: #fff!important;
+    background-color: #000!important;
+    text-align: center!important;
+    font-size: 12px;
+        opacity: 0.60;
+        width: 100%;
+        display: flex;
+        list-style: none;
+}
+
+.menu_small_size ul li {
+	width: 25%;
+}
+.menu_small_size ul li a{
+   text-decoration: none;
+   color: white;
+   display: block;
+       padding: 8px 16px;
+ box-sizing: border-box; 
+ text-transform: uppercase; 
+}
+
+/*================= Main =================*/
+.main{
+   margin-left: 120px;
+   transition: margin-left .4s;
+   padding: 12px 24px;
+   transition: margin-left .4s;
+}
+
+/*Hader page*/
+.header{
+	color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.header_title{
+	font-family: "Montserrat", sans-serif;
+	font-size: 64px;
+	font-weight: 200 !important;
+}
+
+.header img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*================= Footer =================*/
+
+@media(max-width: 600px){
+	.menu{
+		display: none;
+	}
+
+	.main{
+		margin-left: 0;
+	}
+
+	.menu_small_size{
+		display: block;
+	}
+	.header_title span {
+		display: none;
+	}
+}
