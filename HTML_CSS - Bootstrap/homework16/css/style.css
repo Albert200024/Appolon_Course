@@ -5,18 +5,22 @@
 
 body {
 	background-color: black !important;
-
 }
 
 .anim{
 	transition: 0.5s !important;
 }
 
-
-
-
+/*=============== Container block ===============*/
+/*===== header =====*/
 .header{
 	position: relative;
+	background-image: url(../img/headerImg.jpg);
+	background-size: cover !important;
+    width: 100%;
+    background-position: center;
+	height: 100vh !important;
+	box-sizing: border-box;
 }
 
 .header img {
@@ -32,5 +36,166 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
+.header_title h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+/*===== Famous film section =====*/
+.famous_film_section_title{
+	margin-bottom: 25px;
+}
+
+.famous_film_text_block h3 {
+	font-size: 24px;
+}
+
+.famous_film_text_block p {
+	font-size: 14px ;
+}
+
+.famous_film_text_block p {
+	color: gray;
+}
+.famous_film_text_block h3 {
+	color: #343A40;
+}
+
+/*===== Movies section =====*/
+.movies_title{
+   margin-top: 80px;
+   margin-bottom: 25px;
+}
+
+.movies_bloc_item{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.img_height{
+	height: 65% !important;
+}
+
+.card-body p {
+	font-size: 12px;
+    padding-bottom:10px !important ;
+    margin-bottom: 0 !important;
+}
+
+/*===== Movies info section =====*/
+.movies_info_titel{
+	margin-top: 80px;
+	margin-bottom: 25px;
+	color: white !important;
+}
+
+.movies_info_block_item{
+	display: flex;
+	width: 10;
+}
+
+.img_block {
+	width: 50%;
+	height: 50%;
+}
+
+.img_block img {
+	width: 100%;
+	height: 100%;
+}
+
+/*=============== Footer ===============*/
+.footer{
+	background-color: #343A40;
+}
+
+.footer p{
+	margin-top: 80px;
+	padding: 25px 0;
+	text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.footer p a {
+	color: inherit;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.footer p a:hover{
+	color: gray;
+}
+
+.footer div {
+	display: flex;
+	justify-content: center;
+	gap: 10px !important;
+	padding-bottom: 30px;
+}
+
+.footer div i {
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.footer div i:hover {
+	color: gray;
+}
+
+/*=============== Media ===============*/
+@media(max-width:992px){
+	.movies_bloc_item div{
+       width: 10rem !important;
+       height: 520px !important;
+	}
+}
+
+@media(max-width:770px){
+	.header_title h1{
+		font-size: 35px !important;
+	}
+}
+
+@media(max-width:768px){
+	.header_title h1{
+		font-size: 35px !important;
+	}
+
+	.movies_bloc_item{
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+	.movies_bloc_item div{
+		width: 75% !important;
+	}
+}
+
+@media(max-width:560px){
+	.header_title h1{
+		font-size: 30px !important;
+	}
+
+	.famous_film_section_title{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.movies_title{
+		text-align: center;
+	}
+
+	.contact_title{
+		font-size: 30px !important;
+		text-align: center;
+	}
+
+	.movies_info_titel{
+		font-size: 30px !important;
+		text-align: center;
+	}
+}
+
