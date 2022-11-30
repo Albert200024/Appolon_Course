@@ -1082,6 +1082,12 @@ form .form_item2{
     width: 47% !important;
     height: 21px !important;
    }
+
+   .menu ul li a{
+      font-size: 18px;
+   }
+
+
 }
 
 @media(max-width:890px){
@@ -1541,6 +1547,7 @@ form .form_item2{
    .footerBottom_block1 a{
       font-size:15px;    
    }
+   
 }
 
 
