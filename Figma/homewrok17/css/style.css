@@ -7,6 +7,14 @@ p, ul, h1, h2, h3, h4, h5, h6{
 	margin-bottom: 0 !important;
 }
 
+.hide {
+   display: none ;
+}
+
+span {
+  color: #FF7A00;
+}
+
 a {
    text-decoration: none !important;
 }
@@ -584,6 +592,7 @@ form .form_item2{
 	padding: 60px 140px;
 	display: flex;
 	justify-content: space-between;
+   background: #F6F7FC;
 }
 
 .contact_left_side{
@@ -759,6 +768,10 @@ form .form_item2{
 }
 
 /*=========== Footer Bottom section ===========*/
+.footerBottom{
+   background: #F6F7FC;
+}
+
 .footerBottom_block1{
    padding: 30px 0;
    display: flex;
@@ -860,6 +873,184 @@ form .form_item2{
    padding-top: 0 !important;
    padding-bottom: 110px !important;
 }
+/*============================= =============================*/
+
+/*============================= Герман =============================*/
+/*Герман Section 1*/
+.ger_sec1_block{
+   display: flex;
+}
+
+.ger_sec1_leftSide, .ger_sec1_imgBlock{
+   width: 49.9%;
+}
+
+.ger_sec1_title{
+   padding-top: 61px;
+   padding-bottom: 38px;
+   font-family: 'Montserrat' sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 42px;
+   line-height: 120%;
+   color: #124756;
+}
+
+.ger_sec1_title span{
+   color: #FF7A00;
+}
+
+.ger_sec1_imgBlock{
+   padding-top: 30px;
+}
+.ger_sec1_imgBlock img{
+   width: 100%;
+}
+
+.ger_sec1_item{
+  display: flex;
+  gap: 13px;
+  padding-bottom: 25px;
+}
+
+.item_text1{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   color: #124756;
+   padding-bottom: 5px;
+}
+
+.item_text2{
+   font-family: 'Inter';
+   font-style: normal; 
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #72777B;
+}
+
+.ger_sec1_item1{
+   padding-top: 41px;
+   
+}
+
+.item1_text{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   color: #124756;
+}
+
+
+.item1_value{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 120%;
+   color: #FF7A00;
+}
+
+.ger_sec1_item1 div {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 7px;
+}
+
+.ger_sec1_btn{
+   margin-bottom: 145px !important;
+}
+
+/*Section 2*/
+.ger_sec2-title{
+   padding-bottom: 90px !important;
+}
+
+.ger_sec2{
+   padding-bottom: 120px;
+}
+
+/*Sectiob 3*/
+.ger_sect3_block{
+   padding-top: 117px;
+   padding-bottom: 107px;
+}
+
+.ger_sec3_title{
+   padding-bottom: 129px !important;
+}
+
+/*Section 4*/
+.ger_sec4{
+   padding-top: 153px;
+   padding-bottom: 191px;
+}
+
+.ger_sec4_itemBlock{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 20px;
+}
+.ger_vidio_block{
+   width: 48.8%;
+}
+
+.ger_vidio_block img, .ger_vidio_block iframe {
+   width: 100%;
+   height: 100%;
+}
+
+/*Section 5*/
+.ger_sec{
+   padding-top: 0 !important;
+   padding-bottom: 99px !important;
+}
+
+.ger_se5_item_title{
+   font-family: 'Inter' !important;
+   font-style: normal !important;
+   font-weight: 700 !important;
+   font-size: 32px !important;
+   line-height: 39px !important;
+   color: #124756;  
+}
+
+.ger_sec5_text1{
+   padding-top: 10px !important;
+   font-family: 'Inter' !important;
+   font-style: normal !important;
+   font-weight: 600 !important;
+   font-size: 24px !important;
+   line-height: 150% !important;
+   padding-bottom: 0 !important;
+   padding-top: 10px !important;
+   color: #124756;
+}
+
+.ger_sec5_text2{
+   font-family: 'Inter' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 150% !important;
+/* or 27px */
+
+
+/* Black */
+
+color: #124756 !important;
+
+}
+
+.
+/*============================= =============================*/
+
+
 
 
 /*========================== Media ==========================*/
@@ -887,11 +1078,29 @@ form .form_item2{
    }
 }
 
+@media (max-width:1250px){
+ .ger_sec1_title, .item1_value{
+   font-size: 35px;
+ }
+
+ .item1_text{
+   font-size: 17px;
+ }
+
+ .item_text2{
+   font-size: 14px;
+ }
+}
+
 @media(max-width:1200px){
   /* Navbar*/
 	.menu ul li a, .menu_rigt_block p{
 		font-size: 16px;
 	}
+
+   .ger_sec1_imgBlock {
+    padding-top: 0px;
+    }
    
    /* Section2*/
 	.card_item_text1{
@@ -901,6 +1110,19 @@ form .form_item2{
 	.card_item_text2{
 		font-size: 13px !important;
 	}
+
+   .item1_value {
+   padding-right: 49px;
+   }
+
+   .ger_sec1_item1 div {
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+   .ger_sec1_block{
+      align-items: center;
+      justify-content: center;
+   }
 }
 
 @media(max-width:1150px){
@@ -959,12 +1181,32 @@ form .form_item2{
    .page2{
      width: 17%;
    }
+
+   .ger_sec1_item{
+      padding-bottom: 10px;
+   }
+
+   .ger_sec1_item1{
+      padding-bottom: 20px;
+   }
+
+   .ger_sec1_title, .item1_value{
+     font-size: 26px;
+   }
+
+   .item_text1{
+     font-size: 16px;
+   }
+
+   .item_text2{
+     font-size: 11px;
+   }
 }
 
 @media(max-width:1100px){
    .section {
-     padding-left: 100px;
-     padding-right: 100px;
+     padding-left: 40px;
+     padding-right: 40px;
    }
 
    /* Navbar */
@@ -1086,8 +1328,13 @@ form .form_item2{
    .menu ul li a{
       font-size: 18px;
    }
+   .ger_sec1_block{
+      justify-content: flex-start;
+   }
 
-
+   .ger_sec1_imgBlock{
+      padding-bottom: 200px;
+   }
 }
 
 @media(max-width:890px){
@@ -1100,8 +1347,33 @@ form .form_item2{
    .sec8_item_block_leftSide h2,
    .contact_left_side h4,
    .sec4_text1,
-   .pro_sec2_text{
+   .pro_sec2_text,
+   .ger_sec1_title{
       text-align: center;
+   }
+
+   .ger_sec1_title{
+      font-size: 35px;
+   }
+
+   .hide {
+      display: block !important;
+   }
+
+   .ger_sec1_imgBlock {
+    padding-bottom: 20px;
+    }
+
+    .ger_sec1_leftSide, .ger_sec1_imgBlock {
+    width: 100.9%;
+    }
+
+   .ger_sec1_item1{
+      display: none;
+   }
+
+   .ger_sec1_block{
+      flex-direction: column;
    }
 
    .pro_sec4_title{
@@ -1462,6 +1734,10 @@ form .form_item2{
 		 font-size: 18px;
 	 }
 
+    .ger_sec1_title{
+      font-size: 30px;
+    }
+
     .sec8_form p{
    	 font-size: 10px;
     }
@@ -1533,6 +1809,12 @@ form .form_item2{
    .pro_sec2_title{
       font-size: 26px;
    }
+
+   .ger_sec1_title{
+      font-size: 27px;
+   }
+
+
 }
 
 @media(max-width:340px){
