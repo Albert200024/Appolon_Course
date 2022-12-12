@@ -1,0 +1,72 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+$bg: green;
+$w: 200px;
+$h: 200px;
+
+/*body {
+	background-color: $bg;
+}*/
+
+.box{
+	background-color: $bg;
+	width: $w;
+	height: $h;
+
+	&-item{
+		background-color: orange;
+		width: $w / 2;
+		height: $h / 2;
+
+		&-one{
+			background-color: blue;
+			width: $w / 4;
+			height: 50px;
+		}
+	}
+}
+
+.box-one{
+	.text1{
+		color:red;
+		background-color: green;
+		font-size: 35px;
+	}
+
+	.text2{
+		@extend.text1;
+		color:blue;
+		text-align: center;
+	}
+}
+
+h2 {
+	@if 1 + 1 == 2{
+		 color:red;
+	}
+
+	@if 5 < 3 {
+		 color: green;
+	}
+
+	@if null {
+		  color: black;
+	}
+}
+
+h3{
+	@if $bg == red {
+		 background-color: yellow;
+	}
+
+	@else if $bg == blue {
+		  background-color: black;
+	}
+
+	@else {
+		background-color: pink;
+	}
+}
