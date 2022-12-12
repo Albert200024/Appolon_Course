@@ -3,8 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- link my css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- link google fonts DM Sans -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 	<!-- link boostrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- link Uikit -->
@@ -41,20 +46,127 @@
 	    </div>
 	  </div>
 	</nav>
-	<main>
-		<div class="header">
-			<img src="img/homePage_img1.png" alt="">
-			 <div class="header_item_block">
+	<header class="header">
+		<img src="img/homePage_img1.png" alt="">
+		<div class="header_block">
+			<div class="header_text_block">
 			 	<h1>Make your first search</h1>
-			 	<p>Thousands of animals are just waiting for you.</p>
-			 </div>
-			 <div class="robor">
-			     <img src="img/searchImg.svg" alt="">
-			 	 <input type="text">
-			 </div>
-		</div>
+			 	<p>Thousands of <span class="text_color">animals</span> are just waiting for you.</p>
+			</div>
+			<div class="header_search_block">
+			 	<div>
+			 	    <img src="img/searchImg.svg" alt="">
+			 	    <input type="text">
+			 	</div>
+			<button class="btn_hov">Search</button>
+		 </div>
+	</header>
+	<main>
+		 <div class="sec1">
+		 	<div class="sec1_top">
+			 	<div>
+			 	 	<h6>Fast</h6>
+			 	 	<p>Allows for up to 1000 calls per minute</p>
+			 	 </div>
+			 	 <div>
+			 	 	<h6>Optimized</h6>
+			 	 	<p>Continuous update and direction of interruption </p>
+			 	 </div>
+			 	 <div>
+			 	 	<h6>Free</h6>
+			 	 	<p>And always remained so to allow the animals to be adopted more easily. </p>
+			 	 </div>
+		 	</div>	
+		 	<div class="sec1_middle">
+		 		<h5>Our Advantages</h5>
+		 		<div class="sec1_middle_block">
+		 			<div class="sec1_middle_block_text">
+		 				<div class="sec1_item">
+		 					<img src="img/sec1_img1.svg">
+		 					<div>
+		 						<h6>Easy</h6>
+		 						<p>An interface that is easy to use even for beginners </p>
+		 					</div>
+		 				</div>
+		 				<div class="sec1_item">
+		 					<img src="img/sec1_img2.svg">
+		 					<div>
+		 						<h6>Intuitive</h6>
+		 						<p>An api usable even by non-developers </p>
+		 					</div>
+		 				</div>
+		 				<div class="sec1_item">
+		 					<img src="img/sec1_img3.svg">
+		 					<div>
+		 						<h6>Flexible</h6>
+		 						<p>Can be integrated on several systems for all your needs </p>
+		 					</div>
+		 				</div>
+		 				<div class="sec1_item">
+		 					<img src="img/sec1_img4.svg">
+		 					<div>
+		 						<h6>Reliable</h6>
+		 						<p>You just have to see our statue page to understand why we are so appreciated. </p>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="sec1_middle_block_img">
+		 				<img src="img/notebokImg.png" alt="">
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<div class="sec1_botrom_con">
+		 		<div class="sec1_botom_con_top">
+		 			<div>
+		 				<p>Need help?</p>
+		 				<button class="btn_hov">Help</button>
+		 			</div>
+		 		</div>
+			 	<div class="sec1_bottom">
+			 		<div class="sec1_bottom_block">
+			 			<div class="secc_bottom_block_img">
+			 				<a href=""><img src="img/navbarLogo.svg" alt=""></a>
+			 			</div>
+			 			<div class="secc_bottom_block_text">
+			 				<div class="sec1_bottom_text_item">
+			 					<a class="sec1_a" href="">Subscribe to our <br>newsletter</a>
+			 					<div class="sec1_item1">
+			 						<input class = "sec1_input" placeholder="Email address" type="email">
+			 					    <button class="sec1_btn btn_hov">
+			 						   <img src="img/sec1_btnImg.png" alt="">
+			 					    </button>
+			 					</div>
+			 				</div>
+			 				<div class="sec1_bottom_text_item">
+			 					<a href="">Services</a>
+			 					<p>Anim’all</p>
+			 					<p>Api</p>
+			 				</div>
+			 				<div class="sec1_bottom_text_item">
+			 					<a href="">About us</a>
+			 					<p>Our Story</p>
+			 					<p>Advantage</p>
+			 				</div>
+			 				<div class="sec1_bottom_text_item">
+			 					<a href="" class="sec1_a2">Follow Us</a>
+			 					<div class="sec1_bottom_item_img_block">
+			 						<img src="img/facebook.png" alt="">
+			 					    <img src="img/twinter.png" alt="">
+			 					    <img src="img/instagram.png" alt="">
+			 					</div>
+			 					<br>
+			 					<br>
+			 				</div>
+			 			</div>
+			 			<div class="secc_bottom_block_last">
+			 				<img src="img/sec1_bottom_img.png" alt="">
+			 			</div>
+			 		</div>
+			 		<p class="sec1_bottom_last_text">Copyright © 2020. Anim’all. All rights reserved.</p>
+			 	</div>
+		 	</div>
+		 </div>
 	</main>
-
 	<!-- Script boostrap -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
