@@ -1,0 +1,36 @@
+.text1{
+	color: green;
+}
+
+.text2{
+	background-color: orange;
+}
+
+.text3{
+	font-size: 42px;
+	text-align: center; 
+}
+
+#item{
+   text-align: center;
+   background-color: red;
+   color: blue;
+   font-size: 50px;
+}
+
+.btn{
+   background-color: gray;
+}
+
+.btn:hover{
+	background-color: green;
+}
+
+.box{
+	width: 500px;
+	height: 200px;
+}
+
+.box2{
+	resize: none;
+}

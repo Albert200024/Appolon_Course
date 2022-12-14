@@ -1,0 +1,44 @@
+/* ============ form1 ============ */
+.form1{
+	margin: 0 auto;
+	width: 500px;
+	background-color: #FEFD98;
+}
+
+.form1_title{
+  background-color: #FEC900;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form1_text{
+	font-size: 16px;
+}
+
+.center {
+	text-align: center;
+}
+
+.form1_item{
+	padding: 10px 10px;
+}
+
+.margin{
+	margin-left: 58%;
+}
+
+/* ============ form2 ============ */
+.form2{
+	margin: 15px auto;
+	width: 600px;
+	background-color: #D8DEEA;
+	padding: 5px 15px;
+}
+
+.form2_title{
+  color: #233151;
+}
+
+.btn_form2{
+	background-color: #569B3A;
+}
