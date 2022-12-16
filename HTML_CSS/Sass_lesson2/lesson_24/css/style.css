@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.item1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.item2 {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.item3 {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.main {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.page {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.item-4 {
+  width: 800px;
+  height: 800px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.item-5 {
+  width: 1000px;
+  height: 1000px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.item-6 {
+  width: 1200px;
+  height: 1200px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

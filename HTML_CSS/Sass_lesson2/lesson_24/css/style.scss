@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+@for $i from 1 through 3 {
+	.item#{$i}{
+	  width:200px * $i;
+	  height: 200px * $i;
+	  background-color: red;
+	  margin-bottom: 20px;
+	}
+}
+
+@each $x in  main,page,box,header{
+	.#{$x}{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        margin-bottom: 20px;
+	}
+}
+
+$y:4;
+
+@while $y<7{
+  .item-#{$y}{
+  	  width: 200px * $y;
+  	  height: 200px * $y;
+  	  background-color: green;
+  	  margin-bottom: 20px;
+  }
+  $y:$y + 1
+}
