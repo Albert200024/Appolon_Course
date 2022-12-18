@@ -1,0 +1,103 @@
+@font-face {
+	font-family:'Gilroy-Bold';
+	src:url('../fonts/Gilroy-Bold.ttf');
+}
+
+@font-face{
+	font-family: "Gilroy-Regular";
+	src: url('../fonts/Gilroy-Regular.ttf');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+ul, h1{
+	margin: 0 !important;
+}
+
+
+/*========================= Navbar =========================*/
+.menu {
+	display: flex !important;
+	justify-content: soace-between !important;
+}
+
+.menu_item {
+	display: flex !important;
+	justify-content: center !important;
+	width: 100%;
+}
+
+.menu_item ul{
+ list-style: none;
+ display: flex; 
+ gap: 60px;
+ align-items: center;
+}
+
+.fixed-top {
+	position: absolute !important;
+}
+
+.bag_block{
+	display: flex !important;  
+	justify-content: center !important;
+}
+
+/*========================= Header =========================*/
+header{
+	position: relative;
+}
+
+header img {
+	width: 100% ;
+}
+
+.header_text_block{
+	position: absolute;
+	top: 161px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header_text_block h1{
+	font-family: 'Gilroy-Bold';
+    font-size: 80px;
+    padding: 0  290px 20px 290px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header_text_block p {
+  font-family: 'Gilroy-Regular';
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: darkgrey;
+  opacity: 0.8;
+  padding: 0  418px 45px 418px;
+}
+
+@media(max-width:992px){
+    /*======= Navbar /*=======*/
+	.menu_item, .bag_block{
+		justify-content: flex-start !important;
+	}
+
+	.menu_item ul {
+		gap: 5px;
+	}
+
+	.bag_block{
+		padding-left: 24px;
+	}
+
+}
+
