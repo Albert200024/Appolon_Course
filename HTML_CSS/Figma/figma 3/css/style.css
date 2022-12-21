@@ -670,6 +670,15 @@ opacity: 0.8;
   opacity: 0.5;
 }
 
+.sec_5Title_block{
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.sec_5Title_block p{
+   padding-top: 0 ;
+}
+
 /*========================= Media =========================*/
 @media(max-width:2000px){
 	.sec_5_corusel_item_text {
