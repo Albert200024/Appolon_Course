@@ -283,8 +283,14 @@ header img {
    width: 90%;
 }
 
+.push{
+  border-radius: 50% !important;
+}
+
 .slider_item .img_back{
 background-image: url("../img/Rectangle 55.png");
+background-repeat: no-repeat;
+background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -1820,6 +1826,16 @@ opacity: 0.8;
   	width: 70%;
   }
 
+  .text_end_price_block h6 {
+    font-size: 13px;
+  }
+
+  .text_end_price_block p {
+    font-size: 10px;
+  }
+  .slider_item .text_end_price_block {
+    padding: 0 5px;
+}
 }
 
 @media(max-width:330px){
