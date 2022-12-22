@@ -1,0 +1,194 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+/*========================== Navbar ==========================*/
+.menu{
+ position: absolute;
+ top: 0;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ padding-left: 40px;
+ box-sizing: border-box;
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.menu ul li a {
+	font-family: 'Montaga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #2B1105;
+    display: block;
+}
+
+/*========================== Header ==========================*/
+.header{
+	position: relative;
+	display: ;
+}
+
+.header img {
+	width: 100%;
+	height: 100%;
+}
+
+.header_title_block{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 54px;
+}
+
+.header_title_block h1{
+  font-family: 'Montaga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 101px;
+  line-height: 100%;
+  text-align: center;
+  color: #FCF9F7;
+  text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.45);
+}
+
+.month{
+	display: flex;
+	gap: 16px;
+	padding-top: 32px;
+}
+
+.month p{
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 100%;
+   color: #FCF9F7;
+}
+
+
+/*========================== Main ==========================*/
+/*========= Section 1 =========*/
+.our_story{
+	padding-top: 92px;
+	padding-bottom: 120px;
+	padding-left: 217px;
+	padding-right: 217px;
+}
+
+.our_story h5 {
+	font-family: 'Montaga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 100%; 
+    text-align: center;
+    color: #2B1105; 
+    padding-bottom: 64px;
+}
+
+.sec1_text_block{
+	padding: 0 103px;
+}
+
+.sec1_img_block{
+	margin-top: 117px;
+}
+
+.sec1_img_block {
+	width: 100%;
+}
+
+.sec1_img_block img {
+	width: 100%;
+}
+
+/*========= Section 1 =========*/
+.section2{
+	padding: 96px 116px;
+	background-color: #97917A;
+}
+
+.sec2_text1{
+	text-align: center;
+	font-family: 'Montaga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FCF9F7;
+    padding-bottom: 32px;
+}
+
+.sec2_text2_block{
+	display: flex;
+	justify-content: center;
+}
+
+.sec2_text2_block div {
+   display: flex;
+   gap: 32px;
+}
+
+.sec2_text2_block div a {
+   text-decoration: underline !important;
+   font-family: 'Montaga';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 56px;
+   line-height: 100%;
+   color: #FCF9F7;
+}
+
+.sec2_text2_block div p {
+   font-family: 'Montaga';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 56px;
+   line-height: 100%;
+   color: #FCF9F7;
+   opacity: 0.3;
+}
+
+.sec2_people_block{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 101px;
+}
+
+.people{
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.people img{
+   width: 85%;
+}
+
+.people h4 {
+   font-family: 'Montaga', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 100%;
+text-align: center;
+color: #FCF9F7;
+margin-top: 24px;
+}

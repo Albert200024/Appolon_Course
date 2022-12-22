@@ -296,6 +296,9 @@ align-items: center;
 justify-content: center;
 }
 
+.img_back img {
+  height: 300px;
+}
 .slider_item .text_end_price_block{
 	 background-color: white;	
 	 padding: 0 21px; 
@@ -1373,7 +1376,7 @@ opacity: 0.8;
 
 @media (max-width: 750px){
  .text_end_price_block h6 {
-    font-size: 16px;
+    font-size: 15px;
  }
 
  .text_end_price_block p {
@@ -1565,6 +1568,13 @@ opacity: 0.8;
   	padding-bottom: 45px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+@media (max-width: 660px){
+  .slider_item .text_end_price_block {
+    background-color: white;
+    padding: 0 15px;
   }
 }
 
