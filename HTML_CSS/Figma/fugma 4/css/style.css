@@ -17,6 +17,14 @@ body{
    background-color: #FCF9F7 !important;
 }
 
+em {
+   color: white !important;
+}
+
+nav{
+   background-color: white !important;
+}
+
 /*========================== Navbar ==========================*/
 .menu{
  position: absolute;
@@ -27,6 +35,23 @@ body{
  padding-left: 40px;
  box-sizing: border-box;
 }
+
+.nav{
+   margin-top: 24px !important;
+}
+
+.nav_btn{
+   margin: auto;
+}
+
+.menu2 ul{
+  margin: auto;
+  display: flex !important;
+  align-items: center;
+  gap: 80px;
+}
+
+
 
 .menu ul{
 	list-style: none;
@@ -449,6 +474,19 @@ padding-bottom: 66px;
    padding-bottom: 25px;
 }
 
+/*========================== Vineyard ==========================*/
+.header{
+   padding-top: 89px;
+   padding-bottom: 130px;
+   padding-left: 160px;
+   padding-right: 160px;
+}
+
+.header{
+   background-color: white;
+   text-align: center;
+}
+
 
 /*========================== Media ==========================*/
 @media(max-width:1400px){
@@ -458,6 +496,10 @@ padding-bottom: 66px;
 
    .section4 {
     padding: 0 50px;
+   }
+
+   .menu2 ul{
+      gap: 50px;
    }
 }
 
@@ -546,6 +588,14 @@ padding-bottom: 66px;
    }
 }
 
+@media(max-width:992px){
+   .menu2 ul {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+   }
+}
+
 @media(max-width:900px){
    .sec2_people_block{
       flex-wrap: wrap;
@@ -561,10 +611,31 @@ padding-bottom: 66px;
    }
 }
 
+@media(max-width:830px){
+    .menu2 ul li a{
+        font-size: 12px !important;
+     }
+
+      .menu2 ul {
+       gap: 20px;
+     }
+
+     .nav-item img{
+        width: 90px;
+        height: 60px;
+     }
+}
+
 @media(max-width:780px){
    .sec1_text_block {
     padding: 0px 0px;
    }
+}
+
+@media(max-width:770px){
+ .menu2 ul {
+    gap: 26px;
+  }
 }
 
 @media(max-width:750px){
@@ -624,6 +695,10 @@ padding-bottom: 66px;
 @media(max-width:602px){
    .sec5_block_month a {
       font-size: 15px;
+   }
+
+   .menu2 ul {
+      gap: 15px;
    }
 }
 
@@ -710,6 +785,25 @@ padding-bottom: 66px;
    }
 }
 
+@media(max-width:460px){
+  .nav-item img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .menu2 ul {
+    gap: 5px;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+
+   .nav-item img {
+    width: 80px;
+    height: 45px;
+   }
+}
+
 @media(max-width:430px){
    .sec5_block_month{
       flex-direction: column;
@@ -738,6 +832,10 @@ padding-bottom: 66px;
    .sec3_img_block  img {
       width: 70%;
    }
+
+   .sec3_img_block1 img{
+      width: 40%;
+   }
 }
 
 @media(max-width:400px){
@@ -747,5 +845,9 @@ padding-bottom: 66px;
 
    .header img {
       height: 350px;
+   }
+
+   .sec3_img_block1 img{
+      width: 50%;
    }
 }
