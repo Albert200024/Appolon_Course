@@ -475,18 +475,117 @@ padding-bottom: 66px;
 }
 
 /*========================== Vineyard ==========================*/
+/*========= Header =========*/
 .header{
    padding-top: 89px;
    padding-bottom: 130px;
    padding-left: 160px;
    padding-right: 160px;
-}
-
-.header{
-   background-color: white;
    text-align: center;
+  
 }
 
+.header_title_block1{
+    margin-bottom: 67px;
+}
+
+.header div p:nth-child(1){
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 100%;
+   color: #C6754D;
+   padding-bottom: 16px;
+}
+
+.header div h1{
+  font-family: 'Montaga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 101px;
+  line-height: 100%;
+  color: #2B1105;
+  padding-bottom: 16px;
+}
+
+.header div p:nth-child(3){
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 100%;
+   color: #C6754D;
+}
+
+.header_img_block1{
+   background-color: red;
+   width: 100%;
+}
+
+.header_img_block1{
+   width: 100%;
+}
+
+/*========= Section 1 =========*/
+.section1{
+   background: #C6754D;
+}
+
+.vin_sec1_text_block{
+   padding: 110px 80px 0;
+   display: flex;
+}
+
+.vin_sec1_text_block div:nth-child(1){
+   width: 30%;
+   display: flex;
+   align-items: center;
+}
+
+.vin_sec1_text_block div:nth-child(2){
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.vin_sec1_text_block div h5 {
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 101px;
+   line-height: 100%;
+   color: #FCF9F7;
+}
+
+.vin_sec1_text_block div p {
+   font-family: 'Montaga';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 160%; 
+   color: #FCF9F7;
+}
+
+.vin_sec1_img_block{
+   margin-top: 110px;
+}
+
+.vin_sec1_img_block img {
+   width: 100%;
+}
+
+/*========= Section 3 =========*/
+.vin_section2{
+       padding: 135px 80px 86px;
+       background-color: white;
+}
+
+/*========= Section 2 =========*/
+.vin_section3 {
+   background-color: white;
+}
 
 /*========================== Media ==========================*/
 @media(max-width:1400px){
@@ -496,6 +595,10 @@ padding-bottom: 66px;
 
    .section4 {
     padding: 0 50px;
+   }
+
+   .vin_section2 {
+    padding: 135px 50px 86px;
    }
 
    .menu2 ul{
