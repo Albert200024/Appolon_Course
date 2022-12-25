@@ -21,9 +21,9 @@ em {
    color: white !important;
 }
 
-nav{
+/*nav{
    background-color: white !important;
-}
+}*/
 
 /*========================== Navbar ==========================*/
 .menu{
@@ -38,6 +38,7 @@ nav{
 
 .nav{
    margin-top: 24px !important;
+   background-color: white;
 }
 
 .nav_btn{
@@ -50,8 +51,6 @@ nav{
   align-items: center;
   gap: 80px;
 }
-
-
 
 .menu ul{
 	list-style: none;
@@ -72,6 +71,7 @@ nav{
     display: block;
     transition: 0.3s;
 }
+
 .menu ul li a:hover{
    color: #C6754D !important;
    background-color: #a6a6a65e !important;
@@ -475,21 +475,21 @@ padding-bottom: 66px;
 }
 
 /*========================== Vineyard ==========================*/
-/*========= Header =========*/
-.header{
+/*/*========= Header =========*/
+.vin_header{
    padding-top: 89px;
    padding-bottom: 130px;
    padding-left: 160px;
    padding-right: 160px;
    text-align: center;
-  
+   background-color: white;
 }
 
-.header_title_block1{
+.vin_header_title{
     margin-bottom: 67px;
 }
 
-.header div p:nth-child(1){
+.vin_header div p:nth-child(1){
    font-family: 'Montaga', sans-serif;
    font-style: normal;
    font-weight: 400;
@@ -499,7 +499,7 @@ padding-bottom: 66px;
    padding-bottom: 16px;
 }
 
-.header div h1{
+.vin_header div h1{
   font-family: 'Montaga', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -509,7 +509,7 @@ padding-bottom: 66px;
   padding-bottom: 16px;
 }
 
-.header div p:nth-child(3){
+.vin_header div p:nth-child(3){
    font-family: 'Montaga', sans-serif;
    font-style: normal;
    font-weight: 400;
@@ -518,17 +518,17 @@ padding-bottom: 66px;
    color: #C6754D;
 }
 
-.header_img_block1{
+.vin_header_img_block{
    background-color: red;
    width: 100%;
 }
 
-.header_img_block1{
+.vin_header_img_block img{
    width: 100%;
 }
 
 /*========= Section 1 =========*/
-.section1{
+.vin_section1{
    background: #C6754D;
 }
 
@@ -576,15 +576,106 @@ padding-bottom: 66px;
    width: 100%;
 }
 
-/*========= Section 3 =========*/
+/*========= Section 2 =========*/
 .vin_section2{
        padding: 135px 80px 86px;
        background-color: white;
 }
 
-/*========= Section 2 =========*/
+.vin_sec2_block{
+   display: flex;
+   justify-content: space-between;
+}
+
+.vin_sec2_block div:nth-child(1){
+   width: 45%;
+   padding-top: 67px;
+}
+
+.vin_sec2_block div:nth-child(1) p{
+  font-family: 'Montaga', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+color: #C6754D;
+}
+
+.vin_sec2_block div:nth-child(1) h5{
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 56px;
+   line-height: 100%;
+   color: #2B1105;
+   margin-top: 32px !important; 
+   margin-bottom: 32px !important;
+}
+
+.vin_sec2_block div:nth-child(1) div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vin_sec2_block div:nth-child(1) div p{
+  font-family: 'Montaga';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #2B1105;
+  opacity: 0.8;
+}
+
+.vin_sec2_img_block1{
+   width: 40%;
+   position: relative;
+}
+
+.vin_sec2_img1_block{
+   position: absolute;
+   top: 0;
+}
+
+.vin_sec2_img2_block{
+   position: absolute;
+   top: 0;
+}
+
+.vin_sec2_img3_block{
+   position: absolute;
+   top: 16px;
+   left: 9px;
+}
+
+.vin_sec2_img1_block img {
+   width:100%;
+}
+
+.vin_sec2_img3_block img {
+   width:100%;
+}
+
+.vin_sec2_img2_block img {
+   width: 100%;
+}
+
+.vin_sec2_img_block2{
+   display: flex;
+   margin-top: 75px;
+   margin-bottom: 86px;
+   justify-content: center;
+}
+
+/*========= Section 3 =========*/
 .vin_section3 {
    background-color: white;
+}
+
+/*========= Section 5 =========*/
+.vin_section5{
+  padding: 95px 80px;
 }
 
 /*========================== Media ==========================*/
@@ -655,6 +746,25 @@ padding-bottom: 66px;
 
    .sec4_block_item p {
     font-size: 16px;
+   }
+}
+
+@media(max-width:1035px){
+   .vin_header{
+      padding-left: 100px;
+      padding-right: 100px;
+   }
+
+   .vin_header div h1 {
+      font-size: 70px;
+   }
+
+   .vin_header div p:nth-child(1) {
+      font-size: 20px;
+   }
+
+   .vin_header div p:nth-child(3) {
+      font-size: 20px;
    }
 }
 
@@ -743,9 +853,13 @@ padding-bottom: 66px;
 
 @media(max-width:750px){
    .menu {
-       padding-left: 15px;
+       padding-left: 0;
        align-items: flex-start;
    }
+
+    ul {
+       padding-left: 15px !important;
+    }
 
    .header img {
       height: 500px;
