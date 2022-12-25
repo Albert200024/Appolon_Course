@@ -25,6 +25,10 @@ em {
    background-color: white !important;
 }*/
 
+.hide{
+   display: none;
+}
+
 /*========================== Navbar ==========================*/
 .menu{
  position: absolute;
@@ -766,6 +770,18 @@ color: #C6754D;
    .vin_header div p:nth-child(3) {
       font-size: 20px;
    }
+
+   .vin_sec1_text_block {
+      padding: 110px 50px 0;
+   }
+
+   .vin_sec1_text_block div p {
+     font-size: 18px;
+   }
+
+   .vin_sec1_text_block div h5 {
+      font-size: 75px;
+   }
 }
 
 @media(max-width:1020px){
@@ -837,6 +853,36 @@ color: #C6754D;
         width: 90px;
         height: 60px;
      }
+
+     .hide{
+      display: block;
+      text-align: center;
+     }
+
+     .vin_sec1_text_block{
+      flex-direction: column;
+      gap: 20px;
+     }
+
+     .vin_sec1_text_block div:nth-child(1) h5:nth-child(1){
+      display: none;
+     }
+
+
+   .vin_sec1_text_block div:nth-child(1){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   .vin_sec1_text_block div:nth-child(2) {
+      width: 100%;
+      text-align: center;
+   }
+
+   .vin_sec1_text_block div h5 {
+    font-size: 50px;
+   }
 }
 
 @media(max-width:780px){
@@ -907,6 +953,31 @@ color: #C6754D;
    .sec5_block_month {
       gap: 20px;
    }
+}
+
+@media(max-width:710px){
+   .vin_header div p:nth-child(3) {
+    font-size: 15px;
+   }
+
+   .vin_header div p:nth-child(1) {
+    font-size: 15px;
+   }
+
+   .vin_header div h1 {
+    font-size: 50px;
+   }
+}
+
+@media(max-width:650px){
+   .vin_header_title {
+    margin-bottom: 45px;
+   }
+
+   .vin_header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media(max-width:602px){
@@ -1000,6 +1071,20 @@ color: #C6754D;
     font-size: 24px;
     padding-bottom: 19px;
    }
+
+   .vin_header div h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+   }
+
+   .vin_header div p:nth-child(1) {
+      font-size: 11px;
+      padding-bottom: 5px;
+   }
+
+   .vin_header div p:nth-child(3) {
+      font-size: 11px;
+   }
 }
 
 @media(max-width:460px){
@@ -1067,4 +1152,31 @@ color: #C6754D;
    .sec3_img_block1 img{
       width: 50%;
    }
+
+   .vin_header {
+    padding-left: 10px;
+    padding-right: 10px;
+        padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .vin_sec1_text_block {
+    padding: 30px 10px 0;
+  }
+
+  .vin_sec1_img_block {
+    margin-top: 30px;
+ }
+
+ .vin_sec1_text_block div h5 {
+    font-size: 28px;
+}
+
+.vin_sec1_text_block div p {
+    font-size: 14px;
+}
+
+.vin_sec1_text_block div:nth-child(2) {
+   gap: 10px;
+}
 }
