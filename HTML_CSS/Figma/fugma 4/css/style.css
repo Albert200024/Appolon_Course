@@ -3,7 +3,7 @@
    padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+p, h1, h2, h3, h4, h5, h6, label{
    margin: 0 !important;
 }
 
@@ -29,6 +29,7 @@ em {
    display: none;
 }
 
+/*==================================== Desert ====================================*/
 /*========================== Navbar ==========================*/
 .menu{
  position: absolute;
@@ -64,7 +65,7 @@ em {
 }
 
 .menu ul li a {
-	font-family: 'Montaga';
+	font-family: 'Montaga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -200,7 +201,7 @@ em {
 }
 
 .sec2_text2_block div a {
-   text-decoration: underline !important;
+   text-decoration: underline;
    font-family: 'Montaga';
    font-style: normal;
    font-weight: 400;
@@ -478,8 +479,12 @@ padding-bottom: 66px;
    padding-bottom: 25px;
 }
 
-/*========================== Vineyard ==========================*/
-/*/*========= Header =========*/
+/*==================================== Vineyard ====================================*/
+.main{
+   background-color: white;
+}
+
+/*========= Header =========*/
 .vin_header{
    padding-top: 89px;
    padding-bottom: 130px;
@@ -591,21 +596,21 @@ padding-bottom: 66px;
    justify-content: space-between;
 }
 
-.vin_sec2_block div:nth-child(1){
+.vin_sec2_text_block{
    width: 45%;
    padding-top: 67px;
 }
 
-.vin_sec2_block div:nth-child(1) p{
+.vin_sec2_text_block p{
   font-family: 'Montaga', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 100%;
-color: #C6754D;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #C6754D;
 }
 
-.vin_sec2_block div:nth-child(1) h5{
+.vin_sec2_text_block h5{
    font-family: 'Montaga', sans-serif;
    font-style: normal;
    font-weight: 400;
@@ -616,13 +621,13 @@ color: #C6754D;
    margin-bottom: 32px !important;
 }
 
-.vin_sec2_block div:nth-child(1) div{
+.vin_sec2_text_block div{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.vin_sec2_block div:nth-child(1) div p{
+.vin_sec2_text_block div p{
   font-family: 'Montaga';
   font-style: normal;
   font-weight: 400;
@@ -632,60 +637,432 @@ color: #C6754D;
   opacity: 0.8;
 }
 
-.vin_sec2_img_block1{
-   width: 40%;
+.vin_sec2_img_block{
+   width: 45%;
    position: relative;
 }
 
-.vin_sec2_img1_block{
+.vin_sec2_img1_block_item{
    position: absolute;
    top: 0;
 }
 
-.vin_sec2_img2_block{
+.vin_sec2_img2_block_item{
    position: absolute;
    top: 0;
 }
 
-.vin_sec2_img3_block{
+.vin_sec2_img3_block_item{
    position: absolute;
-   top: 16px;
-   left: 9px;
+   top: 15px;
+   left: 15px;
 }
 
-.vin_sec2_img1_block img {
-   width:100%;
+.vin_sec2_img1_block_item img {
+   width: 100%;
 }
 
-.vin_sec2_img3_block img {
-   width:100%;
+.vin_sec2_img2_block_item img {
+   width: 100%;
 }
 
-.vin_sec2_img2_block img {
+.vin_sec2_img3_block_item img {
    width: 100%;
 }
 
 .vin_sec2_img_block2{
    display: flex;
-   margin-top: 75px;
-   margin-bottom: 86px;
+   margin-top: 175px;
    justify-content: center;
 }
 
 /*========= Section 3 =========*/
 .vin_section3 {
    background-color: white;
+   padding-bottom: 144px;
+}
+
+/*========= Section 4 =========*/
+.vin_section4{
+  background-color: white;
+}
+
+.vin_sec4_title{
+   text-align: left !important;
+   padding-top: 96px;
+   padding-bottom: 64px;
+}
+
+.vin_sec4_item_block{
+   display: flex;
+   flex-direction: column;
+}
+
+.vin_sec4_item_block a {
+   border-bottom: 1px solid #C6754D !important;
+   text-decoration: none !important;
+   padding-bottom: 4px !important;
+   font-size: 24px !important;
+   text-decoration: none !important;
+   color: #2B1105 !important;
+}
+
+.vin_sec4_item_block p {
+  font-family: 'Montaga', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 100% !important;
+  color: #2B1105 !important;
+  opacity: 0.6 !important;
+}
+
+.vin_people h4{
+   color: black !important;
+}
+
+.vin_section4_block{
+   margin-bottom: 84px;
+}
+
+.sec4_sec5_middle_phot_block {
+   display: flex;
+   justify-content: center;
+}
+
+.sec4_sec5_middle_phot_block img {
+    opacity: 0.6;
 }
 
 /*========= Section 5 =========*/
 .vin_section5{
-  padding: 95px 80px;
+   padding-top: 96px !important;
 }
 
-/*========================== Media ==========================*/
+.vin_section5_blcok{
+   padding-top: 0 !important;
+}
+
+/*========= Section 6 =========*/
+.vin_section6 {
+   padding-top: 230px;
+   padding-bottom: 230px;
+}
+
+.vin_section6_block{
+   display: flex;
+   justify-content: space-between;
+}
+
+.vin_sec6_block_item1, .vin_sec6_block_item2{
+   width: 45%;
+}
+
+.vin_sec6_block_item1 h5{
+   text-align: left !important;
+}
+
+.vin_sec6_block_item1 p {
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 160%;
+   color: #2B1105;
+   opacity: 0.8;
+}
+
+.vin_sec6_block_item2{
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+}
+
+.vin_sec6_block_item2_item{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.vin_sec6_block_item2_item img {
+   opacity: 0.8;
+}
+
+/*========= Section 7 =========*/
+.vin_section7{
+   background-image: url(../img/sec7_back_img.png);
+   background-repeat: no-repeat;
+  position:relative;
+   width: 100%;
+   height: 950px;
+   background-position: 50% 215%;
+}
+
+.vin_sec7_block{
+   padding-top: 96px;
+   padding-left: 320px;
+   padding-right: 320px;
+}
+
+.vin_sec7_title{
+   text-align: center !important;
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 56px;
+   line-height: 100%;
+   color: #2B1105;
+   padding-bottom: 64px;
+}
+
+.vin_sec7_block p{
+  font-family: 'Montaga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #2B1105;
+  opacity: 0.8;
+  padding-bottom: 64px;
+}
+
+.vin_section7_form_block{
+   display: flex;
+   justify-content: center;
+}
+
+.vin_section7_form{
+   width: 80%;
+   padding-bottom: 250px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.form_item1{
+   display: flex;
+   justify-content: space-between;
+}
+
+.form_item1__item{
+   width: 48%;
+}
+
+.form_item1 div input {
+   display: block;
+}
+
+.form_item2 {
+   width: 22%;
+}
+
+.form_item3{
+   display: flex;
+   flex-direction: column;
+}
+
+.form_item3_block{
+   display: flex;
+   justify-content: space-between;
+}
+
+.form_item3_block_item{
+   width: 48%;
+}
+
+.for_item_4{
+   display: flex;
+   justify-content: space-between;
+}
+
+.form_item_4_item{
+   width: 30%;
+}
+
+.vin_section7_form input{
+   width: 100%;
+   padding: 12px 16px;
+   box-sizing: border-box;
+   background: rgba(255, 255, 255, 0.15);
+   border: 1px solid #2B1105;
+}
+
+.vin_section7_form label{
+   font-family: 'Montaga', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 170%;
+   display: flex;
+   align-items: center;
+   color: #2B1105;
+}
+
+.vin_section7_form label span{
+   font-family: 'Montaga', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+color: #C6754D;
+opacity: 0.8;
+}
+
+/*========= Footer =========*/
+.footer{
+   background-color: white;
+}
+
+.footer_text{
+   text-align: center !important;
+   padding-bottom: 32px ;
+   padding-top: 48px;
+   cursor: pointer !important;
+   display: block;
+   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #2B1105;
+}
+
+/*========= Footer Navbar =========*/
+.vin_menu_footer{
+   display: flex;
+   justify-content: center;
+   padding-top: 32px;
+   background-color: white !important;
+}
+
+.vin_menu_footer ul{
+   display: flex;
+   list-style: none;
+   gap: 80px;
+}
+
+.vin_menu_footer ul li a {
+  font-family: 'Montaga', sans-serif;
+   font-style: normal;
+  font-weight: 400;
+   font-size: 22px;
+   line-height: 32px;
+   opacity: 0.6;
+   color: #2B1105;
+}
+
+/*==================================== Chapel ====================================*/
+.chap_header{
+   width: 100%;
+   height: 900px;
+   position: relative;
+}
+
+
+.chap_header nav{
+   background-color: transparent !important;
+   position: absolute;
+    top: 0;
+     width: 100%;
+}
+
+
+.chap_header img{
+   width: 100%;
+   height: 100%;
+}
+
+.chap_header_text_block{
+   position: absolute;
+   padding: 104px 54px;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.chap_header_text_block div {
+   background: rgba(252, 249, 247, 0.92);
+   padding: 104px 54px;
+}
+
+.chap_header_text_block p:nth-child(1){
+  font-family: 'Montaga' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #2B1105;
+  opacity: 0.8;
+  padding-bottom: 64px;
+}
+
+.chap_header_text_block h1{
+  font-family: 'Montaga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 101px;
+  line-height: 100%;
+  color: #C6754D;
+  padding-bottom: 64px;
+}
+
+.chap_header_text_block p:nth-child(3){
+  font-family: 'Montaga' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #2B1105;
+  opacity: 0.8;
+}
+
+
+.chap_sec2{
+   flex-direction: column !important;
+   gap: 64px;
+   padding-bottom: 237px;
+}
+
+.chap_sec2 div:nth-child(1),
+.chap_sec2 div:nth-child(2) {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.chap_sec2_img_block{
+   margin-top:  -120px;
+   position: absolute; 
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.chap_sec2_img_block img{
+    width: 80%;
+}
+
+
+
+
+/*==================================== Media ====================================*/
 @media(max-width:1400px){
    .sec4_block_item p {
       font-size: 18px;
+   }
+
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 220px;
+    padding-right: 220px;
    }
 
    .section4 {
@@ -698,6 +1075,11 @@ color: #C6754D;
 
    .menu2 ul{
       gap: 50px;
+   }
+
+   .vin_section6 {
+    padding-top: 180px;
+    padding-bottom: 180px;
    }
 }
 
@@ -726,6 +1108,38 @@ color: #C6754D;
     padding-left: 120px;
     padding-right: 120px;
   }
+
+  .vin_sec2_text_block {
+    width: 45%;
+    padding-top: 15px;
+  }
+
+  .vin_sec2_text_block {
+    width: 48%;
+  }
+
+  .vin_sec2_img_block {
+    width: 48%;
+  }
+
+  .vin_sec2_text_block h5 {
+     font-size: 40px;
+     margin-top: 15px !important;
+  }
+
+  .vin_sec2_text_block div p{
+     font-size: 16px;
+   }
+
+  .vin_sec2_img_block2 {
+     margin-top: 240px;
+  }
+
+  .section4 h5 {
+    text-align: center;
+    padding-bottom: 45px;
+    font-size: 40px;
+ }
 }
 
 @media(max-width:1165px){
@@ -751,6 +1165,22 @@ color: #C6754D;
    .sec4_block_item p {
     font-size: 16px;
    }
+
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 120px;
+    padding-right: 120px;
+   }
+}
+
+@media(max-width:1100px){
+   .vin_sec2_img_block2 {
+    margin-top: 200px;
+  }
+
+  .vin_sec2_img_block2 {
+    margin-top: 160px;
+  }
 }
 
 @media(max-width:1035px){
@@ -781,6 +1211,16 @@ color: #C6754D;
 
    .vin_sec1_text_block div h5 {
       font-size: 75px;
+   }
+
+   .vin_sec6_block_item1, .vin_sec6_block_item2 {
+    width: 48%;
+  }
+
+  .vin_sec6_block_item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
    }
 }
 
@@ -825,6 +1265,31 @@ color: #C6754D;
    }
 }
 
+@media(max-width:975px){
+  .vin_sec6_block_item2_item {
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .vin_menu_footer ul {
+   gap: 40px;
+  }
+}
+
+@media(max-width:930px){
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media(max-width:920px){
+  .vin_sec2_img_block2 {
+    margin-top: 100px;
+  }
+}
+
 @media(max-width:900px){
    .sec2_people_block{
       flex-wrap: wrap;
@@ -838,13 +1303,49 @@ color: #C6754D;
    .people h4 {
     font-size: 28px;
    }
+
+   .sec2_text2_block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .vin_sec4_title {
+   text-align: center !important;
+  }
 }
 
 @media(max-width:830px){
+   .vin_section7_form label {
+      font-size: 12px;
+   }
+
     .menu2 ul li a{
         font-size: 12px !important;
      }
 
+     .vin_sec4_title {
+       font-size: 35px !important;
+       padding-top: 20px;
+       padding-bottom: 0 !important;
+     }
+
+     .vin_sec2_text_block h5 {
+         font-size: 30px;
+         margin-top: 5px !important;
+         margin-bottom: 20px !important;
+     }
+
+    .vin_sec2_text_block div p {
+      font-size: 14px;
+    }
+
+    .vin_sec2_img_block2 {
+      margin-top: 130px;  
+    }
+  
       .menu2 ul {
        gap: 20px;
      }
@@ -889,6 +1390,9 @@ color: #C6754D;
    .sec1_text_block {
     padding: 0px 0px;
    }
+    .vin_sec2_img_block2 {
+      margin-top: 80px;  
+    }
 }
 
 @media(max-width:770px){
@@ -953,6 +1457,82 @@ color: #C6754D;
    .sec5_block_month {
       gap: 20px;
    }
+
+   .vin_sec2_block{
+      flex-direction: column;
+      gap: 25px;
+   }
+
+   .vin_section2 {
+    padding: 80px 50px 86px;
+   }
+
+   .vin_sec2_text_block, .vin_sec2_img_block{
+      width: 100%;
+   }
+
+   .vin_sec2_text_block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .vin_sec2_text_block div p {
+      text-align: center;
+   }
+
+   .vin_sec2_img_block2 {
+    margin-top: 525px;
+   }
+
+   .vin_sec2_img1_block_item{
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     margin: auto;
+   }
+
+   .vin_sec2_img2_block_item{
+       position: absolute;
+        top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     margin: auto;
+   }
+
+   .vin_sec2_img3_block_item{
+     position: absolute;
+      top: 15px;
+     right: 0;
+     left: 15px;
+     bottom: 0;
+     margin: auto;
+   }
+
+   .vin_sec2_img3_block_item img {
+    width: 100%;
+  }
+
+  .vin_sec2_text_block h5 {
+    font-size: 35px;
+    margin-top: 5px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .vin_sec2_text_block div p {
+    font-size: 16px;
+  }
+}
+
+@media(max-width:720px){
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media(max-width:710px){
@@ -969,6 +1549,31 @@ color: #C6754D;
    }
 }
 
+@media(max-width:700px){
+   .vin_section7_form {
+    width: 90%;
+ }
+
+ .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+  .vin_menu_footer ul {
+    gap: 20px;
+   }
+
+   .footer_text {
+      font-size: 14px;
+      padding-top: 15px;
+   }
+
+   .vin_menu_footer ul li a {
+      font-size: 16px;
+   }
+}
+
 @media(max-width:650px){
    .vin_header_title {
     margin-bottom: 45px;
@@ -978,6 +1583,39 @@ color: #C6754D;
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .vin_section6_block{
+   flex-direction: column;
+  }
+
+  .vin_sec6_block_item1, .vin_sec6_block_item2 {
+    width: 100%;
+  }
+
+  .vin_sec6_block_item1 h5 {
+    text-align: center !important;
+  }
+
+  .vin_sec6_block_item2_item{
+   flex-direction: row;
+  } 
+
+  .vin_sec6_block_item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .vin_section6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media(max-width:630px){
+   .vin_section7_form {
+    width: 95%;
+    }
 }
 
 @media(max-width:602px){
@@ -991,13 +1629,43 @@ color: #C6754D;
 }
 
 @media(max-width:550px){
+   .footer_text {
+      font-size: 12px;
+   }
        .header_title_block h1 {
       font-size: 35px;
       line-height: 10%;
    }
 
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .vin_sec7_title {
+   padding-bottom: 45px;
+  }
+
+  .vin_section7_form label {
+    font-size: 10px;
+  }
+
+  .vin_sec7_block p {
+   font-size: 15px;
+   text-align: center;
+  }
+
+  .vin_section7_form input {
+    padding: 8px 10px;
+  }
+
    .sec2_people_block {
       flex-direction: column;
+   }
+
+   .vin_sec4_title {
+    font-size: 28px !important;
    }
 
    .people{
@@ -1085,6 +1753,35 @@ color: #C6754D;
    .vin_header div p:nth-child(3) {
       font-size: 11px;
    }
+
+   .vin_section2 {
+    padding: 80px 15px 86px;
+   }
+
+   .vin_section6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .vin_sec6_block_item1 p {
+    font-size: 15px;
+ }
+}
+
+@media(max-width:520px){
+  .vin_sec2_img_block2 {
+    margin-top: 475px;
+  }
+}
+
+@media(max-width:500px){
+   .vin_sec6_block_item2_item {
+    flex-direction: column;
+  }
+
+  .vin_sec6_block_item1 p {
+    text-align: center;
+  }
 }
 
 @media(max-width:480px){
@@ -1093,6 +1790,23 @@ color: #C6754D;
      flex-direction: column;
      align-items: center;
      justify-content: center;
+  }
+
+  .vin_sec2_img_block2 {
+    margin-top: 440px;
+  }
+
+  .vin_menu_footer ul {
+    gap: 10px;
+  }
+
+  .vin_menu_footer ul li a {
+    font-size: 14px;
+  }
+
+  .footer_text {
+    font-size: 10px;
+    padding-top: 0px;
   }
 }
 
@@ -1109,6 +1823,10 @@ color: #C6754D;
 }
 
 @media(max-width:430px){
+   .vin_sec2_img_block2 {
+    margin-top: 385px;  
+   }
+
    .sec5_block_month{
       flex-direction: column;
       align-items: center;
@@ -1147,6 +1865,17 @@ color: #C6754D;
       gap: 0px;
    }
 
+   .vin_menu_footer ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .vin_menu_footer ul li {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
    .header img {
       height: 350px;
    }
@@ -1181,4 +1910,61 @@ color: #C6754D;
 .vin_sec1_text_block div:nth-child(2) {
    gap: 10px;
 }
+}
+
+@media(max-width:375px){
+   .footer_text {
+      padding-left: 70px;
+      padding-right: 70px;
+   }
+   .vin_sec2_text_block h5 {
+    font-size: 26px;
+    margin-top: 5px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .vin_sec2_text_block div p {
+    font-size: 14px;
+  }
+
+  .vin_sec2_img_block2 {
+    margin-top: 330px;
+  }
+
+  .vin_sec2_img1_block_item img {
+     height: 250px;
+  }
+
+  .vin_sec2_img2_block_item img {
+    height: 250px;
+  }
+
+  .vin_sec2_img3_block_item img {
+    height: 250px;
+   }
+}
+
+@media(max-width:345px){
+  .footer_text {
+    padding-left: 47px;
+    padding-right: 47px; 
+  }
+}
+
+@media(max-width:320px){
+   .vin_sec2_img1_block_item img {
+     height: 200px;
+    }
+
+  .vin_sec2_img2_block_item img {
+    height: 200px;
+   }
+
+  .vin_sec2_img3_block_item img {
+    height: 180px;
+   }
+  
+  .vin_sec2_img_block2 {
+    margin-top: 270px;
+  }
 }
