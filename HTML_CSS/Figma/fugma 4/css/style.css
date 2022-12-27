@@ -21,10 +21,6 @@ em {
    color: white !important;
 }
 
-/*nav{
-   background-color: white !important;
-}*/
-
 .hide{
    display: none;
 }
@@ -488,6 +484,15 @@ padding-bottom: 66px;
    background-color: white;
 }
 
+.chap_menu_ul_vin li a:hover{
+   transform: scale(1.5) !important;
+   color: black !important;
+}
+
+.chap_menu_ul_vin li a{
+    transition: 0.3s;
+}
+
 /*========= Header =========*/
 .vin_header{
    padding-top: 89px;
@@ -858,6 +863,21 @@ padding-bottom: 66px;
 
 .form_item2 {
    width: 22%;
+   border: 1px solid #2B1105;
+   display: flex;
+   justify-content: flex-start;
+   padding: 16px 12px;
+   box-sizing: border-box;
+}
+
+.form_item2 {
+   font-size: 14px;
+   text-align: left;  
+}
+
+.form_item2  input{
+   width: 39% !important;
+   border: 1px solid #2B1105 !important;
 }
 
 .form_item3{
@@ -872,6 +892,15 @@ padding-bottom: 66px;
 
 .form_item3_block_item{
    width: 48%;
+   border: 1px solid #2B1105;
+   padding: 16px 12px;
+   box-sizing: border-box;
+   display: flex;
+}
+
+.form_item3_block_item input{
+   width: 12% !important;
+   border: 1px solid #2B1105;
 }
 
 .for_item_4{
@@ -880,7 +909,16 @@ padding-bottom: 66px;
 }
 
 .form_item_4_item{
-   width: 30%;
+    width: 30%;
+    display: flex;
+     padding: 16px 12px;
+     box-sizing: border-box;
+    border: 1px solid #2B1105;
+}
+
+.form_item_4_item input {
+   width: 18% !important;
+   border: 1px solid #2B1105;
 }
 
 .vin_section7_form input{
@@ -970,6 +1008,7 @@ opacity: 0.8;
    transform: scale(1.5) !important;
    color: white  !important;
 }
+
 /*========= Header =========*/
 .chap_header{
    width: 100%;
@@ -1428,14 +1467,22 @@ opacity: 0.8;
     padding-right: 120px;
    }
 
+   .form_item3_block_item input {
+    width: 16% !important;
+    }
+
    .sec4_block_item p {
     font-size: 16px;
    }
 
    .vin_sec7_block {
     padding-top: 96px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+   }
+
+   .form_item_4_item input {
+    width: 25% !important;
    }
 }
 
@@ -1684,6 +1731,10 @@ opacity: 0.8;
 
    .chap_header {
       height: 800px;
+   }
+
+   .form_item_4_item, .form_item3_block_item {
+       padding: 16px 0;
    }
 }
 
@@ -2077,6 +2128,12 @@ opacity: 0.8;
    .menu2 ul {
       gap: 15px;
    }
+
+   .vin_sec7_block {
+    padding-top: 96px;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
 }
 
 @media(max-width:550px){
@@ -2372,6 +2429,41 @@ opacity: 0.8;
    .chap_sec2_img_block {
     top: 610px;
   }
+
+  .form_item_4_item {
+   flex-direction: column-reverse;
+  }
+
+  .form_item2{
+   flex-direction: column-reverse;
+  }
+
+  .form_item2 label{
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+
+  .form_item_4_item label{
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+
+  .form_item_4_item input {
+    width: 35% !important;
+  }
+
+  .form_item3_block_item{
+   flex-direction: column-reverse;
+  }
+
+  .form_item3_block_item label{
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+
+  .form_item3_block_item input {
+    width: 23% !important;
+  }
 }
 
 @media(max-width:430px){
@@ -2384,6 +2476,8 @@ opacity: 0.8;
       align-items: center;
       padding-bottom: 40px;
    }
+
+  
 
      .chap_sec2_img_block {
        top: 620px;
@@ -2424,6 +2518,25 @@ opacity: 0.8;
   .chap_menu_ul li a{
       font-size: 10px !important;
    }
+}
+
+@media(max-width:410px){
+    .form_item_4_item input {
+      width: 23% !important;
+    }
+
+    .form_item_4_item label {
+    padding-left: 5px;
+    padding-bottom: 5px;
+   }
+
+   .form_item_4_item {
+    width: 32%;
+    }
+
+    .form_item3_block_item {
+       width: 49%;
+    }
 }
 
 @media(max-width:400px){
@@ -2502,6 +2615,16 @@ opacity: 0.8;
     margin-bottom: 25px !important;
   }
 
+  .form_item3_block_item label {
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  .form_item2 label {
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+
   .vin_sec2_text_block div p {
     font-size: 14px;
   }
@@ -2544,12 +2667,20 @@ opacity: 0.8;
     padding-right: 47px; 
   }
 
+  .form_item_4_item label {
+   font-size: 9px !important;
+  }
+
+  .form_item3_block_item label {
+    font-size: 9px;
+  }
+
   .chap_sec2_img_block {
     top: 545px;
    }
 
   .chap_menu_ul {
-    flex-wrap: wrap !important;
+     flex-wrap: wrap !important;
      padding-left: 25px !important;
      padding-right: 25px !important;
      margin-top: 0 !important;
