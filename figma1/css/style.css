@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .slider_item img {
 	width: 100% !important;
-	height: 100vh !important;
+	height: 900px !important;
 }
 
 .slider_btn1 {
@@ -515,6 +515,11 @@ h1, h2, h3, h4, h5, h6, p{
 	 .menu_ul li a {
 	    font-size: 13px;
 	 }
+
+   .slider_item img {
+     width: 100% !important;
+     height: 750px !important;
+   }
 }
 
 @media(max-width:1150px){
@@ -719,11 +724,11 @@ h1, h2, h3, h4, h5, h6, p{
 
   .slider_item img {
     width: 100% !important;
-    height: 75vh !important;
+    height: 650px !important;
   }
 
   .header_text_block {
-  	top: 200px;
+  	top: 195px;
   }
 
   .section1_block_item2 h5 {
@@ -768,6 +773,15 @@ h1, h2, h3, h4, h5, h6, p{
     .section1_block_item2_text {
     	  padding-bottom: 100px;
     }
+
+    .slider_item img {
+    width: 100% !important;
+    height: 550px !important;
+   }
+
+   .header_text_block {
+    top: 145px;
+   }
 }
 
 
@@ -803,12 +817,6 @@ h1, h2, h3, h4, h5, h6, p{
      font-size: 22px;
     }
 
-    .sec3_card_block_item a {
-/*    	font-size: 17px;*/
-    }
-
-
-
     .section1_block_item2_text p {
     font-size: 14px;
     }
@@ -828,7 +836,7 @@ h1, h2, h3, h4, h5, h6, p{
 
    .slider_item img {
       width: 100% !important;
-      height: 60vh !important;
+      height: 450px !important;
   }
 
   .header_text_block {
@@ -898,5 +906,13 @@ h1, h2, h3, h4, h5, h6, p{
 
     .header_text_block button {
         font-size: 9px;
+    }
+
+    .header_text_block h1 {
+       line-height: 32px;
+    }
+
+    .header_text_block {
+       top: 60px;
     }
 }
