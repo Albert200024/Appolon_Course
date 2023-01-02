@@ -1,15 +1,15 @@
-1920 amenamec cham
+1920 amenamec chap
 1720
-1650 notbuk ekrani chap verj
+1650 notbuk ekrani chap skizb
 1440
 1365
-1200 notbuk ekrani chap skizb
-1024 plansheti ekrani chap verj
+1200 
+1024 plansheti ekrani chap skizb
 992
 920
 860
-768 plansheti ekrani chap skizb
-576 heraxosi chape avart
+768 
+576 heraxosi chape skizb
 420
 375
-320 heraxosi chapes sklsele
+320 
