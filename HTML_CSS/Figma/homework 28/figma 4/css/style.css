@@ -131,8 +131,8 @@ body {
 /*=============================== Main ===============================*/
 /*============== Section 1 ==============*/
 .section1 {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    margin-top: 118px;
+    margin-bottom: 118px;
 }
 
 .sec1_block{
@@ -181,7 +181,11 @@ body {
 	height: 100%;
 }
 /*============== Section 2 ==============*/
+
 /*============== Section 3 ==============*/
+.sec3_block{
+    padding-bottom: 107px;
+}
 /*============== Section 4 ==============*/
 /*============== Section 5 ==============*/
 /*============== Section 6 ==============*/
@@ -275,7 +279,7 @@ body {
 
 @media(max-width:1586px){
 	.sec_padding {
-       padding: 118px 170px;
+       padding: 0 170px;
     }
 }
 
@@ -449,7 +453,7 @@ body {
      }
 
      .sec_padding {
-        padding: 118px 70px;
+        padding: 0 70px;
      }
 }
 
@@ -564,7 +568,7 @@ body {
 
 @media(max-width:605px){
   .sec_padding {
-    padding: 118px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -578,6 +582,15 @@ body {
 	.header{
 		flex-direction: column;
 	}
+
+    .sec_padding {
+       padding: 0 40px;
+    }
+
+    .section1 {
+      margin-top: 60px;
+      margin-bottom: 58px;
+    }
 
 	.header_leftSide{
 		background: white;
@@ -645,6 +658,35 @@ body {
 	.hide{
 		display: none;
 	}
+
+    .sec1_block {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .sec1_block_leftSide, .sec1_block_rightSide{
+          width: 100%;
+    }
+
+    .sec1_block_rightSide{
+         display: flex;
+         justify-content: center;
+    }
+
+    .sec1_block_rightSide img {
+       height: 120px;
+       width: 100%;
+    }
+
+    .sec1_block_leftSide{
+         padding-left: 22px;
+         padding-right: 22px;
+    }
+
+    .sec1_block {
+       padding-left: 0px;
+       padding-right: 0px;
+    }
 }
 
 @media(max-width:460px){
@@ -656,6 +698,10 @@ body {
 @media(max-width:400px){
 	.header_leftSide_text_block {
      width: 100%;
+    }
+
+    .sec_padding {
+       padding: 0 20px;
     }
 }
 
@@ -671,4 +717,8 @@ body {
     .header_leftSide_btn_block button {
       font-size: 15px;
     }
+
+    .sec1_block_leftSide p {
+    font-size: 14px;
+   }
 }
