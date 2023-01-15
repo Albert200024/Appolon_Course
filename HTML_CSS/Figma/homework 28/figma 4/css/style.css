@@ -549,7 +549,6 @@ body {
 
 .vidio_block img {
     width: 90%;
-  
 }
 
 .sec6_item{
@@ -564,6 +563,184 @@ body {
 .img_mobil {
     display: none;
 }
+
+
+/*=============================== Form ===============================*/
+.form_padding {
+    padding-left: 115px;
+    padding-right: 115px;
+}
+/*============== Form 1 ==============*/
+.form_top_block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 125px;
+}
+
+.form_top_blockItem{
+    width: 48%;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 29px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: normal;
+    border-radius: 21px;
+}
+
+.form_top_blockItem_imgLeft img {
+    width: 100%;
+}
+
+.form_top_blockItem_imgLeft, .form_top_blockItem_imgRight{
+    width: 7%;
+}
+
+.form_top_blockItem_text{
+    width: 60%;
+}
+
+.item_back{
+   background: #EB242A;
+}
+
+.item_border{
+  border: 2px solid #EB242A;
+}
+
+.form_top_blockItem_text h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 11px;
+}
+
+.form_top_blockItem_text p {
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+}
+
+.d-center {
+    display: flex;
+    align-items: center;
+}
+
+.form_top_blockItem_imgRight button{
+  padding: 21px 17px;
+  border: none;
+  cursor: pointer;
+  background: #FFFFFF;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+}
+
+.text_color{
+    color: #001A49 !important;
+}
+
+.back_color {
+    background: #001A49 !important;
+}
+
+.form_inputBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_inputBlock_leftSide, .form_inputBlock_rightSide{
+    width: 48%;
+}
+
+.input {
+    width: 100%;
+    padding: 24px 28px;
+    box-sizing: border-box;
+    background: #F3F3F3;
+    border: none;
+    margin-top: 20px;
+}
+
+.input::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4F596A;
+    opacity: 0.3 !important;
+}
+
+.btn_form{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.4944px;
+    line-height: 31px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 20px 75px;
+     background: #EB242A;
+border-radius: 60px;
+}
+
+.mar-top{
+    margin-top: 58px;
+}
+
+.qashelu_block {
+    margin-top: 26px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.qashelu_block button {
+    padding: 13px;
+    background: #299EF3;
+box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.08);
+border-radius: 50%;
+border: none;
+}
+
+.qashelu_block p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.9188px;
+    line-height: 34px;
+    color: #001A49;
+    padding-left: 22px;
+}
+
+.harcakanaDiv{
+    display: flex;
+    align-items: flex-start;
+    height: 59px;
+}
+
+.mr-top1{
+    margin-top: 40px;
+}
+
+.harcakanaDiv span {
+    font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+color: #FFFFFF;
+padding: 0 6px;
+background: #EB242A;
+opacity: 0.3;
+border-radius: 50%;
+}
+/*============== Form 2 ==============*/
+
 /*=============================== Footer ===============================*/
 .footer{
     background: #272D4E;
@@ -893,6 +1070,10 @@ body {
 	.header_leftSide {
 		padding-left: 200px;
 	}
+
+    .form_top_blockItem_imgLeft {
+      width: 8%;
+     }
 }
 
 @media(max-width:1500px){
@@ -995,6 +1176,15 @@ body {
 @media(max-width:1420px){
 	.header_rightSide_btnBlock {
        right: 141px;
+    }
+
+    .form_top_blockItem_text p {
+        font-size: 13px;
+    }
+
+    .form_top_blockItem_text h5 {
+       font-size: 20px;
+       line-height: 26px;
     }
 }
 
@@ -1152,6 +1342,10 @@ body {
     .sec4_block_leftSide p {
         font-size: 35px;
     }
+
+    .form_top_blockItem_imgLeft {
+      width: 10%;
+    }
 }
 
 @media(max-width:1275px){
@@ -1239,6 +1433,11 @@ body {
   .sec6_item img {
     height: 260px;
   }
+
+  .form_padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 @media(max-width:1200px){
@@ -1267,6 +1466,11 @@ body {
 @media(max-width:1148px){
     .sec6_item {
        right: 207px;
+    }
+
+    .form_padding {
+      padding-left: 50px;
+      padding-right: 50px;
     }
 }
 
@@ -1301,6 +1505,16 @@ body {
     .sec_padding {
        padding: 0px 50px;
     }
+
+    .form_top_blockItem_text h5 {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    .form_top_blockItem_text p {
+       font-size: 11px;
+       line-height: 18px;
+     }
 }
 
 @media(max-width:1080px){
@@ -1370,6 +1584,27 @@ body {
   .sec2_title{
      line-height: 40px !important;
   }
+}
+
+@media(max-width:992px){
+    .form_top_blockItem{
+        flex-wrap: wrap;
+       justify-content: center;
+        gap: 25px;
+    }
+
+    .form_top_blockItem_text{
+        width: 76%;
+    }
+
+    .form_top_blockItem_imgLeft {
+       width: 14%;
+    }
+
+    .form_top_blockItem {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 }
 
 @media(max-width:991px){
@@ -1672,6 +1907,15 @@ body {
    .sec6_item {
     right: 94px;
    }
+
+   .form_top_blockItem_text h5 {
+    font-size: 16px;
+    line-height: 20px;
+    }
+
+    .form_top_blockItem_text p {
+      font-size: 10px;
+   }
 }
 
 @media(max-width:730px){
@@ -1706,6 +1950,12 @@ body {
     .sec6_block h5 {
        font-size: 20px;
     }
+}
+
+@media(max-width:712px){
+   .form_top_blockItem_imgLeft {
+      width: 13%;
+   }
 }
 
 @media(max-width:708px){
@@ -1794,6 +2044,11 @@ body {
 
     .sec_title {
     font-size: 27px;
+    }
+
+    .form_padding {
+      padding-left: 15px;
+      padding-right: 15px;
     }
 }
 
@@ -1886,6 +2141,14 @@ body {
     .sec6_item {
       right: 71px;
     }
+}
+
+@media(max-width:595px){
+    .form_top_blockItem {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 49%;
+   }s
 }
 
 @media(max-width:593px){
