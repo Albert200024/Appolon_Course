@@ -570,7 +570,16 @@ body {
     padding-left: 115px;
     padding-right: 115px;
 }
+
+.form_container {
+    padding-bottom: 180px;
+}
+
 /*============== Form 1 ==============*/
+.titlen_hdie{
+  display: none;
+}
+
 .form_top_block {
     display: flex;
     justify-content: space-between;
@@ -739,7 +748,37 @@ background: #EB242A;
 opacity: 0.3;
 border-radius: 50%;
 }
+
+.mobile_item_block{
+    display: none;
+}
+
 /*============== Form 2 ==============*/
+.form2_top_block {
+    padding-top: 101px !important;
+}
+
+.pasport_imgBlock{
+    width: 100%;
+}
+
+.inputBlock_rightSide_pasportBlock {
+    width: 50%;
+}
+
+.paddinTop_botom1{
+    padding-top: 17px;
+    padding-bottom: 37px;
+}
+
+.pasport_imgBlock img, .inputBlock_rightSide_pasportBlock img{
+    width: 100%;
+    height: 100% !important;
+}
+
+.img_block{
+    display: none;
+}
 
 /*=============================== Footer ===============================*/
 .footer{
@@ -973,6 +1012,11 @@ border-radius: 50%;
     .sec5_caed_block_item_div1 img {
       width: 100%;
     }
+
+    .sec4_block {
+    padding-top: 54px !important;
+    padding-bottom: 42px !important;
+   }
 
     .securty, .present {
        width: 100% !important;
@@ -1810,6 +1854,10 @@ border-radius: 50%;
    .sec6_block {
     padding-left: 40px;
    }
+
+   .paddinTop_botom1 {
+    padding-bottom: 20px ;
+   }
 }
 
 @media(max-width:800px){
@@ -1840,6 +1888,20 @@ border-radius: 50%;
      .m_top {
        margin-top: 40px;
      }
+
+     .qashelu_block p {
+        font-size: 20px;
+     }
+
+     .harcakanaDiv span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .btn_form {
+         font-size: 16px;
+         padding: 10px 40px;
+    }
 }
 
 @media(max-width:790px){
@@ -1943,6 +2005,10 @@ border-radius: 50%;
 
     .sec2_item_div {
       height: 64px;
+    }
+
+    .form_top_blockItem {
+        gap: 15px;
     }
 }
 
@@ -2174,10 +2240,137 @@ border-radius: 50%;
 	   flex-direction: column;
 	 }
 
+     .form_inputBlock{
+        flex-direction: column;
+     }
+
+  
+
+
+     .form_container {
+        padding-top: 31px;
+       padding-bottom: 179px;
+     }
+
+     .titlen_hdie{
+        display: block;
+     }
+      
+    .form1_title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        text-align: center;
+        color: #272D4E;
+        padding-bottom: 10px;
+    }
+
+    .form1_pagaraph{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: #57606A;
+        padding-bottom: 45px;
+    }
+
+     .mobile_item_block {
+        display: block;
+        border-radius: 8.75px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 15px;
+
+     }
+
+     .mobile_block_item1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 22px;
+     }
+
+     .mobile_block_item2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+     }
+
+     .form_top_blockItem_text h5 {
+        font-size: 14px;
+        line-height: 17px;
+        }
+
+    .form_top_blockItem_text p {
+        font-size: 12px;
+        line-height: 13px;
+      }
+
+     .form_inputBlock_leftSide, .form_inputBlock_rightSide {
+       width: 100%;
+     }
+
+     .btn_form {
+        width: 100%;
+        font-size: 26px;
+     }
+
+     .mar-top {
+      margin-top: 25px;
+      margin-bottom: 85px;
+     }
+
+     .mr-top1 {
+       margin-top: 25px;
+     }
+     
+     .form2 {
+        padding-bottom: 129px !important;
+     }
+
+     
+     .inputBlock_rightSide_pasportBlock, .pasport_imgBlock{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .inputBlock_rightSide_pasportBlock img, .pasport_imgBlock img {
+        width: 70% !important;
+    }
+     
+
+     .img_block {
+        display: block;
+     }
+
+     .img_hide {
+        display: none;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
      .section6 {
        padding-left: 10px;
        padding-right: 10px;
        padding-bottom: 85px;
+     }
+
+     .form_top_block {
+        display: none;
      }
 
      .sec6_block{
@@ -2582,6 +2775,10 @@ border-radius: 50%;
 	.logo_block, .btn_block_mobile{
 		width: 40%;
 	}
+
+    .form_top_blockItem_imgRight button {
+       padding: 15px 12px;
+    }
 }
 
 @media(max-width:410px){
@@ -2662,6 +2859,19 @@ border-radius: 50%;
 		width: 30%;
 	}
 
+    .mobile_block_item2 {
+        width: 86%;
+    }
+
+    .form_top_blockItem_text p {
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    .form_top_blockItem_imgRight button {
+       padding: 13px 10px;
+    }
+
     .div1_item h6 br {
         display: none !important;
     }
@@ -2699,6 +2909,9 @@ border-radius: 50%;
     width: 25%;
    }
 
+   .btn_form {
+     font-size: 19px;
+   }
 }
 
 @media(max-width:322px){
