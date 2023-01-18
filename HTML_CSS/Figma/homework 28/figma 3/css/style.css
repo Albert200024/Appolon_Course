@@ -409,15 +409,82 @@ padding-left: 135px;
 }
 
 /*========== Section 3 ==========*/
+.section3 {
+   margin-top: 736px;
+}
+
+.sec3_block {
+  padding-right: 135px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec3_block_leftSide {
+    width: 48%;
+    position: relative;
+}
+
+.sec3_block_leftSide_img {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 25px;
+}
+
+.sec3_block_leftSide_fon1{
+   position: absolute;
+   right: -30px;
+   top: -54px;
+   z-index: 2;
+}
+
+.sec3_block_leftSide_fon2{
+    top: 50px;
+    position: absolute;
+    right: -76px;
+    width: 33%;
+    height: 630px;
+}
+
+.sec3_block_leftSide_fon2 img {
+   height: 100%;
+}
+
+.sec3_block_leftSide_fon3{
+  position: absolute;
+  left: 60px;
+  top: 600px;
+}
+
+.sec3_block_leftSide_fon4{
+    width: 33%;
+    height: 630px;
+    left: 0;
+}
+
+.sec3_block_leftSide_fon4 img {
+  height: 100%;
+}
+
+.sec3_block_leftSide_fon5{
+   position: absolute;
+   left: -25px;
+   top: 50%;
+}
+
+.sec3_block_rightSie {
+    width: 48%;
+    background: green;
+}
 
 /*========== Section 4 ==========*/
 
 /*========== Section 5 ==========*/
 
 /*========== Section 6 ==========*/
-.section6 {
+/*.section6 {
   margin-top: 900px;
-}
+}*/
 
 .sec6_title {
   font-weight: bold !important;
