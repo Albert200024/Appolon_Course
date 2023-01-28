@@ -53,57 +53,63 @@
 			</div>
 		</div>
 	</div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sec_padding">
+	<nav class="navbar navbar-expand-lg navbar-light  sec_padding nav">
 	  <div class="container-fluid manu">
-	    <a class="navbar-brand" href="#"><img src="img/navbar_logo.png" alt=""></a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
+	    <a class="navbar-brand logo_png" href="#"><img src="img/navbar_logo.png" alt=""></a>
+	    <a class="navbar-brand logo_mobileNav_img" href="#"><img src="img/Logo_nav_mobile.png" alt=""></a>
+	    <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	       <img src="img/menu_btn.png" alt="">
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu_list" >
-	        <li class="nav-item">
-	          <a class="nav-link active" href="#">Топ-продаж</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Золото</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#" >Серебро</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#" >Другие монеты</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#" >Акции</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#" >Ресурсы</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#" >Контакты</a>
-	        </li>
-	      </ul>
-	      <div class="d-flex menu_rightSide">
-	        <div class="menu_rightSide_search_end_karzinaBlock">
-	        	<a href="">
-	        		<img src="img/nav_search_logo.png" alt="">
-	        	</a>
-	        	<img src="img/nav_gic.png" alt="">
-	        	<a href="">
-	        		<img src="img/karzina.png" alt="">
-	        	</a>
-	        </div>
-	        <button class="nav_btn" type="submit">
-	            <img src="img/nav_login.png" alt="">
-	            Войти в аккаунт
-	        </button>
-	      </div>
+	    <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu_list" >
+		        <li class="nav-item">
+		          <a class="nav-link active" href="#">Топ-продаж</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Золото</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#" >Серебро</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#" >Другие монеты</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#" >Акции</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#" >Ресурсы</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#" >Контакты</a>
+		        </li>
+		      </ul>
+	          <div class="d-flex menu_rightSide">
+			        <div class="menu_rightSide_search_end_karzinaBlock">
+			        	<a href="">
+			        		<img src="img/nav_search_logo.png" class="btn152222222" alt="">
+			        	</a>
+			        	<img src="img/nav_gic.png" alt="">
+			        	<a href="">
+			        		<img src="img/karzina.png" class="btn152222222" alt="">
+			        	</a>
+			        </div>
+			        <button class="nav_btn" type="submit">
+			            <img src="img/nav_login.png" alt="">
+			            Войти в аккаунт
+			        </button>
+	           </div>
 	    </div>
+	  </div>
+	  <div class="mobile_block">
+	  	  <img src="img/tel_mobile.png" alt="">
+	  	  <img src="img/user_mobile.png" alt="">
+	  	  <img src="img/cart.png" alt="">
 	  </div>
     </nav>
     <header class="header sec_padding">
     	 <div class="header_block">
-    	 	  <img src="img/header_back.png" alt="">
+    	 	  <img src="img/header_back.png" alt="" class="header_img_back">
     	 	  <div class="header_text_end_btn_block">
     	 	  	  <h1>Инвестиционные монеты из золота и серебра</h1>
     	 	  	  <p>При покупке золотых монет весомв сумме <br> от 200 грамм — скидка иподарок: монета из серебра.</p>
@@ -116,6 +122,16 @@
     	 	  	  </div>
     	 	  </div>
     	 </div>
+    </header>
+    <div class="mobile_block_2 sec_padding">
+    	<div class="mobile_block_2_inputBlock">
+    		<input type="text" placeholder="Поиск" class="mobile_block_2_p_input">
+    		<button><img src="img/icon_search.png" alt=""></button>
+    	</div>
+    	<p class="mobile_block_2_p">Быстрая и бесплатная доставка при заказе от 15 000 рублей!</p>
+    </div>
+    <header class="header_mobile">
+    	<img src="img/headerMobile_img.png" alt="">
     </header>
     <main>
     	 <section class="section1 sec_padding">
@@ -135,7 +151,7 @@
     	 	 	</div>
     	 	 </div>
     	 </section>
-    	 <section class="section2 sec_padding">
+    	<!--  <section class="section2 sec_padding">
     	 	 <h5 class="sec_title sec1_title">Специальное предложение</h5>
     	 	 <div class="sec2_block">
     	 	 	<div class="sec2_block_item">
@@ -207,7 +223,7 @@
     	 	 		</div>
     	 	 	</div>
     	 	 </div>
-    	 </section>
+    	 </section> -->
     </main>
 	<!-- Script Uikit -->
 	<script src="js/uikit.min.js"></script>
