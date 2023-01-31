@@ -636,6 +636,46 @@ body {
 	padding-bottom: 32px;
 }
 
+.sec9_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec9_block_item {
+	width: 23.5%;
+}
+
+.sec9_block_item_img {
+	width: 100% ;
+}
+
+.sec9_block_item_title {
+	font-style: normal;
+	font-weight: bold !important;
+	font-size: 18px;
+	line-height: 136%;
+	color: #202225;
+	padding-top: 15px;
+	padding-bottom: 4px;
+}
+
+.sec9_block_item_p1 {
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 16px;
+	line-height: 136%;
+	color: #202225;
+	padding-bottom: 12px;
+}
+
+.sec9_block_item_p2 {
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 14px;
+	line-height: 136%;
+	color: rgba(32, 34, 37, 0.6);
+}
+
 /*======= Section 10 ======*/
 .section10 {
 	padding-bottom: 64px;
@@ -664,6 +704,19 @@ body {
 	line-height: 100%;
 	color: #36393F;
 }
+
+/*======= Mobile_section ======*/
+ .mobile_section {
+ 	display: none;
+ }
+
+ /*=========================== Footer ===========================*/
+ .footer {
+  background: #202225;
+  width: 100%;
+  height: 250px;
+ }
+
 /*=========================== Media ===========================*/
 @media(max-width:1885px){
   .sec4_textBtn_block {
@@ -728,6 +781,11 @@ body {
 	.sec7_blockItem_p {
 		font-size: 14px;
 	}
+
+	.sec_padding {
+    padding-left: 250px !important;
+    padding-right: 250px !important;
+    }
 }
 
 @media(max-width:1630px){
@@ -798,6 +856,18 @@ body {
 
     .header_text_end_btn_block {
         width: 55%;
+     }
+
+     .sec9_block_item_title {
+     	font-size: 16px;
+     }
+
+     .sec9_block_item_p1 {
+       font-size: 13px;
+     }
+
+     .sec9_block_item {
+       width: 23%;
      }
 }
 
@@ -1063,6 +1133,29 @@ body {
     .sec3_block_item_textBlock a {
        font-size: 13px;
     }
+
+    .sec9_block {
+    	flex-wrap: wrap;
+    }
+
+    .sec9_block_item {
+    	width: 48%;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;    
+    }
+
+    .sec9_block_item_img {
+    	width: 75%;
+    }
+
+    .sec9_mTop {
+    	margin-top: 35px;
+    }
+
+    .sec9_block_item_title, .sec9_block_item_p1, .sec9_block_item_p2{
+    	text-align: center;
+    }
 }
 
 @media(max-width: 923px){
@@ -1276,8 +1369,16 @@ body {
 }
 
 @media(max-width:576px){
+	.mobile_section{
+		display: block;
+	}
+
   .header_text_end_btn_block h1 {
     font-size: 28px;
+   }
+
+   .section9 {
+   	display: none;
    }
 
    .section10 {
