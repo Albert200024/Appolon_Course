@@ -1068,6 +1068,27 @@ opacity: 0.5;
 	.sec2_card_block_item_text1_block p:nth-child(2) {
     font-size: 7px;
   }
+
+  .sec2_card_block_item_tex3_block p {
+    font-size: 9px;
+  }
+
+  .sec2_card_block_item_tex3_block div {
+    padding: 4px 4px;
+  }
+
+  .btn_block  button{
+  	width: 14% !important;
+  	background: none !important;
+  }
+
+  .people_block_text1 {
+  	line-height: 12px;
+  }
+
+  .people_block img {
+  	width: 23%;
+  }
 }
 
 @media(max-width:650px){
@@ -1438,6 +1459,15 @@ opacity: 0.5;
     gap: 0px;
   }
 
+  .sec2_card_block_item_tex3_block div {
+    gap: 3px;
+  }
+
+  .sec_padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .menu {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -1546,4 +1576,15 @@ opacity: 0.5;
     padding-top: 390px;
     padding-left: 34px;
   }
+}
+
+@media(max-width:300px){
+	.sec2_card_block_item_tex3_block p {
+		font-size: 8px;
+	}
+
+	.sec2_card_block_item {
+    padding-left: 14px;
+    padding-right: 14px;
+   }
 }
