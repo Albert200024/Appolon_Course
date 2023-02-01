@@ -657,9 +657,47 @@ body {
 
 .sec8_block_peopleInfo_block_item {
 	width: 23% !important;
-	height: 200px !important;
-	background-color: red !important;
+
 }
+
+.sec8_block_peopleInfo_block_item_peopleInfo_block {
+	display: flex;
+	gap: 11px;
+	align-items: center;
+}
+
+.sec8_peopleImg {
+	width: 25%;
+}
+
+.sec8_block_peopleInfo_block_item_peopleInfo_block h6 {
+	font-size: 20px;
+	font-weight: bold !important;
+	color:  #131C39;
+}
+
+.sec8_p1 {
+	font-size: 14px;
+	font-weight: 300 !important;
+	color:  #898D9C;
+	padding-top: 21px;
+	padding-bottom: 16px;
+}
+
+.sec8_p2 {
+	padding-bottom: 14px;
+}
+
+.sec8_block_peopleInfo_block_item a, .sec8_p2{
+	font-size: 16px ;
+	font-weight: 600 !important;
+	color:  #131C39;
+}
+
+
+
+
+
 
 /*======= Section 9 ======*/
 .section9 {
