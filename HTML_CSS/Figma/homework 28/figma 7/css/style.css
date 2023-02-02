@@ -24,6 +24,10 @@ p, h5, h6, h1{
 	color: #383838;	
 	text-align: center;
 }
+
+.btn_block button {
+	background: none !important;
+}
 /*============================ Navbar ============================*/
 .menu_righrSide{
 	display: flex;
@@ -198,6 +202,10 @@ justify-content: space-between;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.number_Img {
+	display: none;
 }
 
 /*=========== Section2 ===========*/
@@ -533,6 +541,12 @@ opacity: 0.5;
       padding: 11px 20px;
       font-size: 12px;
    }
+}
+
+@media(max-width:1630px){
+	.sec2_card_block_item_tex3_block p {
+     font-size: 12px;
+	}
 }
 
 @media(max-width:1611px){
@@ -1252,6 +1266,19 @@ opacity: 0.5;
     padding-bottom: 45px;
   }
 
+  .sec1_mT {
+  	margin-top: 45px;
+  }
+
+  /* .sec1_block_card_item {
+   	  position: relative;
+   }
+
+   .sec1_block_card_item div {
+   	   position: absolute;
+
+   }*/
+
   .sec1_block_card{
   	flex-wrap: wrap;
   }
@@ -1444,7 +1471,10 @@ opacity: 0.5;
 @media(max-width:410px){
   .hider_hide_img {
     padding-top: 350px;
-   
+  }
+
+  .sec1_block_card_item p {
+    font-size: 13px;
   }
 }
 
@@ -1457,6 +1487,10 @@ opacity: 0.5;
 @media(max-width:400px){
   .menu_mobile1 {
     gap: 0px;
+  }
+
+  .sec1_block_card_item p {
+    font-size: 14px;
   }
 
   .sec2_card_block_item_tex3_block div {
@@ -1576,6 +1610,41 @@ opacity: 0.5;
     padding-top: 390px;
     padding-left: 34px;
   }
+
+  .sec1_block_card_item1 {
+  	  background-image: url("../img/1.png");
+  	  background-repeat: no-repeat;
+  	  background-position: 0 3px;
+  }
+
+  .sec1_block_card_item2 {
+  	  background-image: url("../img/2.png");
+  	  background-repeat: no-repeat;
+  	  background-position: 0 3px;
+  }
+
+  .sec1_block_card_item3 {
+  	  background-image: url("../img/3.png");
+  	  background-repeat: no-repeat;
+  	  background-position: 0 3px;
+  }
+
+  .sec1_block_card_item4 {
+  	  background-image: url("../img/4.png");
+  	  background-repeat: no-repeat;
+  	  background-position: 0 3px;
+  }
+
+  .sec1_block_card_item div {
+          display: flex;
+          flex-direction: column;
+           align-items: center;
+  }
+
+   .img2 {
+    width: 80%;
+    height: 125px;
+   }
 }
 
 @media(max-width:300px){
@@ -1586,5 +1655,9 @@ opacity: 0.5;
 	.sec2_card_block_item {
     padding-left: 14px;
     padding-right: 14px;
+   }
+
+   .header_text h1 {
+    font-size: 25px;
    }
 }
