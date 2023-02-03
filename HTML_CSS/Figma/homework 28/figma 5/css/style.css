@@ -1697,6 +1697,83 @@ body {
 		padding-top: 16px;
 	}
 
+	.nav, .mobile_block_2 {
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+
+	.mobile_block_2_div1 {
+		display: flex;
+		margin-bottom: 12px;
+		justify-content: space-between;
+	}
+
+	.mobile_block_2_div1_item {
+		width: 49%;
+		display: flex;
+		justify-content: space-between;
+		background: white;
+		padding: 6px 16px;
+		border-radius: 40px;
+		align-items: center;
+		box-sizing: border-box;
+	}
+
+	.item_border1 {
+		border: 2px solid rgba(214, 159, 51, 0.7);
+	}
+
+	.item_border2 {
+		border: 2px solid rgba(101, 97, 91, 0.7);
+	}
+
+	.mobile_block_2_div1_item_p1 {
+		 font-style: normal;
+		font-weight: 700 !important;
+		font-size: 10px;
+		line-height: 14px;
+		color: #000000;
+	}
+
+	.mobile_block_2_div1_item_p2 {
+		font-style: normal;
+		font-weight: 600 !important;
+		font-size: 10px;
+		line-height: 14px;
+		color: #65615B;
+	}
+
+	.mobile_block_2_div1_item_p3 {
+		font-style: normal;
+		font-weight: 600 !important;
+		font-size: 10px;
+		line-height: 14px;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	.item1_color1 {
+		color: #24A186;
+	}
+
+	.item1_color2 {
+		color: #F95929;
+	}
+
+	.section1 {
+	    padding-top: 28px;
+	    padding-bottom: 28px;
+    }
+
+    .section2, .section3, .section4, .section5, .section7 {
+       padding-bottom: 28px;
+     }
+
+     .section8 {
+       padding-bottom: 64px;
+     }
+
 	.mobile_title {
 		font-style: normal;
 		font-weight: 700;
@@ -2317,6 +2394,10 @@ body {
      .sec4_img_mobile {
      	height: 245px;
      }
+
+     .mobile_block_2_div1_item {
+     	padding: 6px 10px;
+     }
 }
 
 @media(max-width:343px){
@@ -2333,6 +2414,8 @@ body {
       right: 15px;
       bottom: -44px
     }
+
+
 }
 
 @media(max-width:340px){
@@ -2343,6 +2426,10 @@ body {
      .sec8_mobileImg {
 		width: 100%;
 	}
+
+	.mobile_block_2_div1_item {
+       padding: 5px 4px;
+     }
 }
 
 @media(max-width:324px){
@@ -2375,6 +2462,10 @@ body {
     .slider_item {
        width: 62% !important; 
     }
+
+    .mobile_block_2_div1_item_p3 {
+    	gap: 1px;
+    }
 }
 
 @media(max-width:319px){
@@ -2394,6 +2485,17 @@ body {
 @media(max-width:309px){
 	.uk-grid>* {
       padding-left: 20px !important;
+     }
+
+     .mobile_block_2_div1{
+     	flex-direction: column;
+     	align-items: center;
+     	gap: 10px;
+     }
+
+     .mobile_block_2_div1_item {
+        padding: 6px 16px;
+        width: 75%;
      }
 }
 
