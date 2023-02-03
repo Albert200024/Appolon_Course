@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Graphik Lcg';
+  src:url('../Graphik-Lcg font/GraphikLCG-Regular.ttf');
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -5,11 +10,16 @@
 
 body{
 	 background: #F9FBFF !important;
+	 font-family: Graphik Lcg !important;
 }
 
 p, h5, h6, h1{
 	margin: 0 !important;
 }
+
+h1, h2, h3, h4, h5, h6{
+	 font-family: Graphik Lcg !important;
+} 
 
 .sec_padding{
 	padding-left: 161px;
@@ -44,6 +54,14 @@ p, h5, h6, h1{
 .menu ul {
 	display: flex;
 	gap: 55px;
+}
+
+.menu a {
+	  font-style: normal !important;
+    fon t-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    color: #575756 !important;
 }
 
 .logo{
@@ -191,7 +209,7 @@ justify-content: space-between;
 }
 
 .slaq {
-	width: 60%;
+	width: 40%;
 }
 
 .sec1_block_card_item{
@@ -276,6 +294,10 @@ border-radius: 10px;
 	display: flex;
 	gap: 10px;
 	padding-bottom: 27px;
+}
+
+.sec2_card_block_item_text1_block p{
+	font-family: 'Roboto', sans-serif !important;
 }
 
 .sec2_card_block_item_text1_block p:nth-child(1){
@@ -410,11 +432,16 @@ border-radius: 10px;
 
 .people_block h6{
 	font-style: normal;
+	font-family: 'Roboto', sans-serif !important;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
 	color: #2F2F2F;
 	padding-bottom: 4px;
+}
+
+.people_block p, .btn_block p{
+	 font-family: 'Roboto', sans-serif !important;
 }
 
 .people_block_text1 {
@@ -476,6 +503,7 @@ border-radius: 10px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #3A85F4;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /*============================ Footer ============================*/
@@ -522,6 +550,10 @@ opacity: 0.5;
 
 .hide345, .hide789{
 	display: none !important;
+}
+
+.footer_block p, .footer_block a {
+	font-family: 'Roboto', sans-serif !important;
 }
 
 

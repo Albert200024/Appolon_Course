@@ -1,7 +1,35 @@
+@font-face {
+  font-family: 'Mont Bold';
+  src:url('../Mont/Mont-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Mont Regular';
+  src:url('../Mont/Mont-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Mont Light';
+  src:url('../Mont/Mont-Light.otf');
+}
+
 *{
 	padding: 0;
 	margin: 0;
 }
+
+body{
+   font-family: 'Mont Regular' !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Mont Bold' !important;
+}
+
+p {
+  font-family: 'Mont Light' !important;
+}
+
 
 h1, h2, h3, h4, h5, h6, p{
 	margin:  0 !important;
@@ -139,7 +167,8 @@ h1, h2, h3, h4, h5, h6, p{
 
 .section1_block_item1_text p {
    font-style: normal;
-   font-weight: 400;
+   font-family: 'Roboto Condensed', sans-serif !important;
+   font-weight: lighter !important;
    font-size: 48px;
    line-height: 55px;
    padding-top: 95px;
@@ -170,7 +199,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 .section1_block_item2_text p {
 	font-style: normal;
-    font-weight: 500;
     font-size: 24px;
     line-height: 31px;
     text-transform: uppercase;
@@ -475,7 +503,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .sec7_text {
-  background-color: red;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer{
@@ -483,6 +515,39 @@ h1, h2, h3, h4, h5, h6, p{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sec7_img_block_item h6{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.sec7_img_block_item p {
+   font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.sec7_img_block_item a {
+  font-style: normal;
+  font-family: 'Mont Light' !important;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
 /*================================== Footer ==================================*/
 /*==================== Footer Top ====================*/
@@ -792,6 +857,22 @@ color: #FFFFFF;
     width: 35%;
     padding: 41px 23px;
    }
+
+   .sec7_img_block_item h6 {
+    font-size: 20px;
+    padding-bottom: 10px;
+   }
+
+   .sec7_img_block_item p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  .sec7_img_block_item a {
+    font-size: 14px;
+    line-height: 15px;
+  }
 }
 
 @media(max-width:1390px){
@@ -1150,6 +1231,10 @@ color: #FFFFFF;
     align-items: center;
     gap: 15px;
   }
+
+  .sec6_block_item {
+    background: none !important;
+  }
   
    .foooter_botoom p {
        text-align: center;
@@ -1357,6 +1442,10 @@ color: #FFFFFF;
     padding-top: 50px;
     padding-bottom: 10px;
   }
+
+  .sec6_block2_item {
+    width: 10%;
+  }
 }
 
 @media(max-width:760px){
@@ -1422,13 +1511,21 @@ color: #FFFFFF;
     height: 360px;
   }
 
+  .sec_padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .sec6_block2 {
     flex-wrap: wrap;
-    gap: 23px;
   }
 
   .sec6_block2_item {
-     width: 30%;
+     width: 26%;
+  }
+
+  .sec7_mTop {
+    margin-top: 35px;
   }
 
   .sec6_block1 {
@@ -1521,6 +1618,7 @@ color: #FFFFFF;
    }
 }
 
+
 @media(max-width:535px){
 	.sec_title {
      font-size: 22px;
@@ -1546,7 +1644,7 @@ color: #FFFFFF;
     }
 
     .sec6_block2_item {
-       width: 47%;
+       width: 33%;
        display: flex;
        gap: 0;
        justify-content: center;
@@ -1657,7 +1755,20 @@ color: #FFFFFF;
 @media(max-width:422px){
    .sec6_block2{
      flex-direction: column;
+     gap: 25px;
    }
+
+   .sec6_block2_item img {
+    width: 100%;
+   }
+
+   .sec7_mTop {
+    margin-top: 0px;
+   }
+
+   .sec6_block2_item {
+    width: 38%;
+  }
 
    .footer_top_textBlock p {
     font-size: 13px;
