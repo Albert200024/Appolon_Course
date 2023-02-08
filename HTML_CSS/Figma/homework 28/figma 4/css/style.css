@@ -35,6 +35,15 @@ body {
 	display: none;
 }
 
+.logo{
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
 .header{
   display: flex;
 }
@@ -96,6 +105,13 @@ body {
 	cursor: pointer;
 	background: #EB242A;
     border-radius: 60px;
+    transition: 0.5s;
+}
+
+.header_leftSide_btn_block button:hover{
+    border: 1px solid #EB242A;
+    color: #EB242A;
+    background: transparent;
 }
 
 .header_leftSide_btn_block p {
@@ -111,6 +127,13 @@ body {
 .header_leftSide_btn_block p  a{
 	color: #299EF3;
     border-bottom: 2px solid #2B9FF3;
+    transition: 0.2s;
+}
+
+.header_leftSide_btn_block p  a:hover{
+   color: #EB242A;
+   text-decoration: none !important;
+   border-bottom: 2px solid #EB242A;
 }
 
 .header_rightSide{
@@ -303,6 +326,12 @@ body {
 .sec3_back_item{
    background: #001A49 !important;
    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.08);
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.sec3_back_item:hover{
+    transform: scale(1.1);
 }
 
 .sec3_card_block_item{
@@ -350,6 +379,12 @@ body {
     background: white;
     padding: 15px;
     border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sec3_img1:hover{
+    transform: scale(1.1);
 }
 
 .sec3_mobile_block{
@@ -538,6 +573,14 @@ body {
     font-size: 25.1389px;
     line-height: 32px;
     color: #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sec6_block button:hover{
+      border: 1px solid #EB242A;
+    color: #EB242A;
+    background: transparent;
 }
 
 .vidio_block{
@@ -695,8 +738,15 @@ body {
     border: none;
     cursor: pointer;
     padding: 20px 75px;
-     background: #EB242A;
-border-radius: 60px;
+    background: #EB242A;
+    border-radius: 60px;
+    transition: 0.5s;
+}
+
+.btn_form:hover{
+    border: 1px solid #EB242A;
+    color: #EB242A;
+    background: transparent;
 }
 
 .mar-top{
@@ -716,6 +766,15 @@ border-radius: 60px;
 box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.08);
 border-radius: 50%;
 border: none;
+}
+
+.form_btn350 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form_btn350:hover{
+    transform: scale(1.1);
 }
 
 .qashelu_block p {
@@ -817,7 +876,13 @@ border-radius: 50%;
     font-weight: 400;
     font-size: 21.3333px;
     line-height: 27px;
+    transition: 0.3s;
     color: #FFFFFF;
+}
+
+.footer_block_top_leftSide ul li a:hover{
+    color: #EB242A !important;
+    text-decoration: none;
 }
 
 .footer_top_rightSide {
@@ -834,6 +899,21 @@ border-radius: 50%;
     font-size: 12px;
     line-height: 22px;
     color: #FFFFFF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer_block p:hover{
+    color: #EB242A !important;
+}
+
+.footer_block_top_leftSide img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer_block_top_leftSide img:hover{
+    transform: scale(1.1);
 }
 
 /*=============================== Media ===============================*/

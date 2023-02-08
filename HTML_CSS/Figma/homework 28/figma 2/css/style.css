@@ -31,10 +31,10 @@ ul{
 }
 /*============================ Navbar ============================*/
 .navbar-expand-lg .navbar-nav .nav-link {
-   padding-left: 0 !important;
-   padding-right: 0 !important;
-   padding-top:  0 !important;
-   padding-bottom: 0 !important;
+   padding-left: 15px !important;
+   padding-right: 15px !important;
+   padding-top:  5px !important;
+   padding-bottom: 5px !important;
 }
 
 .navbar {
@@ -54,7 +54,7 @@ ul{
 
 .menu_list {
 	display: flex !important;
-	gap: 40px;
+	gap: 15px;
 }
 
 .menu_list li a {
@@ -63,6 +63,17 @@ ul{
    font-size: 16px !important;
    line-height: 28px !important;
    color: #000000 !important;
+   transition: 0.5s !important;
+   display: block !important;
+   box-sizing: border-box;
+}
+
+.menu_list li a:hover{
+   border: 1px solid #FF8A56;
+   box-sizing: border-box;
+   border-radius: 25px;
+   display: block !important;
+   color: #FF8A56 !important;
 }
 
 .menu_item {
@@ -134,6 +145,7 @@ ul{
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
+    transition: 0.3s;
 }
 
 .header_topBlock_btn_block a {
@@ -146,6 +158,21 @@ ul{
 	font-size: 18px;
 	line-height: 18px;
 	color: #000000;
+  transition: 0.5s;
+}
+
+.header_topBlock_btn_block a:hover{
+  border: 1px solid #FF8A56;
+  text-decoration: none;
+  color: #FF8A56 !important;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.header_topBlock_btn_block button:hover{
+  background: #FF8A56;
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .header_topBlock_imgBlock img {
@@ -261,6 +288,10 @@ color: #000000;
   position: relative;
 }
 
+.aassa button {
+  cursor:  pointer;
+}
+
 .sec2_fon{
   width: 100%;
   background: black;
@@ -307,6 +338,14 @@ color: #000000;
   cursor: pointer;
   background: black;
   padding: 17px 30px;
+  transition: 0.3s;
+
+}
+
+.sec2_top_block_rightSide button:hover{
+  background: #FF8A56;
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .uk-grid>* {
@@ -690,6 +729,12 @@ color: #000000;
 .about_blockText_end_BtnBlock div button {
   border: none;
   cursor: pointer;
+ transition: 0.3s;
+}
+
+.about_blockText_end_BtnBlock div button:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .sec6_btnBlock {
@@ -713,6 +758,8 @@ color: #000000;
   line-height: 18px;
   color: #000000;
 }
+
+.sec6_btnBlock {}
 /*=============== Section 7 ===============*/
 .section7{
   background: #000000;

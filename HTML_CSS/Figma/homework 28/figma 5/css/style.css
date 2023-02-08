@@ -215,11 +215,11 @@ body {
 	gap: 10px;
 }
 
-.header_btn_block_btn2:hover{
+/*.header_btn_block_btn2:hover{
 	background: #24A186;
 	color: white;
 	transform: scale(1.1);
-}
+}*/
 
 .header_mobile {
 	display: none;
@@ -440,12 +440,19 @@ body {
 	display: block;
 	color: #24A186;
 	padding-bottom: 16px;
+	transition: 0.3s;
+}
+
+.sec3_block_item_textBlock a:hover{
+	text-decoration: none !important;
+	transform: scale(1.2);
 }
 
 .btn_sec3 {
 	display: flex;
 	justify-content: center;
 	margin-top: 25px;
+
 }
 
 .btn_sec3 button{
@@ -460,7 +467,13 @@ body {
 	line-height: 19px;
 	color: #000000;
 	cursor: pointer;
+	transition: 0.3s;
+}
 
+.btn_sec3 button:hover{
+	background: #2B495A;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	color: white;
 }
 
 .sec3_slider {
@@ -487,6 +500,10 @@ body {
 	top: 81px;
 	left: 92px;
 	width: 30%;
+}
+
+.logo12334454{
+	display: none;
 }
 
 .sec4_textBtn_block h3 {
@@ -519,6 +536,13 @@ body {
 	line-height: 132%;
 	color: #000000;
 	cursor: pointer;
+	transition: 0.3s;
+}
+
+.sec4_textBtn_block button:hover{
+	background: #2B495A;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	color: white;
 }
 
 .sec4_img_mobile, .mobile_img24{
@@ -776,6 +800,14 @@ body {
 	font-size: 18px;
 	line-height: 100%;
 	color: #36393F;
+	transition: 0.2s;
+}
+
+.section10 a:hover{
+  color: #24A186 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #24A186 ;
+
 }
 
 /*======= Mobile_section ======*/
@@ -828,6 +860,17 @@ body {
 	font-size: 16px;
 	line-height: 112%;
 	color: #96A2AF;
+	transition: 0.2s;
+	display: block !important;
+	padding: 5px;
+ }
+
+ .footer_block1Item_div ul li a:hover{
+ 	 color: #24A186;
+ 	 text-decoration: none;
+ 	 transform: scale(1.2) !important;
+ 	 background: #2B495A;
+ 	 border-radius: 10px;
  }
 
  .footer_logo_block {
@@ -857,6 +900,17 @@ body {
 	padding-bottom: 12px;
 	display: block;
 	text-align: right;
+	transition: 0.2s;
+	padding: 5px;
+}
+
+.footer_tel:hover{
+  text-decoration: none;
+   color: #24A186;
+ 	 text-decoration: none;
+ 	 transform: scale(1.2) !important;
+ 	 background: #2B495A;
+ 	 border-radius: 10px;
 }
 
 .footer_block1Itemtitle2 {
@@ -874,6 +928,23 @@ body {
 	font-size: 16px;
 	line-height: 112%;
 	color: #96A2AF;
+	transition: 0.2s;
+	padding: 5px;
+
+}
+
+.footer123 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.hover1:hover{
+     color: #24A186;
+ 	 text-decoration: none;
+ 	 transform: scale(1.2) !important;
+ 	 background: #2B495A;
+ 	 border-radius: 10px;
 }
 
 .pad_bottom {
@@ -914,6 +985,25 @@ body {
 	display: none;
 }
 
+.hide_whatsap button, .hide_block_mobile button{
+   border: none;
+   border-radius: 50%;
+   background: transparent;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.hide_whatsap button:hover{
+	transform: scale(1.2);
+}
+
+.hide_block_mobile button:hover{
+	transform: scale(1.2);
+}
+
+.hide_block_mobile{
+	margin-bottom: 10px;
+}
 /*=========================== Media ===========================*/
 @media(max-width:1885px){
   .sec4_textBtn_block {
@@ -991,7 +1081,7 @@ body {
 	}
 
 	.menu_rightSide {
-		width: 29%;
+		width: 26%;
 	}
 	.menu_list li a {
        font-size: 12px;
@@ -1041,14 +1131,14 @@ body {
     }
 
     .sec2_block_item_div button {
-    padding: 8px 19px;
-}
+       padding: 8px 19px;
+    }
 }
 
 @media(max-width:1500px){
 	.sec_padding {
-       padding-left: 220px !important;
-       padding-right: 220px !important;
+       padding-left: 180px !important;
+       padding-right: 180px !important;
     }
 
     .header_text_end_btn_block {
@@ -1205,6 +1295,10 @@ body {
 	.nav_btn {
        font-size: 12px;
     }
+
+    .logo_png {
+       width: 16% !important;
+    }
     
     .hide_block_mobile {
     	display: block;
@@ -1273,7 +1367,7 @@ body {
 
 @media(max-width:1050px){
 	.menu_rightSide {
-        width: 27%;
+        width: 28%;
      }
 }
 
@@ -1315,6 +1409,29 @@ body {
     .burger{
     	border: none !important;
     }
+
+    .menu {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 20px;
+    }
+
+    .menu_list{
+    	margin-top: 10px !important;
+    }
+
+    .menu ul {
+      margin-top: 10px !important;
+     }
+
+    .navbar-collapse {
+      align-items: flex-start !important;
+    }
+
+    .menu_list li a {      
+    	padding: 8px 10px !important;
+    }
+
 }
 
 @media(max-width:950px){
@@ -1454,6 +1571,10 @@ body {
 	.header_text_end_btn_block p {
 		font-size: 15px;
 	}
+
+	.menu_rightSide {
+      width: 30%;
+    }
 }
 
 @media(max-width:874px){
@@ -1493,6 +1614,14 @@ body {
      .sec2_block_item_div {
         width: 65%;
       }
+}
+
+@media(max-width:800px){
+	.menu_rightSide {
+      width: 100%;
+      gap: 25px;
+      justify-content: flex-start;
+     }
 }
 
 
@@ -1697,6 +1826,23 @@ body {
 		padding-top: 16px;
 	}
 
+	.mobile_nav_block2 {
+		display: flex;
+		gap: 10px;
+	}
+
+	.logon987 {
+		display: none !important;
+	}
+
+	.logon1000 {
+		display: block !important;
+	}
+
+	.logo12334454{
+	   display: block;
+     } 
+
 	.nav, .mobile_block_2 {
 		padding-left: 16px !important;
 		padding-right: 16px !important;
@@ -1733,6 +1879,19 @@ body {
 		font-size: 10px;
 		line-height: 14px;
 		color: #000000;
+	}
+
+	.footer_block1Item_p{
+		transition: 0.2s;
+		padding: 5px;
+	}
+
+	.hover125554:hover{
+		color: #24A186;
+    text-decoration: none;
+    transform: scale(1.2) !important;
+    background: #2B495A;
+    border-radius: 10px;
 	}
 
 	.mobile_block_2_div1_item_p2 {
@@ -2119,6 +2278,13 @@ body {
 		line-height: 136%;
 		text-align: center;
 		color: #FFFFFF;
+		transition: 0.3s;
+   }
+
+   .slider_item_text_block button:hover{
+   	 background: transparent;
+   	 color: #24A186;
+   	 border: 1px solid #24A186;
    }
 
    .slider_p1 {
@@ -2164,6 +2330,25 @@ body {
    	padding-left: 16px !important;
    }
 
+   .sec3_paragraph, .mobile_block a, .logo_mobileNav_img{
+   	transition: 0.2s;
+   	cursor: pointer;
+   }
+
+   .mobile_block a:hover{
+       transform: scale(1.2) !important;
+   }
+
+   .logo_mobileNav_img;hover{
+   	transform: scale(1.2) !important;
+   }
+
+   .sec3_paragraph:hover{
+   	    text-decoration: none !important;
+        transform: scale(1.2);
+        color: #0f6ecd !important;
+   }
+
    .uk-slider-container-offset {
    	 padding: 0 !important;
    	 margin: 0 !important;
@@ -2201,6 +2386,11 @@ body {
    	cursor: pointer !important;
    	position: absolute;
    	right: 28px;
+   	transition: 0.2s;
+   }
+
+   .mobile_block_2_inputBlock button:hover{
+   	  transform: scale(1.2);
    }
 
    .mobile_block_2_p {
@@ -2235,14 +2425,19 @@ body {
   }
 
    .manu {
-   	 width: 77% !important;
+   	 width: 100% !important;
+   	 display: flex !important;
+   	 justify-content: space-between !important;
    }
 
+
+
    .mobile_block {
-   	  width: 23% !important;
+   	  width: 64% !important;
    	  align-items: center !important;
    	  display: flex !important;
-   	  justify-content: space-between !important;
+   	  justify-content: flex-end !important;
+   	  gap: 15px;
    }
 
    .sec1_block_item h6 {
@@ -2269,7 +2464,7 @@ body {
 
     .manu {
     	flex-direction: row-reverse !important;
-    	justify-content: flex-end !important;
+    	justify-content: space-between !important;
     	align-items: center !important;
     	gap: 16px;
     }
@@ -2311,15 +2506,18 @@ body {
     }
 }
 
+@media(max-width:449px){
+	.mobile_block {
+        width: 63% !important;
+    }
+}
+
 @media(max-width:440px){
 	.sec_title {
     font-size: 20px;
    }
 
-   .manu {
-   	 width: 75% !important;
-   }
-
+  
    .mobile_block {
     width: 25% !important;
    }
@@ -2355,9 +2553,7 @@ body {
 }
 
 @media(max-width:400px){
-	.manu {
-        width:70% !important;
-    }
+	
 
     .mobile_block {
        width: 30% !important;
@@ -2451,10 +2647,6 @@ body {
     width: 85% !important;
    }
 
-   .manu {
-        width:65% !important;
-    }
-
     .mobile_block {
        width: 35% !important;
     }
@@ -2479,6 +2671,10 @@ body {
 
      .footer_block2_item_p {
         font-size: 12px;
+     }
+
+     .menu_rightSide {
+     	gap: 15px;
      }
 }
 
@@ -2526,12 +2722,9 @@ body {
 }
 
 @media(max-width:290px){
-	.manu {
-        width:60% !important;
-    }
-
     .mobile_block {
-       width: 40% !important;
+       width: 30% !important;
+       gap: 5px;
     }
 
     .sec1_block_item h6 {
