@@ -18,20 +18,10 @@ function hanum(){
 	 var tiv2 = Number(document.getElementById("tiv2").value);
 
 	 var res;
-  
-    if(isNaN(tiv1) == true && isNaN(tiv2) == false){
-	 	 result = "Խդրում եմ մութքագրեք թիվ";
-	 }
-
-	 if(isNaN(tiv1) == false && isNaN(tiv2) == true){
-	 	 result = "Խդրում եմ մութքագրեք թիվ";
-	 }
 
 	 if(isNaN(tiv1) == false && isNaN(tiv2) == false){
 	 	 result = tiv1 + " - "  + tiv2 + " = " + (tiv1 - tiv2);
-	 }
-
-	 else {
+	 } else {
        result = "Խդրում եմ մութքագրեք թիվ";
     }
 
