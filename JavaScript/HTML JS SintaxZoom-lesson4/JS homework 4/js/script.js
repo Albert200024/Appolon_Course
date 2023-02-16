@@ -14,6 +14,7 @@ function zoom(){
             bool = false;
         }
     }
-
+    
     document.getElementById("img").style = "width:" + size + "px" + ";" + "height:" + size + "px";
 }
+
