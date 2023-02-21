@@ -32,14 +32,18 @@ for(let i = 0; i < arr2.length; i++){
 console.log("Exersize 2:" + max2);
 
 // Exersize 3;
-let arr3 = [14, 27, 5, 789, 21, 35, 5, 87, 9];
+let arr3 = [14, 27, 5, 789, 21, 35, 5, 87, 9, -15, -100];
+let countDrakan = 0
 let sum = 0;
 
 for (let i = 0; i < arr3.length; i++) {
-    sum += arr3[i];
+    if(arr3[i] >= 0){
+       sum += arr3[i];
+       countDrakan += 1
+    }
 }
 
-console.log("Exersize 3:" + parseInt(sum / arr3.length));
+console.log("Exersize 3:" + parseInt(sum / countDrakan));
 
 // Exersize 4;
 let arr4 = [12, 54, 2, 6, 49, 118, 7, -14, 36, 14, 1];
