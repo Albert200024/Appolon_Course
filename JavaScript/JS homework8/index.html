@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS homework 8</title>
+    <style>
+        body{
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+        
+        .box{
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            border: 1px solid;
+        }
+
+        .input_block{
+            position: relative;
+            width: 20%;
+            display: flex;
+        }
+        
+        .input_block input{
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            transition: .3s;
+            border: 2px solid green;
+            color: green;
+        }
+
+        .input_block input:focus{
+            border-color: green;
+            box-shadow:  0 0 8px 0 green;
+        }
+
+        .input_block i{
+            position: absolute;
+            top: 5px;
+            bottom: 0;
+            right: 10px;
+            cursor: pointer;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br>
+    <button id="point1">COLOR1</button>
+    <button id="point2">COLOR2</button>
+    <button id="point3">COLOR3</button>
+    <button id="clear">CLEAR</button>
+    </div>
+    <div class="input_block">
+        <input type="password" id="input">
+        <i onclick="myInput()" class="fa-solid fa-eye" id="show"></i>
+    </div>
+    <script src="https://kit.fontawesome.com/1f21eb1afe.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
