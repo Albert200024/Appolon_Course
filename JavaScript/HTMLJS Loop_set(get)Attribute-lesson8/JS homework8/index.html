@@ -22,12 +22,14 @@
 
         .input_block{
             position: relative;
-            width: 20%;
+            width: 17%;
             display: flex;
         }
         
         .input_block input{
             width: 100%;
+            font-size: 20px;
+            margin-top: 5px;
             padding: 5px;
             box-sizing: border-box;
             border-radius: 10px;
@@ -44,11 +46,28 @@
 
         .input_block i{
             position: absolute;
-            top: 5px;
+            font-size: 22px;
+            top: 12px;
             bottom: 0;
             right: 10px;
             cursor: pointer;
             color: green;
+        }
+        
+        .btn{
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 5px;
+            transition: 0.2s;
+        }
+
+        .btn:hover{
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -84,10 +103,10 @@
     <div class="box"></div>
     <div class="box"></div>
     <br>
-    <button id="point1">COLOR1</button>
-    <button id="point2">COLOR2</button>
-    <button id="point3">COLOR3</button>
-    <button id="clear">CLEAR</button>
+    <button class="btn" id="point1">COLOR1</button>
+    <button class="btn" id="point2">COLOR2</button>
+    <button class="btn" id="point3">COLOR3</button>
+    <button class="btn" id="clear">CLEAR</button>
     </div>
     <div class="input_block">
         <input type="password" id="input">

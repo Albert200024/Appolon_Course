@@ -41,7 +41,6 @@ function point1(){
 
 
 function point2(){
-    let divAllLength = divAll.length - 1;
     for(let i = 0; i < divAll.length; i++){
         let dataSyun = divAll[i].getAttribute("data-syun");
         let dataTox = divAll[i].getAttribute("data-tox");
@@ -49,18 +48,10 @@ function point2(){
         let r = parseInt(Math.random() *255);
         let g = parseInt(Math.random() *255);
         let b = parseInt(Math.random() *255);
-        
-        if(bool == false){
-            if(dataSyun > dataTox){
+
+        if(dataSyun > dataTox){
                 divAll[i].style.background="rgb(" + r + "," + g + "," + b + ")";
-            } 
-            if (i == divAllLength) bool = true
-        } else {
-            if(dataSyun > dataTox){
-                divAll[i].style.background= "white";
-            } 
-            if(i == divAllLength) bool = false
-        }
+        } 
     } 
 }
 
@@ -73,27 +64,29 @@ function point3(){
         let g = parseInt(Math.random() *255);
         let b = parseInt(Math.random() *255);
 
-        if(bool == false){
-            if(dataSyun < dataTox){
-                divAll[i].style.background="rgb(" + r + "," + g + "," + b + ")";
-            } 
-            
-            if(i == divAll.length - 1) bool = true    
-        } else{
-            if(dataSyun < dataTox){
-                divAll[i].style.background="white";
-            }
-            
-            if(i == divAll.length - 1) bool = false
-        }
+
+        if(dataSyun < dataTox){
+            divAll[i].style.background="rgb(" + r + "," + g + "," + b + ")";
+        } 
     }
 }
 
+let btnAll = document.querySelectorAll(".btn");
+
+for(let i = 0; i < btnAll.length; i++){
+        let r = parseInt(Math.random() *255);
+        let g = parseInt(Math.random() *255);
+        let b = parseInt(Math.random() *255);
+
+        btnAll[i].style.background="rgb(" + r + "," + g + "," + b + ")";
+        btnAll[i].style.border = "1px solid " + "rgb(" + r + "," + g + "," + b + ")";
+}
+
 function clear(){
-    for (let index = 0; index < divAll.length; index++) {
+     for (let index = 0; index < divAll.length; index++) {
         divAll[index].style.background="white";
     }
-}
+ }
 
 var input = document.getElementById("input");
 document.getElementById("show").onclick = showFunc
