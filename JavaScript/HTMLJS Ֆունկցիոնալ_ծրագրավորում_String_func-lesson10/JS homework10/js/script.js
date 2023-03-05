@@ -31,22 +31,21 @@ console.log("Exersize2 :", sumArr);
 
 // Exersize 3
 function replaceV2(text, a, b){
-  for(let i = 0; i < a.length; i++){
-  //  text[text.indexOf(a[i])] = "10";
-  //  console.log(text.indexOf(a[i]))
-    text[text.indexOf(a[i])] = "110";  
-  }
- 
-  for(let i = 0; i < )
-    
-
+  let arrText = text.split("");
   
-   console.log(text);
+  if(!text.includes(a)){
+      return arrText.join("")
+  } else {
+    for(let i = 0; i < b.length; i++){
+       arrText[text.indexOf(a[i])] = b[i]
+    }
+  }
+
+  return arrText.join("")
 }
 
-// let replaceText = replaceV2("i hate js", "hate", "love");
-// console.log(replaceText); 
-replaceV2("i hate js", "hate", "love");
+let replaceText = replaceV2("i heat js", "heat", "love");
+console.log("Exersize3 :", replaceText); 
 
 // Exersize 4
 function isPalindrom(text){
