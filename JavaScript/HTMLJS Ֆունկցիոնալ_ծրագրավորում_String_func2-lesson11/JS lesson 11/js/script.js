@@ -39,7 +39,7 @@ function shuffleText(text){
     return c.join("")
 }
 
-console.log("Exersize 4:", shuffleText("albert"));
+console.log("Exersize 4:", shuffleText("arm"));
 
 // 5 exersize
 function  newArray (arr){
@@ -75,3 +75,4 @@ function sumArray(arr){
 }
 
 console.log(sumArray("Exersize 6:", [5, 10, -4, 2, -15, 8]))
+
