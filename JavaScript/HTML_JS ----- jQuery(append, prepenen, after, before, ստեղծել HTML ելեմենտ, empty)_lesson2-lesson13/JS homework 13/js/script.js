@@ -9,6 +9,7 @@ $("document").ready(function (){
         for (let i = 0; i < tox; i++) {
             let tr = $("<tr></tr>")
             tr.css({border:"1px solid"})
+
             for(let j = 0; j < syun; j++){
                 let num = parseInt(Math.random()*500)
                     let td = $(`<td>${num}</td>`)
