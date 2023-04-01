@@ -36,7 +36,7 @@ $(document).ready(function (){
     //     e.preventDefault();
     //     console.log("ok");
     // })
-    
+
     let isPresid = false;
     $(".item").on({
         mousedown:() => isPresid = true,
