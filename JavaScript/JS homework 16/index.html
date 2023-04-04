@@ -5,10 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS homework 16</title>
+    <style>
+        .selectBlock {
+            margin-left: 0 !important;
+            margin-top: 8px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .exercises2_div{
+            margin-top: 8px;
+        }
+        button{
+            cursor: pointer;
+            border: none;
+            border-radius:5px;
+            background: orangered;
+            color: white;
+            padding: 14px;
+            font-size: 13px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        input, select{
+            font-size: 18px;
+            padding: 8px 5px;
+            border: 2px solid orangered;
+            border-radius: 5px;
+            outline: none;
+            color: orangered;
+            transition: 0.2s;
+        }
+
+        .gic{
+            border: 2px solid orangered;
+            width: 25%;
+           border-radius: 10px;
+        }
+
+        button:hover{
+            box-shadow:  0 0 8px 0 orangered;
+            letter-spacing: 2px;
+        }
+
+        input:focus{
+            border-color: orangered;
+            box-shadow:  0 0 8px 0 orangered;
+        }
+    </style>
 </head>
 <body>
-    <button class="btn_createSelecter">Create Select</button>
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <div class="exercises1_div">
+        <button class="btn_createSelector">Create Select</button>
+        <button class="del_selector">Delete Selector</button>
+    </div>
+    <div class="selectBlock"></div>
+    <br>
+    <divc class="gic"></divc>
+    <br>
+    <div class="exercises2_div">
+        <input type="text">
+        <button class="save">SAVE</button>
+        <button class="addSelector">ADD SELECTOR</button>
+    </div>
+    <div class="selBlock"></div>
+    <script
+            src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
