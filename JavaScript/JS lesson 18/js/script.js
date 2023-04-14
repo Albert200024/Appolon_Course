@@ -201,4 +201,11 @@ $(document).ready(function(e){
     $(".closeZoomImageBtn").click(function(){
         $(".zommBlock").fadeOut()
     })
+
+   $(".index-btn").click(function(){
+     $(".avtiveSlide").removeClass("avtiveSlide");
+     var clickedIndex = $(".index-btn").index($(this))
+
+     $(".sliderItem").eq(clickedIndex).addClass("avtiveSlide")
+   })
 })
