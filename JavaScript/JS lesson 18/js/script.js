@@ -178,7 +178,8 @@ $(document).ready(function(e){
             }
         }
     })
-
+    
+    // menu
     $(".btn_mobileMenu").click(function(){
         $(".mobileMenu").toggleClass("openMenu")
     })
@@ -188,7 +189,8 @@ $(document).ready(function(e){
         $(".btn_mobileMenu").toggleClass("changeBtn");
         $(".btn_mobileMenu").toggleClass("toggle")
     })
-    
+
+    // zoom
     $(".zoomBtnBlock").click(function(){
         let elem = $(this);
         let imgSrc = elem.find(".nkar11").attr("src")
@@ -208,4 +210,6 @@ $(document).ready(function(e){
 
      $(".sliderItem").eq(clickedIndex).addClass("avtiveSlide")
    })
+
+  // slider 
 })
