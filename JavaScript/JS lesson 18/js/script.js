@@ -204,12 +204,42 @@ $(document).ready(function(e){
         $(".zommBlock").fadeOut()
     })
 
-   $(".index-btn").click(function(){
-     $(".avtiveSlide").removeClass("avtiveSlide");
-     var clickedIndex = $(".index-btn").index($(this))
+   // slider About.html
+    $(".next").click(function (){
+        console.log("clicked")
+        let activeSlide = $(".avtiveSlide");
+        var nextSlide= activeSlide.next();
+        
+        $(".prev").css("opacity", 1)
+        if(nextSlide.length){
+               activeSlide.removeClass("avtiveSlide");
+               nextSlide.addClass("avtiveSlide");
+               $(this).css("opacity", 1)
+        } else {
+            $(this).css("opacity", "0.25")
+        }
+    })
 
-     $(".sliderItem").eq(clickedIndex).addClass("avtiveSlide")
-   })
+    $(".prev").click(function (){
+        let activeSlide = $(".avtiveSlide");
+        var prevSlide= activeSlide.prev();
+        
+        $(".next").css("opacity", 1)
+        if(prevSlide.length){
+            activeSlide.removeClass("avtiveSlide");
+            prevSlide.addClass("avtiveSlide");
+            $(this).css("opacity", 1)
+        } else {
+            $(this).css("opacity", "0.25")
+        }
+    })
 
-  // slider 
+    $(".sliderbtn").click(function(){
+        $(".avtiveSlide").removeClass("avtiveSlide");
+        var clickedIndex = $(".sliderbtn").index($(this))
+        $(".sliderbtn").not(this).removeClass("boxShadow")
+        $(this).addClass("boxShadow")
+
+        $(".sliderItem").eq(clickedIndex).addClass("avtiveSlide")
+    })
 })
