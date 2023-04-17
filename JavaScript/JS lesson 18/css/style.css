@@ -1,3 +1,8 @@
+@font-face{
+    font-family:'Tuesday Nigrh';
+    src: url("/font/TuesdayNight-Regular.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -1041,27 +1046,6 @@ z-index: 2;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*===================================================== About style start ===================================================*/
 /*========================================== Header style start ==========================================*/
 .header_About {
@@ -1359,6 +1343,55 @@ z-index: 2;
 
 
 
+
+/*===================================================== Typography style start ===================================================*/
+/*============================== Typograph heading section style start ===============================*/
+
+.typograph_fontBlockSide h5{
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.typograph_fontBlockSide h6{
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    margin-top: 30px;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.typograph_fontBlockSide  h3{
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 36px;
+    line-height: 1.33333;
+}
+
+.typograph_fontBlockSide h2{
+    margin-top: 35px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    font-size: 45px;
+    line-height: 1.2;
+    color: black;
+    font-family:'TuesdayNigrh' !important;
+}
+/*============================== Typograph heading section style and ===============================*/
+
+/*============================== Typograph text section style start ===============================*/
+/*============================== Typograph text section style and ===============================*/
+/*===================================================== Typography style start ===================================================*/
+
+
+
+
 /*======================================================================= Media =======================================================================*/
 @media(max-width:1800px){
     .navbar_block {
@@ -1633,8 +1666,8 @@ z-index: 2;
   }
   
   .img155 {
-    height: 49%;
-    width: 60%; 
+    height: 58%;
+    width: 90%; 
   }
 
   .marginBottom {
@@ -1875,8 +1908,8 @@ z-index: 2;
     }
     
     .img155 {
-        height: 49%;
-        width: 72%;
+        height: 55%;
+        width: 100%;
     }
 
     .featured_p_block {
@@ -1895,6 +1928,15 @@ z-index: 2;
 @media(max-width:756px){
     .widt2 {
         width: 41%;
+    }
+
+    .awardsBlock {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .awardsBlockItem{
+        max-width: 40% !important;
     }
 
     .about_Html_aboutImgBlock {
@@ -1982,6 +2024,11 @@ z-index: 2;
     .sliderItem p {
         font-style: italic;
         font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sliderBtnBlock {
+        margin-top: 35px;
     }
 
     .footerMenu{
@@ -2016,6 +2063,22 @@ z-index: 2;
         height: 63%;
         width: 100%;
     }
+  
+    .sliderItem {
+        width: 80%;
+    }
+
+    .next, .prev {
+        top: 12%;
+    }
+
+    .sliderItem {
+       height: 140px;
+    }
+
+    .sliderItem p {
+       font-size: 16px;
+    }
 }
 
 @media(max-width:640px){
@@ -2048,11 +2111,16 @@ z-index: 2;
     .chooseBlockItemBlock2 h6 {
         font-size: 19px;
     }
-    
 }
+
 @media(max-width:600px){
     .header_About {
         height: 49vh !important;
+    }
+
+    .footerTopBlock_content {
+        left: 0;
+        width: 94%;
     }
     
     .img155 {
@@ -2072,10 +2140,77 @@ z-index: 2;
     .featured_p_block {
         width: 95%;
     }
+   
+    .awardsBlockItem {
+      max-width: 48% !important;
+    }
+
+    .sliderItem p {
+       font-size: 14px;
+    }
+
+    .sliderbtn {
+        width: 9%;
+    }
+
+    .sliderbtn img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sliderBtnBlock {
+      margin-top: 40px;
+   }
+
+   .testimaonialsContent{
+      padding: 50px 0 !important;
+   }
+    
+   .chooseBlockItemBlock1 {
+      width: 15%;
+   }
+
+   .awardsBlockItem {
+        padding-right: 0px;
+        padding-left: 0px;
+   }
+
+  .chooseBlockItemBlock1 img {
+    width: 100%;
+  }
+
+    .chooseBlockItemBlock2{
+        width: 100%;
+    }
+
+    .chooseBlock  {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .chooseBlockItemBlock1 img {
+       width: 80%;
+    }
+
+    .chooseBlockItem {
+       width: 100%;
+    }
+
+    .chooseBlockItemBlock2 p {
+      font-size: 15px;
+    }
+
+    .chooseBlockItemBlock2 h6 {
+      font-size: 23px;
+    }
 
     .about_Html_aboutImgBlock {
         width: 100%;
     }
+
+    .marginBottom {
+      margin-bottom: 0px;
+     }
 
     .imageBottom_block, .imageTop_block {
         flex-direction: column;
@@ -2188,9 +2323,73 @@ z-index: 2;
     }
 }
 
+@media(max-width:530px){
+    .sliderItem p {
+      font-size: 13px;
+   }
+
+   .footerTopBlock {
+      height: 120px;
+   } 
+}
+
+@media(max-width:492px){
+    .testimaonialsContent{
+        width: 95% !important;
+    }
+
+    .next i, .prev i{
+        font-size: 13px;
+    }
+
+    .sliderItem {
+       width: 90%;
+    }
+}
+
+@media(max-width:440px){
+    .chooseBlockItemBlock1 img {
+      width: 100%;
+   }
+
+   .chooseBlockItemBlock2 h6 {
+    font-size: 21px;
+   }
+
+   .chooseBlockItemBlock2 p {
+    font-size: 13px;
+    }
+}
+
 @media(max-width:400px){
     .header {
         height: 55vh;
+    }
+
+    .footerTopBlock_content {
+      left: 0;
+       width: 100%;
+    }
+
+    .footerTopBlock {
+       height: 100px;
+     }
+
+    .sliderItem p {
+       font-size: 11px;
+       line-height: 17px;
+   }
+   
+   .sliderBtnBlock {
+    margin-top: 20px;
+   }
+
+   .sliderBtnBlock {
+    gap: 10px;
+   }
+
+    .awardsBlockItem {
+       max-width: 50% !important;
     }
 
     .header_About {
@@ -2208,6 +2407,10 @@ z-index: 2;
 
     .header_content h1 {
         font-size: 40px;
+    }
+
+    .chek_block, .section {
+       width: 93%;
     }
 
     .header_contentGic {
@@ -2243,10 +2446,20 @@ z-index: 2;
     }
 }
 
+@media(max-width:330px){
+    .chooseBlockItemBlock1 {
+       width: 21%;
+    }
+}
+
 @media(max-width:320px){
     .axchikImg {
         width: 86%;
         height: 395px;
+    }
+
+    .footerTopBlock {
+        height: 85px;
     }
 
     .header_About {
