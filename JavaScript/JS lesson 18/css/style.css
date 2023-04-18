@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li:not(.olLi){
     list-style: none;
 }
 
@@ -1346,6 +1349,75 @@ z-index: 2;
 
 /*===================================================== Typography style start ===================================================*/
 /*============================== Typograph heading section style start ===============================*/
+.typographyHeadingSecBlock{
+    display: flex;
+    align-items: flex-start;
+}
+
+.typography_headingSide {
+    width: 70%;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+.typography_headingSide h1 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.075;
+    text-transform: uppercase;
+}
+
+.typography_headingSide h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.typography_headingSide h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33333;
+}
+
+.typography_headingSide h4{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38462;
+}
+
+.typography_headingSide h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.05556;
+}
+
+.typography_headingSide h6{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.06667;
+}
+
+.typography_headingSide p {
+    margin-top: 30px;
+    color: rgba(21, 21, 21, 0.8);
+}
+
+.p111 {
+    padding-bottom: 50px;
+}
+.typograph_fontBlockSide {
+    border-left: 2px solid #C4C4C4;
+    width: 30%;
+    box-sizing: border-box;
+ }
+
+.box1{
+    padding: 0 80px;
+}
+
+.box2{
+    padding-left: 80px;
+}
 
 .typograph_fontBlockSide h5{
     font-weight: 300;
@@ -1381,11 +1453,198 @@ z-index: 2;
     font-size: 45px;
     line-height: 1.2;
     color: black;
-    font-family:'TuesdayNigrh' !important;
+    font-family:'Tuesday Nigrh' !important;
+}
+
+.typograph_fontBlockSide p {
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.05556;
+}
+
+.box2 {
+    margin-top: 40px;
+}
+
+.colorsBlock{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.colorsBlockItem {
+    width: 54px;
+    height: 54px;
+}
+
+.bg1{
+    background: #41A451
+}
+
+.bg2{
+    background: #F73CA1;
+}
+
+.bg3{
+    background: #FFD541;
+}
+
+.bg4{
+    background: #00E175;
+}
+
+.bg5{
+    background: #5656DF;
+}
+
+.bg6{
+    background-color: #151515;
+}
+
+.bg7{
+    background-color: #C4C4C4;
+}
+
+.bg8{
+    background-color: #E7E7E7;
+}
+
+.bg9{
+    background-color: #323232;
+}
+
+.bg10{
+    background-color: #444141;
 }
 /*============================== Typograph heading section style and ===============================*/
 
 /*============================== Typograph text section style start ===============================*/
+.typographyeTextSec{
+    padding: 0 0 100px !important;
+}
+
+.typographyeTextSecTitle {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.p1Block {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.paddingTypo{
+    padding-bottom: 100px;
+}
+
+.p1Block p {
+    color: rgba(21, 21, 21, 0.8);
+    line-height: 1.7;
+}
+
+.span11 {
+    background: #41A451;
+    color: white;
+    padding: 3px;
+}
+
+.span22 {
+    color: #41A451;
+}
+
+.span33 {
+    text-decoration: line-through;
+}
+
+.span44 {
+    text-decoration: underline;
+}
+
+.p1Block p a {
+    color: #41A451;
+}
+
+.lsitBlock {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.lsitBlockItem {
+    width: 40%;
+    display: flex;
+}
+
+.lsitBlockItem ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(21, 21, 21, 0.8) !important;
+}
+
+.olLi {
+    padding-left: 10px;
+}
+.lisMargin_top{
+   margin-top: 5px;
+}
+
+.lsitBlockItem ul li i {
+    font-size: 12px;
+}
+
+.lastDiv {
+    width: 70%;
+    margin-top: 30px;
+    color: rgba(21, 21, 21, 0.8) !important;
+}
+
+.p345{
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+
+.nameBlock {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.keter{
+    max-width: 250px;
+    flex-basis: 50%;
+    height: 50px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.keter::before{
+    background: url("../img/bg-dot.png");
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    z-index: 0;
+}
+
+.nameBlock h4{
+    margin-top: 0;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif !important;
+}
 /*============================== Typograph text section style and ===============================*/
 /*===================================================== Typography style start ===================================================*/
 
@@ -1657,6 +1916,10 @@ z-index: 2;
     background: #444141 !important;
   }
 
+    .section {
+        padding: 85px 0;
+    }
+
   .chooseBlock {
     flex-wrap: wrap;
   }
@@ -1763,7 +2026,16 @@ z-index: 2;
     padding: 85px 0;
    }
 
-   .btn_mobileMenu span::before{
+    .paddingTypo {
+        padding-bottom: 85px;
+    }
+
+    .typographyeTextSec {
+        padding: 0 0 85px !important;
+    }
+
+
+    .btn_mobileMenu span::before{
     content: "";
     position: absolute;
     left: 0;
@@ -1928,6 +2200,18 @@ z-index: 2;
 @media(max-width:756px){
     .widt2 {
         width: 41%;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .paddingTypo {
+        padding-bottom: 50px;
+    }
+
+    .typographyeTextSec {
+        padding: 0 0 50px !important;
     }
 
     .awardsBlock {
