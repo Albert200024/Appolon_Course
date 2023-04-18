@@ -24,8 +24,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/uikit.min.css" >
 </head>
 <body >
+    <div class="loading">
+        <div class="loading_block">
+            <div uk-spinner class="spiner"></div>
+            <p class="loading_text">loading...</p>
+        </div>
+    </div>
     <header class="header header_About" id="home">
         <img src="img/breadcrumbs.jpg" claass="header_aboutImg" alt="">
         <div class="navbar">
@@ -51,8 +63,13 @@
             </div>
         </div>
         <div class="header_content about222">
-            <div class="header_contentBlock">
-                <h1>TYPOGRAPHY</h1>
+            <div class="header_contentBlock ">
+                <h1 class="">TYPOGRAPHY</h1>
+                <div class="header_p">
+                    <a href="index.html" class="header_p_item">home</a>
+                    <div class="div_headerP"></div>
+                    <span class="header_p_item activePage" >typography </span>
+                </div>
             </div>
         </div>
     </header>
@@ -62,7 +79,7 @@
         </div>
         <section class="section typographyHeadingSec">
             <div class="typographyHeadingSecBlock">
-                <div class="typography_headingSide">
+                <div class="typography_headingSide anim" data-aos="fade-right" >
                     <h1>H1 HEADING</h1>
                     <p class="p111">Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
                     <h2>H2 Heading</h2>
@@ -76,7 +93,7 @@
                     <h6>H6 Heading</h6>
                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
                 </div>
-                <div class="typograph_fontBlockSide">
+                <div class="typograph_fontBlockSide anim" data-aos="fade-left">
                     <div class="box1">
                         <h5>fonts</h5>
                         <h6>Henric</h6>
@@ -102,42 +119,48 @@
             </div>
         </section>
         <section class="section typographyeTextSec">
-            <h5 class="typographyeTextSecTitle">HTML Text Elements</h5>
-            <div class="p1Block paddingTypo">
-                <p>Welcome to our wonderful world. This is a bold text <span class="span11">This is a highlighted text </span>
-                    We sincerely hope that each and every user entering our website will find exactly what he/she is looking for.
-                    With advanced features of activating account and new login <span class="span22">Tooltips</span> widgets, you
-                    will definitely have a great experience of using our web page. <span class="span33">This is a strickethrough text</span>
-                    <span class="span44">This is anunderlined text.</span> <a href="">Hover link</a> Press link</p>
-            </div>
-            <h5 class="typographyeTextSecTitle">Ordered & Unordered Lists</h5>
-            <div class="lsitBlock paddingTypo">
-                 <div class="lsitBlockItem">
-                     <ul>
-                         <li><i class="fa-solid fa-check"></i>High Professionalism</li>
-                         <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Customer Service</li>
-                         <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Innovation</li>
-                         <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Ethics</li>
-                         <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Management</li>
-                     </ul>
-                 </div>
-                <div class="lsitBlockItem">
-                    <ol type="1" class="ol">
-                        <li class="olLi ">High Professionalism</li>
-                        <li class="olLi lisMargin_top">Customer Service</li>
-                        <li class="olLi lisMargin_top">Innovation</li>
-                        <li class="olLi lisMargin_top">Ethics</li>
-                        <li class="olLi lisMargin_top">Management</li>
-                    </ol>
+            <div class="anim" data-aos="fade-down">
+                <h5 class="typographyeTextSecTitle">HTML Text Elements</h5>
+                <div class="p1Block paddingTypo">
+                    <p>Welcome to our wonderful world. This is a bold text <span class="span11">This is a highlighted text </span>
+                        We sincerely hope that each and every user entering our website will find exactly what he/she is looking for.
+                        With advanced features of activating account and new login <span class="span22">Tooltips</span> widgets, you
+                        will definitely have a great experience of using our web page. <span class="span33">This is a strickethrough text</span>
+                        <span class="span44">This is anunderlined text.</span> <a href="">Hover link</a> Press link</p>
                 </div>
             </div>
-            <h5 class="typographyeTextSecTitle">Blockquote</h5>
-            <div class="lastDiv">
-                <p class="p345">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, tristique senectus et netus et malesuada fames ac turpis egestas</p>
+            <div class="anim" data-aos="fade-up">
+                <h5 class="typographyeTextSecTitle">Ordered & Unordered Lists</h5>
+                <div class="lsitBlock paddingTypo">
+                    <div class="lsitBlockItem">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>High Professionalism</li>
+                            <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Customer Service</li>
+                            <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Innovation</li>
+                            <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Ethics</li>
+                            <li class="lisMargin_top"><i class="fa-solid fa-check"></i>Management</li>
+                        </ul>
+                    </div>
+                    <div class="lsitBlockItem">
+                        <ol type="1" class="ol">
+                            <li class="olLi ">High Professionalism</li>
+                            <li class="olLi lisMargin_top">Customer Service</li>
+                            <li class="olLi lisMargin_top">Innovation</li>
+                            <li class="olLi lisMargin_top">Ethics</li>
+                            <li class="olLi lisMargin_top">Management</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-            <div class="nameBlock">
-               <div class="keter"></div>
-                <h4>Jane Smith</h4>
+            <div class="anim" data-aos="fade-down">
+                <h5 class="typographyeTextSecTitle">Blockquote</h5>
+                <div class="lastDiv">
+                    <p class="p345">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                </div>
+                <div class="nameBlock">
+                    <div class="keter"></div>
+                    <h4>Jane Smith</h4>
+                </div>
             </div>
         </section>
     </main>
@@ -177,6 +200,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -23,8 +23,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.min.css" >
 </head>
-<body>
+<body class="body1 scrolNone">
+    <div class="loading">
+        <div class="loading_block">
+            <div uk-spinner class="spiner"></div>
+            <p class="loading_text">loading...</p>
+        </div>
+    </div>
     <!------------------- Header start ------------------->
     <header class="header" id="home">
         <div class="fon">
@@ -56,7 +63,7 @@
 
     </header>
 
-    <div class="header_content">
+    <div class="header_content notAnim">
         <div class="header_contentBlock">
             <h1>welcome</h1>
             <div class="header_contentGic"></div>
@@ -120,51 +127,53 @@
               </div>
          </div>
        </section>
-       <section class="section featured">
-            <div  data-aos="fade-down" class="anim">
-                <h5 class="sec_title">Featured Offers</h5>
-                <div class="featured_p_block">
-                    <p>We offer a great variety of the best Italian dishes to our visitors and guests. Below are some of our most popular main dishes and desserts.</p>
-                </div>
-            </div>
-            <div class="featured_foodBlock anim" data-aos="fade-up">
-               <div class="featured_foofBlock_item">
-                    <div class="featured_foofBlock_itemImgBlock">
-                        <img src="img/product-1.jpg" alt="">
-                        <div class="buttonNkariVariBlock">
-                             <button class="btn12">order now</button>
-                        </div>
-                    </div>
-                    <div class="featured_foofBlock_item_content">
-                        <h3>Ravioli</h3>
-                        <p>$8</p>
-                    </div>
+       <section class="featured">
+           <div class="section ">
+               <div  data-aos="fade-down" class="anim">
+                   <h5 class="sec_title">Featured Offers</h5>
+                   <div class="featured_p_block">
+                       <p>We offer a great variety of the best Italian dishes to our visitors and guests. Below are some of our most popular main dishes and desserts.</p>
+                   </div>
                </div>
-               <div class="featured_foofBlock_item">
-                    <div class="featured_foofBlock_itemImgBlock">
-                        <img src="img/product-2.jpg" alt="">
-                        <div class="buttonNkariVariBlock">
-                            <button class="btn12">order now</button>
-                        </div>
-                    </div>
-                    <div class="featured_foofBlock_item_content">
-                        <h3>Black Pasta</h3>
-                        <p>$13</p>
-                    </div>
+               <div class="featured_foodBlock anim" data-aos="fade-up">
+                   <div class="featured_foofBlock_item">
+                       <div class="featured_foofBlock_itemImgBlock">
+                           <img src="img/product-1.jpg" alt="">
+                           <div class="buttonNkariVariBlock">
+                               <button class="btn12">order now</button>
+                           </div>
+                       </div>
+                       <div class="featured_foofBlock_item_content">
+                           <h3>Ravioli</h3>
+                           <p>$8</p>
+                       </div>
+                   </div>
+                   <div class="featured_foofBlock_item">
+                       <div class="featured_foofBlock_itemImgBlock">
+                           <img src="img/product-2.jpg" alt="">
+                           <div class="buttonNkariVariBlock">
+                               <button class="btn12">order now</button>
+                           </div>
+                       </div>
+                       <div class="featured_foofBlock_item_content">
+                           <h3>Black Pasta</h3>
+                           <p>$13</p>
+                       </div>
+                   </div>
+                   <div class="featured_foofBlock_item">
+                       <div class="featured_foofBlock_itemImgBlock">
+                           <img src="img/product-3.jpg" alt="">
+                           <div class="buttonNkariVariBlock">
+                               <button class="btn12">order now</button>
+                           </div>
+                       </div>
+                       <div class="featured_foofBlock_item_content">
+                           <h3>Gelato</h3>
+                           <p>$4</p>
+                       </div>
+                   </div>
                </div>
-               <div class="featured_foofBlock_item">
-                    <div class="featured_foofBlock_itemImgBlock">
-                        <img src="img/product-3.jpg" alt="">
-                        <div class="buttonNkariVariBlock">
-                            <button class="btn12">order now</button>
-                        </div>
-                    </div>
-                    <div class="featured_foofBlock_item_content">
-                        <h3>Gelato</h3>
-                        <p>$4</p>
-                    </div>
-               </div>
-            </div>
+           </div>
        </section>
        <section class="ourResturant">
             <div class="section">
@@ -282,71 +291,73 @@
                  <img src="img/zoo1.jpg" class="zomImage" alt="">
            </div>
        </section>
-       <section class="section sliderBlock">
-            <div data-aos="fade-down" class="anim">
-                <h5 class="sec_title center">Recent News</h5>
-            </div>
-            <div data-aos="fade-up" class="anim">
-                <div class="owl-carousel owl-theme" data-aos="fade-up">
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">Jul 02, 2019</a>
-                        <h6 class="sliderItem_Tittle">Genuine Italian Pizza: Authenticity and Choice</h6>
-                        <p>As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">JUL 12, 2019</a>
-                        <h6 class="sliderItem_Tittle">Italian vs. American Spaghetti: Top 5 Differences</h6>
-                        <p>Commonly, when we hear there is spaghetti for dinner we will be expecting a red tomato sauce with meat and seasonings poured over long...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">AUG 02, 2019</a>
-                        <h6 class="sliderItem_Tittle">The Delicious History of Lasagna and Its Origins</h6>
-                        <p>Lasagna, could there be a more perfect dish? It’s comfort food on steroids. Layers of cheese generously piled on top of decadent amounts...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
+        <section class="secSlider">
+           <div class="section sliderBlock">
+                <div data-aos="fade-down" class="anim">
+                    <h5 class="sec_title center">Recent News</h5>
+                </div>
+                <div data-aos="fade-up" class="anim">
+                    <div class="owl-carousel owl-theme" data-aos="fade-up">
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">Jul 02, 2019</a>
+                            <h6 class="sliderItem_Tittle">Genuine Italian Pizza: Authenticity and Choice</h6>
+                            <p>As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">JUL 12, 2019</a>
+                            <h6 class="sliderItem_Tittle">Italian vs. American Spaghetti: Top 5 Differences</h6>
+                            <p>Commonly, when we hear there is spaghetti for dinner we will be expecting a red tomato sauce with meat and seasonings poured over long...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">AUG 02, 2019</a>
+                            <h6 class="sliderItem_Tittle">The Delicious History of Lasagna and Its Origins</h6>
+                            <p>Lasagna, could there be a more perfect dish? It’s comfort food on steroids. Layers of cheese generously piled on top of decadent amounts...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
 
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">AUG 15, 2019</a>
-                        <h6 class="sliderItem_Tittle">Making Gelato Like a True Italian: Tips From Our Chef</h6>
-                        <p>Most would agree that gelato is the most delicious frozen dessert; the perfect ending to any meal. With origins in Sicily, gelato has been made famous...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">SEP 15, 2019</a>
-                        <h6 class="sliderItem_Tittle">Italian Ingredients You Can Easily Grow at Home</h6>
-                        <p>Imagine preparing an Italian dinner but having to stop cooking because you forget an ingredient and must run to the store. How nice would it be to go...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">SEP 28, 2019</a>
-                        <h6 class="sliderItem_Tittle">Our Brief Guide to Pairing Wine and Pasta the Right Way</h6>
-                        <p>To Italians, pasta is the food of the gods, and there is nothing better to go with a good pasta than a perfect wine. To the uninitiated, finding the right...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">AUG 15, 2019</a>
+                            <h6 class="sliderItem_Tittle">Making Gelato Like a True Italian: Tips From Our Chef</h6>
+                            <p>Most would agree that gelato is the most delicious frozen dessert; the perfect ending to any meal. With origins in Sicily, gelato has been made famous...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">SEP 15, 2019</a>
+                            <h6 class="sliderItem_Tittle">Italian Ingredients You Can Easily Grow at Home</h6>
+                            <p>Imagine preparing an Italian dinner but having to stop cooking because you forget an ingredient and must run to the store. How nice would it be to go...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">SEP 28, 2019</a>
+                            <h6 class="sliderItem_Tittle">Our Brief Guide to Pairing Wine and Pasta the Right Way</h6>
+                            <p>To Italians, pasta is the food of the gods, and there is nothing better to go with a good pasta than a perfect wine. To the uninitiated, finding the right...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
 
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">OCT 05, 2019</a>
-                        <h6 class="sliderItem_Tittle">Top 10 Famous Spring Dishes in Italian Restaurants</h6>
-                        <p>Spring is the time for growth and rebirth. One can see this throughout the countrysides of Italy with blooming flowers and budding trees. Springtime is...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">OCT 17, 2019</a>
-                        <h6 class="sliderItem_Tittle">What Makes Some Seasonings Truly Italian?</h6>
-                        <p>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
-                    </div>
-                    <div class="item">
-                        <a href="##" class="sliderItem_a">NOV 10, 2019</a>
-                        <h6 class="sliderItem_Tittle">Types of Italian Sausage and Why They Are Different</h6>
-                        <p>There are many types of Italian sausage. The main difference in Italian sausage when compared to other sausages is the seasoning. The particular...</p>
-                        <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">OCT 05, 2019</a>
+                            <h6 class="sliderItem_Tittle">Top 10 Famous Spring Dishes in Italian Restaurants</h6>
+                            <p>Spring is the time for growth and rebirth. One can see this throughout the countrysides of Italy with blooming flowers and budding trees. Springtime is...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">OCT 17, 2019</a>
+                            <h6 class="sliderItem_Tittle">What Makes Some Seasonings Truly Italian?</h6>
+                            <p>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
+                        <div class="item">
+                            <a href="##" class="sliderItem_a">NOV 10, 2019</a>
+                            <h6 class="sliderItem_Tittle">Types of Italian Sausage and Why They Are Different</h6>
+                            <p>There are many types of Italian sausage. The main difference in Italian sausage when compared to other sausages is the seasoning. The particular...</p>
+                            <a href="##" class="readMore">Read more <i class="fa-solid    fa-arrow-right-long"></i> </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-       </section>
+           </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footerTopBlock">
@@ -380,10 +391,15 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
     <script src="https://kit.fontawesome.com/1f21eb1afe.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="js/script.js"></script>
 </body>
 </html>

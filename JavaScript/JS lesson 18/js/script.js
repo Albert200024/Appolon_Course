@@ -242,4 +242,8 @@ $(document).ready(function(e){
 
         $(".sliderItem").eq(clickedIndex).addClass("avtiveSlide")
     })
+
+    $(window).on("load", function (){
+        $(".loading").fadeOut(1200)
+    })
 })
