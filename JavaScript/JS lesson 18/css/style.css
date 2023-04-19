@@ -3,6 +3,10 @@
     src: url("/font/TuesdayNight-Regular.ttf");
 }
 
+ul {
+    padding-left: 0 !important;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ a:hover {
 .body1 {
     background-color: #f5f5f5;
 }
+
 
 li:not(.olLi){
     list-style: none;
@@ -46,6 +51,7 @@ body {
     font-weight: 300;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
@@ -69,39 +75,40 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.loading {
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    z-index: 99999999;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*.loading {*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    background-color: white;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    z-index: 99999999;*/
+/*    overflow: hidden;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    transition: 0.3s;*/
+/*}*/
 
-.loading_block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*.loading_block {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
 
-.spiner {
-     color: #41A451 !important;
-     margin-right: 15px !important;
-}
+/*.spiner {*/
+/*     color: #41A451 !important;*/
+/*     margin-right: 15px !important;*/
+/*}*/
 
-.loading_text {
-    text-align: center;
-    color: rgba(21, 21, 21, 0.8);
-    font-size: 20px;
-}
+/*.loading_text {*/
+/*    text-align: center;*/
+/*    color: rgba(21, 21, 21, 0.8);*/
+/*    font-size: 20px;*/
+/*}*/
 
-.scrolNone{
-    overflow: hidden;
-}
+/*.scrolNone{*/
+/*    overflow: hidden;*/
+/*}*/
 /*========================================== Header style start ==========================================*/
 .header{
     height: 100vh;
@@ -130,6 +137,7 @@ h1, h2, h3, h4, h5, h6 {
    height: 100%;
    width: 100%;
    animation: bunner-img 10s infinite;
+    margin-top: 5px;
 }
 /*=================== header fon style and ===================*/
 
@@ -233,12 +241,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header_content:not(.notAnim){
-    animation: fadeRight_my 1.8s ease-in-out;
+    animation: fadeRight_my 1.5s ease-in-out;
 }
 
 @keyframes fadeRight_my {
     0%{
-        transform: translate(-80%);
+        transform: translate(-50%);
     }
     100%{
         transform: translate(0);
@@ -1196,6 +1204,9 @@ z-index: 2;
     margin-top: 17px;
 }
 
+
+
+
 .about_Html_aboutImgContent_text1 h6{
     font-weight: 400;
     font-style: italic;
@@ -1228,7 +1239,7 @@ z-index: 2;
 
 .img155 {
     width: 100%;
-    height: 80%
+    height: 50%
 }
 
 .marginBottom {
@@ -1622,6 +1633,7 @@ z-index: 2;
 .typographyeTextSecTitle {
     font-size: 24px;
     line-height: 1.5;
+    color: black;
 }
 
 .p1Block {
@@ -1668,7 +1680,6 @@ z-index: 2;
 }
 
 .lsitBlockItem {
-    width: 40%;
     display: flex;
 }
 
@@ -1740,6 +1751,150 @@ z-index: 2;
 /*===================================================== Typography style start ===================================================*/
 
 
+/*===================================================== Contact style start ===================================================*/
+/*============================== Contact info section style and ===============================*/
+.contact_sec1_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact_sec1_info_item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_sec1_info_item i{
+    color: rgba(21, 21, 21, 0.8) !important;
+}
+
+.contact_sec1_info_item a {
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    color: rgba(21, 21, 21, 0.8) !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.contact_sec1_info_item p {
+    margin-top: 20px;
+    color: rgba(21, 21, 21, 0.6);
+}
+/*============================== Contact info section style and ===============================*/
+
+/*============================== Contact map section style start ===============================*/
+.contact_sec2_map {
+    width: 100%;
+    height: 500px;
+}
+
+.contact_sec2_map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact_sec1_info_item i {
+    font-size: 90px;
+    line-height: 1;
+    color: rgba(21, 21, 21, 0.8);
+}
+/*============================== Contact map section style and ===============================*/
+
+/*============================== Contact form section style start ===============================*/
+.contact_sec3_contact {
+    background-color: #f5f5f5;
+}
+
+.lastTitelContact {
+    padding-bottom: 50px;
+}
+
+.contact_sec3_contact form{
+    width: 50%;
+    margin: auto;
+}
+
+.divInput {
+    margin-top: 20px;
+}
+
+.contact_sec3_contact form div input, .contact_sec3_contact form div textarea{
+    width: 100%;
+    min-height: 60px;
+    padding: 16px 25px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #151515;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    resize: vertical;
+    transition: 15s;
+    transition: .3s ease-in-out;
+}
+
+.contact_sec3_contact form div input:focus::placeholder{
+    opacity: 0;
+}
+
+.contact_sec3_contact form div textarea::placeholder{
+   font-weight: 300;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact_sec3_contact form div input::placeholder{
+    transition: 0.2s;
+}
+
+.contact_sec3_contact form div textarea{
+    height: 150px;
+}
+
+.sendButtonBlock {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.sendBtn{
+    text-align: center;
+    padding: 18px 35px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #41A451;
+    border-color: #41A451;
+    cursor: pointer;
+    border: none   ;
+    width: 45%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    transition: 250ms all ease-in-out;
+}
+
+.sendBtn:hover{
+    color: #ffffff;
+    background-color: #444141;
+    border-color: #444141;
+}
+
+.borderInpur {
+    border-color: red !important;
+}
+/*============================== Contact form section style and ===============================*/
+/*===================================================== Contact style start ===================================================*/
 
 
 /*======================================================================= Media =======================================================================*/
@@ -1864,12 +2019,101 @@ z-index: 2;
         padding-right: 15px !important;
     }
 
+    .lsitBlock {
+            width: 55%;
+    }
+
 }
 
 @media(max-width:1200px){
     .chek_block {
         width: 70%;
         padding: 40px 15px;
+    }
+
+    .header_p {
+        margin-top: 0px;
+    }
+
+
+    .contact_sec3_contact form {
+        width: 65%;
+    }
+
+    .typographyHeadingSecBlock {
+        flex-direction: column-reverse;
+    }
+
+    .typograph_fontBlockSide {
+        display: flex;
+    }
+
+    .typograph_fontBlockSide {
+        width: 100% !important;
+    }
+
+    .box1 {
+        width: 48%;
+    }
+
+    .box2 {
+        width: 30%;
+        margin-top: 0px !important;
+    }
+
+    .typograph_fontBlockSide p{
+        margin-left: 19px;
+    }
+
+    .typograph_fontBlockSide{
+        border: none !important;
+        margin-bottom: 50px;
+    }
+
+    .typograph_fontBlockSide h3 {
+        font-size: 24px;
+    }
+
+    .typograph_fontBlockSide h6, .typograph_fontBlockSide h2 {
+        font-size: 28px;
+    }
+
+    .typography_headingSide h1 {
+        font-size: 32px;
+    }
+
+    .typography_headingSide h2 {
+        font-size: 28px;
+    }
+
+    .typography_headingSide h3 {
+        font-size: 24px;
+    }
+
+    .typography_headingSide h4 {
+        font-size: 22px;
+    }
+
+    .typography_headingSide h5 {
+        font-size: 18px;
+    }
+
+    .typography_headingSide h6 {
+        font-size: 15px;
+    }
+
+    .typography_headingSide {
+        width: 100%;
+        padding-right: 50px;
+        box-sizing: border-box;
+    }
+
+
+    .box1 {
+        padding: 0 0!important;
+    }
+    .box2 {
+        padding-left: 15px !important;
     }
 
     .section{
@@ -1912,7 +2156,7 @@ z-index: 2;
     }
 
     .chek_block, .section {
-        width: 85%;
+        width: 80%;
     }
 
     .axchikImg {
@@ -1996,13 +2240,48 @@ z-index: 2;
 }
 
 @media(max-width:992px){
-  .navbar{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0 4px !important;
-    background: #444141 !important;
-  }
+    .contact_sec1_info_item a {
+        font-size: 17px;
+    }
+
+    .header {
+        height: 73vh;
+    }
+
+    .header_About {
+        height: 65vh !important;
+    }
+
+    .contact_sec1_info_item i {
+        font-size: 60px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 4px !important;
+        background: #444141 !important;
+    }
+
+    .contact_sec2_map {
+        width: 100%;
+        height: 409px;
+    }
+
+    .contact_sec1_info_item p {
+        margin-top: 10px;
+    }
+
+    .contact_sec1_info_item {
+        width: 40%;
+    }
+
+    .contact_sec1_info {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
 
     .section {
         padding: 85px 0;
@@ -2262,6 +2541,12 @@ z-index: 2;
     }    
 }
 
+@media (max-width: 840px) {
+    .lsitBlock {
+        width: 62%;
+    }
+}
+
 @media(max-width:800px){
     .chek_block, .section {
         width: 95%;
@@ -2288,6 +2573,40 @@ z-index: 2;
 @media(max-width:756px){
     .widt2 {
         width: 41%;
+    }
+
+    .header {
+        height: 65vh;
+    }
+
+    .header_content {
+        height: 62%;
+    }
+
+
+
+    .lsitBlock {
+        width: 65%;
+    }
+
+    .lsitBlockItem ul {
+       padding-left: 0 !important;
+    }
+
+    .box1 {
+        width: 50%;
+    }
+
+    .box2 {
+        width: 40%;
+    }
+
+    .p1Block {
+        width: 90%;
+    }
+
+    .lastDiv {
+        width: 90%;
     }
 
     .section {
@@ -2426,6 +2745,14 @@ z-index: 2;
     }
 }
 
+@media(max-width: 710px){
+    .contact_sec1_info_item {
+        width: 46%;
+    }
+
+}
+
+
 @media(max-width:700px){
     .img155 {
         height: 63%;
@@ -2457,6 +2784,14 @@ z-index: 2;
         font-size: 12px;   
     }
 
+    .box1 {
+        width: 40%;
+    }
+
+    .box2 {
+        width: 52%;
+    }
+
     .chooseBlockItemBlock1 {
         width: 25%;
     }
@@ -2479,11 +2814,34 @@ z-index: 2;
     .chooseBlockItemBlock2 h6 {
         font-size: 19px;
     }
+
+    .lsitBlock {
+        width: 74%;
+    }
 }
+
+@media (max-width: 720px) {
+        .contact_sec1_info_item {
+            width: 47%;
+        }
+
+    .contact_sec1_info_item p {
+        font-size: 14px;
+    }
+}
+
 
 @media(max-width:600px){
     .header_About {
-        height: 49vh !important;
+        height: 45vh !important;
+    }
+
+    .contact_sec3_contact form {
+        width: 85%;
+    }
+
+    lsitBlock {
+        width: 79%;
     }
 
     .footerTopBlock_content {
@@ -2501,14 +2859,74 @@ z-index: 2;
 
     .chooseBlockItemBlock1 {
         width: 35%;
-    }    
+    }
+
+    .typography_headingSide {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .p1Block, .lastDiv{
+        width: 95%;
+    }
 }
 
 @media(max-width:576px){
     .featured_p_block {
         width: 95%;
     }
-   
+
+    .header {
+        height: 51vh;
+    }
+
+    .contact_sec1_info {
+        flex-direction: column;
+    }
+
+    .paddingCont {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .contact_sec1_info_item {
+        width: 100%;
+    }
+
+    .contact_sec1_info_item p {
+        font-size: 16px;
+    }
+
+    .typograph_fontBlockSide {
+        flex-direction: column;
+    }
+
+    .box2 {
+        padding-left: 0px !important;
+    }
+
+    .typograph_fontBlockSide p {
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+
+    .lsitBlock  {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    p1Block, .lastDiv {
+        width: 100%;
+    }
+
+    typography_headingSide {
+        padding-right: 0;
+    }
+
+    .ol {
+        padding-left: 15px;
+    }
+
     .awardsBlockItem {
       max-width: 48% !important;
     }
@@ -2640,6 +3058,10 @@ z-index: 2;
         transition: .3s ease-in-out;
     }
 
+    .typography_headingSide {
+        padding-right: 0 !important;
+    }
+
     .pading2, .pading1 {
         padding-left: 5px;
     }
@@ -2679,7 +3101,7 @@ z-index: 2;
     }
 
     .header {
-        height: 62vh;
+        height: 51vh;
     }
 
     .header_content {
@@ -2694,7 +3116,16 @@ z-index: 2;
 
    .footerTopBlock {
       height: 120px;
-   } 
+   }
+
+    .box2 {
+        width: 58%;
+    }
+
+    .paddingCont {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 @media(max-width:492px){
@@ -2711,10 +3142,34 @@ z-index: 2;
     }
 }
 
+@media (max-width: 479px) {
+    .box2 {
+        width: 62%;
+    }
+}
+
+@media (max-width: 448px) {
+    .box2 {
+        width: 70%;
+    }
+}
 @media(max-width:440px){
     .chooseBlockItemBlock1 img {
       width: 100%;
    }
+
+    .contact_sec3_contact form {
+        width: 100%;
+    }
+
+    .sendButtonBlock button {
+        width: 60%;
+    }
+
+    .paddingCont {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
    .chooseBlockItemBlock2 h6 {
     font-size: 21px;
@@ -2790,7 +3245,7 @@ z-index: 2;
     }
 
     .header {
-        height: 49vh;
+        height: 45vh;
     }
 
     .header_content {
@@ -2819,6 +3274,21 @@ z-index: 2;
         height: 350px;
     }
 }
+@media (max-width: 386px) {
+    .box2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 345px) {
+    .nameBlock h4 {
+        font-size: 22px;
+    }
+    .box2 {
+        width: 90%;
+    }
+
+}
 
 @media(max-width:330px){
     .chooseBlockItemBlock1 {
@@ -2826,9 +3296,9 @@ z-index: 2;
     }
 }
 
-@media(max-width:320px){
+@media(max-width:320px) {
     .axchikImg {
-        width:75%;
+        width: 75%;
     }
 
     .footerTopBlock {
@@ -2836,6 +3306,22 @@ z-index: 2;
     }
 
     .header_About {
-        height: 37vh !important;
+        height: 30vh !important;
+    }
+
+    .paddingCont {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact_sec2_map {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 305px) {
+    .box2 {
+        width: 100%;
     }
 }
